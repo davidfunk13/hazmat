@@ -1,1 +1,11 @@
+//reset always first
+@import 'base/reset';
+//abstracts
+@import 'abstracts/variables';
+@import 'abstracts/utilities';
+//base
 @import 'base/base';
+@import 'base/typography';
+//components
+@import 'components/header';
+@import 'components/section';
