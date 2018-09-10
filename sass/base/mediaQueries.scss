@@ -1,3 +1,11 @@
-@media only screen and (max-width : 320px) {
-    /* Styles */
-    }
+
+@mixin video-HD {
+  @media screen and(min-width:1025px) {
+    @content;
+  }
+}
+@mixin video-notHD {
+  @media screen and(max-width:1024px) {
+    @content;
+  }
+}

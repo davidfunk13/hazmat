@@ -1,16 +1,17 @@
 .section{
-    // background-color: red;
     &__1{
-        background-color:$c-hazmat-blue;
+        background-color: $c-hazmat-blue;
+        height: 60vh;
     }
     &__2{
-        background-color: red;
+        background-color: $c-hazmat-orange;
+        height: 5vh;
         &--span{
           color: green;
         }
     }
     &__3{
-        height: 30vh;
-        background-color: yellow;
+        height: 50vh;
+        background-color: $c-hazmat-green;
     }
 }

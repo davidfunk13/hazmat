@@ -77,44 +77,54 @@ h2 {
 h3 {
   font-size: 1.6em; }
 
-@media only screen and (max-width: 320px) {
-  /* Styles */ }
-
 header {
   position: relative;
-  height: 40vh;
+  height: 100vh;
   border-bottom: 0.1rem solid black;
   overflow: hidden; }
+
+@media screen and (min-width: 1025px) {
+  video {
+    width: 100vw; } }
+
+@media screen and (max-width: 1024px) {
+  video {
+    height: 100vh; } }
 
 video {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  width: 585px; }
+  transform: translate(-50%, -50%); }
 
 .logo {
   z-index: 1;
-  position: fixed;
-  top: 30vh;
+  position: absolute;
+  bottom: 5vh;
   left: 0;
   height: 5vh;
-  background-color: rgba(255, 255, 255, 0.2);
   border-bottom: 0.05rem solid #5ea539;
   border-top: 0.05rem solid #5ea539;
   width: 100%; }
 
 .hazmat {
-  vertical-align: middle; }
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: .2rem;
+  font-size: 1.5rem;
+  color: white;
+  margin-top: .4rem; }
 
 .section__1 {
-  background-color: #0083d3; }
+  background-color: #0083d3;
+  height: 60vh; }
 
 .section__2 {
-  background-color: red; }
+  background-color: #fc7f04;
+  height: 5vh; }
   .section__2--span {
     color: green; }
 
 .section__3 {
-  height: 30vh;
-  background-color: yellow; }
+  height: 50vh;
+  background-color: #5ea539; }
