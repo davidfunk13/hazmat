@@ -1,9 +1,28 @@
-.flex{
+.flex {
     display: flex;
-    &--row{
-        flex-flow: row wrap; 
+
+    &--row {
+        flex-flow: row wrap;
     }
-    &--column{
-        flex-flow: column; 
+
+    &--column {
+        flex-flow: column;
+    }
+}
+
+//shapes
+.circle {
+    position: relative;
+    height: 5rem;
+    width: 5rem;
+    background-color: red;
+    -webkit-clip-path: circle(50.1% at 50% 50%);
+    clip-path: circle(50.1% at 50% 50%);
+
+    &__text {
+        transform: translate(-50%, -50%);
+        position: absolute;
+        top: 50%;
+        left: 50%;
     }
 }

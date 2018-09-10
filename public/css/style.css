@@ -52,6 +52,19 @@ table {
   .flex--column {
     flex-flow: column; }
 
+.circle {
+  position: relative;
+  height: 5rem;
+  width: 5rem;
+  background-color: red;
+  -webkit-clip-path: circle(50.1% at 50% 50%);
+  clip-path: circle(50.1% at 50% 50%); }
+  .circle__text {
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%; }
+
 body {
   font-size: 1rem; }
 
@@ -65,9 +78,17 @@ h3 {
   font-size: 1.6em; }
 
 header {
+  position: relative;
   width: 100vw;
   height: 40vh;
-  border-bottom: 1rem solid black; }
+  border-bottom: 1rem solid black;
+  overflow: hidden; }
+
+.video {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%; }
 
 .section__1 {
   background-color: blue; }
@@ -76,3 +97,7 @@ header {
   background-color: red; }
   .section__2--span {
     color: green; }
+
+.section__3 {
+  height: 30vh;
+  background-color: yellow; }
