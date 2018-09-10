@@ -1,10 +1,27 @@
-header{
+header {
     position: relative;
-    width: 100vw;
-    height: 10vh;
-    border-bottom: .3rem solid black;
+    height: 40vh;
+    border-bottom: .1rem solid black;
     overflow: hidden;
 }
+
 video {
-    background-size: 100%;
+    height: 100%;
+    transform: translateX(-20%);
+    z-index: -3;
+}
+
+.logo{
+    z-index: 1;
+    position: fixed;
+    top: 30vh;
+    left: 0;
+    height: 5vh;
+    background-color: rgba($color: white, $alpha: .2);
+    border-bottom: .05rem solid $c-hazmat-green;
+    border-top: .05rem solid $c-hazmat-green;
+    width: 100%;
+}
+.hazmat{
+    vertical-align: middle;
 }

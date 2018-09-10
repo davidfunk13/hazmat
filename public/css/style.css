@@ -77,24 +77,36 @@ h2 {
 h3 {
   font-size: 1.6em; }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
-  video {
-    position: absolute;
-    transform: translate(-50%, -50%);
-    height: 10vh; } }
+@media only screen and (max-width: 320px) {
+  /* Styles */ }
 
 header {
   position: relative;
-  width: 100vw;
-  height: 10vh;
-  border-bottom: .3rem solid black;
+  height: 40vh;
+  border-bottom: .1rem solid black;
   overflow: hidden; }
 
 video {
-  background-size: 100%; }
+  height: 100%;
+  transform: translateX(-20%);
+  z-index: -3; }
+
+.logo {
+  z-index: 1;
+  position: fixed;
+  top: 30vh;
+  left: 0;
+  height: 5vh;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-bottom: 0.05rem solid #5ea539;
+  border-top: 0.05rem solid #5ea539;
+  width: 100%; }
+
+.hazmat {
+  vertical-align: middle; }
 
 .section__1 {
-  background-color: blue; }
+  background-color: #0083d3; }
 
 .section__2 {
   background-color: red; }

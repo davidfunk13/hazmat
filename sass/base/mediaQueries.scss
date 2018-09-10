@@ -1,13 +1,3 @@
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 480px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: portrait) {
-
-    video{
-        // width: 200%;
-        position: absolute;
-        transform: translate(-50%, -50%);
-        height: 10vh
+@media only screen and (max-width : 320px) {
+    /* Styles */
     }
-}
