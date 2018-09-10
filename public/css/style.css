@@ -77,18 +77,21 @@ h2 {
 h3 {
   font-size: 1.6em; }
 
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  video {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    height: 10vh; } }
+
 header {
   position: relative;
   width: 100vw;
-  height: 40vh;
-  border-bottom: 1rem solid black;
+  height: 10vh;
+  border-bottom: .3rem solid black;
   overflow: hidden; }
 
-.video {
-  position: absolute;
-  transform: translate(-50%, -50%);
-  top: 50%;
-  left: 50%; }
+video {
+  background-size: 100%; }
 
 .section__1 {
   background-color: blue; }
