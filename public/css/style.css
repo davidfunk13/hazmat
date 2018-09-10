@@ -87,9 +87,11 @@ header {
   overflow: hidden; }
 
 video {
-  height: 100%;
-  transform: translateX(-20%);
-  z-index: -3; }
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  transform: translate(-50%, -50%); }
 
 .logo {
   z-index: 1;
