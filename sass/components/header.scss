@@ -5,39 +5,28 @@ header {
   overflow: hidden;
 }
 
-@include video-HD {
-  video {
-    width: 100vw;
-  }
-}
-
-@include video-notHD {
-  video {
-    height: 100vh;
-  }
-}
 video {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-
+  height: 100vh;
 }
-.logo {
+.nav {
   z-index: 1;
   position: absolute;
-  bottom: 5vh;
+  top: 2vh;
   left: 0;
   height: 5vh;
   border-bottom: 0.05rem solid $c-hazmat-green;
   border-top: 0.05rem solid $c-hazmat-green;
   width: 100%;
+  height: 3rem;
 }
-.hazmat {
-  font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: .2rem;
-  font-size: 1.5rem;
-  color: white;
-  margin-top: .4rem;
+.nav-logo {
+  position: absolute;
+  padding-top: 1rem;
+  top: 0;
+  left: 0;
+  width: 15rem;
 }

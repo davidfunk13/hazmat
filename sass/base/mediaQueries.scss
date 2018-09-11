@@ -1,11 +1,12 @@
 
 @mixin video-HD {
-  @media screen and(min-width:1025px) {
-    @content;
+    @media screen and(min-width:1025px) {
+      @content;
+    }
   }
-}
-@mixin video-notHD {
-  @media screen and(max-width:1024px) {
-    @content;
+  @mixin video-notHD {
+    @media screen and(max-width:1024px) {
+      @content;
+    }
   }
-}
+  

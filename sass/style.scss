@@ -6,8 +6,9 @@
 @import 'abstracts/utilities';
 //base
 @import 'base/base';
-@import 'base/typography';
 @import 'base/mediaQueries';
+@import 'base/typography';
 //components
 @import 'components/header';
 @import 'components/section';
+@import 'components/hamburgerMenu'
