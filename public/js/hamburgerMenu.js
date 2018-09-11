@@ -1,9 +1,9 @@
 function openNav() {
-    document.getElementById("hamburger").style.width = "250px";
+    document.getElementById("hamburger").style.width = "100px";
     // document.getElementById("container").style.marginLeft = "250px";
-    document.body.style.marginLeft = "250px";
+    document.body.style.marginLeft = "100px";
     document.getElementById("opacity").style.display = "block";
-    document.getElementById('nav-logo').setAttribute('src', '/img/fixed-logo.png');
+    document.getElementById('nav-logo').setAttribute('src', '/img/circle-logo.png');
 }
 
 function closeNav() {
