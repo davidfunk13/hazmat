@@ -2,13 +2,11 @@
 @import 'base/reset';
 //abstracts
 @import 'abstracts/variables';
-@import 'abstracts/mixins';
-@import 'abstracts/utilities';
 //base
 @import 'base/base';
-@import 'base/mediaQueries';
+// @import 'base/mediaQueries';
 @import 'base/typography';
 //components
+@import 'components/hamburgerNav';
 @import 'components/header';
 @import 'components/section';
-@import 'components/hamburgerMenu'
