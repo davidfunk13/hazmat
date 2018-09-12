@@ -1,21 +1,24 @@
 function openNav() {
-    document.getElementById("hamburger").style.width = "100px";
-    // document.getElementById("container").style.marginLeft = "250px";
-    document.body.style.marginLeft = "100px";
-    document.getElementById("opacity").style.display = "block";
-    document.getElementById('nav-logo').setAttribute('src', '/img/circle-logo.png');
+    document.getElementById("pushNav").style.width = "150px";
+    //this pushes sections and text
+    document.getElementById("pushNav__container").style.marginLeft = "150px";
+    //this pushes fixed video along with the rest of the document.
+    document.getElementById("video").style.marginLeft = "150px";
+    //this is the opacity layer. needs to be on top z-index.
+    document.getElementById('opacity').style.display = "block";
 }
 
 function closeNav() {
-    document.getElementById("hamburger").style.width = "0";
-    // document.getElementById("container").style.marginLeft = "0";
-    document.body.style.marginLeft = "0";
-    document.getElementById("opacity").style.display = "none";
-    document.getElementById('nav-logo').setAttribute('src', '/img/nav-logo.png');
+    document.getElementById("pushNav").style.width = "0";
+    //this pushes sections and text
+    document.getElementById("pushNav__container").style.marginLeft= "0";
+    //this pushes fixed video along with the rest of the document
+    document.getElementById("video").style.marginLeft= "0";
+    //this is the opacity layer. needs to be on top z-index.
+    document.getElementById('opacity').style.display = "none";
 }
 
 let toggle = false;
-
 function toggleNav() {
     console.log(toggle)
     switch (toggle) {

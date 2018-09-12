@@ -45,29 +45,20 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-.flex {
-  display: flex; }
-  .flex--row {
-    flex-flow: row wrap; }
-  .flex--column {
-    flex-flow: column; }
+html, body {
+  font-size: 1rem; }
 
-.circle {
-  position: relative;
-  height: 5rem;
-  width: 5rem;
-  background-color: red;
-  -webkit-clip-path: circle(50.1% at 50% 50%);
-  clip-path: circle(50.1% at 50% 50%); }
-  .circle__text {
-    transform: translate(-50%, -50%);
-    position: absolute;
-    top: 50%;
-    left: 50%; }
+.container {
+  width: 100%; }
 
-body {
-  font-size: 1rem;
-  transition: margin-left .5s; }
+#opacity {
+  display: none;
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  width: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 0; }
 
 h1 {
   font-size: 3.2em; }
@@ -78,73 +69,21 @@ h2 {
 h3 {
   font-size: 1.6em; }
 
-header {
-  position: relative;
-  height: 100vh;
-  border-bottom: 0.1rem solid black;
-  overflow: hidden; }
+#pushNav__container {
+  transition: .5s; }
 
-video {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  height: 100vh; }
-
-.nav {
-  z-index: 2;
-  position: absolute;
-  top: 2vh;
-  left: 0;
-  height: 5vh;
-  border-bottom: 0.05rem solid #5ea539;
-  border-top: 0.05rem solid #5ea539;
-  width: 100%;
-  height: 3rem; }
-
-.nav-logo {
-  position: absolute;
-  padding-top: 1rem;
-  top: 0;
-  left: 0;
-  height: 3rem; }
-
-.section__1 {
-  background-color: #0083d3;
-  height: 60vh; }
-
-.section__2 {
-  background-color: #fc7f04;
-  height: 5vh; }
-  .section__2--span {
-    color: green; }
-
-.section__3 {
-  height: 50vh;
-  background-color: #5ea539; }
-
-/* The side navigation menu */
 .sidenav {
   height: 100%;
-  /* 100% Full-height */
   width: 0;
-  /* 0 width - change this with JavaScript */
   position: fixed;
-  /* Stay in place */
-  z-index: 3;
-  /* Stay on top */
+  z-index: 1;
   top: 0;
   left: 0;
   background-color: #111;
-  /* Black*/
-  overflow-x: hidden;
-  /* Disable horizontal scroll */
-  padding-top: 60px;
-  /* Place content 60px from the top */
+  overflow: hidden;
   transition: 0.5s;
-  /* 0.5 second transition effect to slide in the sidenav */ }
+  padding-top: 60px; }
 
-/* The navigation menu links */
 .sidenav a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
@@ -153,11 +92,9 @@ video {
   display: block;
   transition: 0.3s; }
 
-/* When you mouse over the navigation links, change their color */
 .sidenav a:hover {
   color: #f1f1f1; }
 
-/* Position and style the close button (top right corner) */
 .sidenav .closebtn {
   position: absolute;
   top: 0;
@@ -165,23 +102,24 @@ video {
   font-size: 36px;
   margin-left: 50px; }
 
-a
-#container {
-  transition: margin-left .5s;
-  z-index: 1; }
-
-#opacity {
-  display: none;
-  background-color: rgba(0, 0, 0, 0.5);
-  position: fixed;
-  height: 100%;
-  width: 100%;
-  z-index: 2;
-  transition: margin-left .5s; }
-
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
   .sidenav {
     padding-top: 15px; }
   .sidenav a {
     font-size: 18px; } }
+
+header {
+  height: 100vh; }
+
+video {
+  transition: margin-left .5s;
+  height: 100%;
+  transform: translate(-50%, -50%);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: -10; }
+
+.section__1 {
+  background-color: #0083d3;
+  height: 700px; }
