@@ -11,3 +11,8 @@ video {
   left: 50%;
   z-index: -10;
 }
+@include videoDesktopBreakpoint {
+  video{
+    height: initial;
+  }
+}

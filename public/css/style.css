@@ -61,6 +61,7 @@ html, body {
   z-index: 0; }
 
 #menu-toggle {
+  z-index: 10000;
   height: 2rem;
   position: fixed;
   top: 1rem;
@@ -125,6 +126,10 @@ video {
   top: 50%;
   left: 50%;
   z-index: -10; }
+
+@media screen and (min-width: 1024px) {
+  video {
+    height: initial; } }
 
 .section__1 {
   background-color: #0083d3;
