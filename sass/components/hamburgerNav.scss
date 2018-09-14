@@ -1,6 +1,6 @@
 #pushNav{
     &__container{
-      z-index: 0;
+      @include z-index(contentContainer);
       transition: .5s
     }
 }

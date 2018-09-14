@@ -52,7 +52,7 @@ html, body {
   display: none;
   position: fixed;
   top: 0;
-  height: 100vh;
+  height: 100%;
   width: 100vw;
   background-color: rgba(0, 0, 0, 0.4);
   z-index: 0; }
@@ -135,4 +135,6 @@ video {
 
 .section__2 {
   background-color: #5ea539;
-  height: 700px; }
+  height: 700px;
+  white-space: nowrap;
+  overflow: hidden; }
