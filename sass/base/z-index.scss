@@ -1,0 +1,12 @@
+$z-index: (
+  pushNav: 200,
+  // contentContainer: ,
+  video: -10,
+  opacity: 0,
+);
+@function z-index($value) {
+  @return map-get($z-index, $value);
+}
+@mixin z-index($value) {
+  z-index: z-index($value);
+}

@@ -1,6 +1,7 @@
 #pushNav{
     &__container{
-        transition: .5s
+      z-index: 0;
+      transition: .5s
     }
 }
 .sidenav {

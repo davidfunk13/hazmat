@@ -1,12 +1,13 @@
 //reset always first
 @import 'base/reset';
+@import 'base/z-index';
 //abstracts
-@import 'abstracts/variables';
-@import 'abstracts/mixins';
 //base
 @import 'base/base';
-// @import 'base/mediaQueries';
+@import 'base/variables';
+@import 'base/breakpoints';
 @import 'base/typography';
+
 //components
 @import 'components/hamburgerNav';
 @import 'components/header';

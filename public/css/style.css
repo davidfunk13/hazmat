@@ -48,9 +48,6 @@ table {
 html, body {
   font-size: 1rem; }
 
-.container {
-  width: 100%; }
-
 #opacity {
   display: none;
   position: fixed;
@@ -77,6 +74,7 @@ h3 {
   font-size: 1.6em; }
 
 #pushNav__container {
+  z-index: 0;
   transition: .5s; }
 
 .sidenav {

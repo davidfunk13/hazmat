@@ -1,10 +1,16 @@
-.section{
-    &__1{
-        background-color: $c-hazmat-blue;
-        height: 700px;
+.section {
+  &__1 {
+    background-color: $c-hazmat-blue;
+    height: 700px;
+  }
+
+  &__2 {
+    // position: relative;
+    background-color: $c-hazmat-green;
+    height: 700px;
+    &--box {
+
+      // width: 300px;
     }
-    &__2{
-        background-color: $c-hazmat-green;
-        height: 700px;
-    }
+  }
 }
