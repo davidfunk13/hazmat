@@ -1,14 +1,16 @@
 .section {
+  white-space: nowrap;
+  overflow: hidden;
+  position: relative;
+@include z-index(section)
   &__1 {
     background-color: $c-hazmat-blue;
     height: 700px;
+
   }
 
   &__2 {
-    // position: relative;
     background-color: $c-hazmat-green;
     height: 700px;
-    white-space: nowrap;
-    overflow: hidden;
   }
 }

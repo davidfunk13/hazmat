@@ -1,8 +1,9 @@
 $z-index: (
   pushNav: 200,
+  section: 0,
   contentContainer: 0,
+  opacity: 1,
   video: -10,
-  opacity: 0,
 );
 @function z-index($value) {
   @return map-get($z-index, $value);
