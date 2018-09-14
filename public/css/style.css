@@ -77,6 +77,12 @@ h2 {
 h3 {
   font-size: 1.6em; }
 
+.banner-text {
+  text-align: center;
+  font-size: 5rem;
+  margin-top: 15rem;
+  color: white; }
+
 #pushNav__container {
   z-index: 0;
   transition: .5s; }
