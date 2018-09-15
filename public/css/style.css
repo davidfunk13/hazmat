@@ -71,15 +71,21 @@ html {
 h1 {
   font-size: 3.2em; }
 
+#section__1--h1 {
+  transition: .5s; }
+
+#section__2--h2 {
+  transition: .5s; }
+
 h2 {
-  font-size: 2.4em; }
+  font-size: 2em; }
 
 h3 {
   font-size: 1.6em; }
 
 .banner-text {
   text-align: center;
-  font-size: 5rem;
+  font-size: 4rem;
   margin-top: 15rem;
   color: white; }
 
@@ -145,8 +151,16 @@ video {
   position: relative;
   z-index: 0; }
   .section__1 {
+    text-align: center;
     background-color: #0083d3;
     height: 700px; }
   .section__2 {
+    text-align: center;
     background-color: #5ea539;
     height: 700px; }
+    .section__2--box {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%; }

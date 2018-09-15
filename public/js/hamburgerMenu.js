@@ -11,6 +11,9 @@ function openNav() {
     document.getElementById('opacity').style.display = "block";
     //for the logo
     document.getElementById('menu-toggle').style.display = "none";
+    //section content push
+    document.getElementById('section__1--h1').style.marginLeft = '100px';
+    document.getElementById('section__2--h2').style.marginLeft = '100px';
 }
 
 function closeNav() {
@@ -22,7 +25,11 @@ function closeNav() {
     document.getElementById("video").style.marginLeft = "0";
     //this is the opacity layer. needs to be on top z-index.
     document.getElementById('opacity').style.display = "none";
+    //opacity layer. top z index
     document.getElementById('menu-toggle').style.display = "block";
+    //section content push
+    document.getElementById('section__1--h1').style.marginLeft = '0px';
+    document.getElementById('section__2--h2').style.marginLeft = '0px';
 }
 function toggleNav() {
     console.log(toggle)
