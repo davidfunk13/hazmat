@@ -1,5 +1,4 @@
 let toggle = false;
-
 function openNav() {
     toggle = true;
     document.getElementById("pushNav").style.width = "150px";
@@ -13,9 +12,8 @@ function openNav() {
     document.getElementById('menu-toggle').style.display = "none";
     //section content push
     document.getElementById('section__1--h1').style.marginLeft = '100px';
-    document.getElementById('section__2--h2').style.marginLeft = '100px';
+    document.getElementById('section__2--h1').style.marginLeft = '100px';
 }
-
 function closeNav() {
     toggle = false;
     document.getElementById("pushNav").style.width = "0";
@@ -29,7 +27,7 @@ function closeNav() {
     document.getElementById('menu-toggle').style.display = "block";
     //section content push
     document.getElementById('section__1--h1').style.marginLeft = '0px';
-    document.getElementById('section__2--h2').style.marginLeft = '0px';
+    document.getElementById('section__2--h1').style.marginLeft = '0px';
 }
 function toggleNav() {
     console.log(toggle)

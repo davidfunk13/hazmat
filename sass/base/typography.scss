@@ -1,24 +1,57 @@
+h1,
+h2,
+h3 {
+  font-family: 'MontrealRegular';
+  font-weight: normal;
+  font-style: normal;
+}
 h1 {
-    font-size: 3.2em;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1.6em;
+}
+
+p {
+  font-family: 'PoppinsRegular';
+  font-weight: normal;
+  font-style: normal;
 }
 //custom h1's
-#section__1--h1{
-  transition: .5s;
+
+#section__1--h1 {
+  text-align: center;
+  transition: 0.5s;
   // transition-timing-function: ease;
 }
-#section__2--h2{
-  transition: .5s;
+
+#section__2--h1 {
+  text-align: center;
+  transition: 0.5s;
   // transition-timing-function: ease;
 }
-h2 {
-    font-size: 2em;
+#section__3--h1 {
+  text-align: center;
+  transition: 0.5s;
+  // transition-timing-function: ease;
 }
-h3{
-    font-size: 1.6em;
+#section__4--h1 {
+  text-align: center;
+  transition: 0.5s;
+  // transition-timing-function: ease;
 }
-.banner-text{
+//headings
+
+.banner-text {
   text-align: center;
   font-size: 4rem;
-  margin-top: 15rem;
+  padding-top: 15rem;
   color: white;
 }

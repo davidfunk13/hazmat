@@ -1,0 +1,12 @@
+.text{
+  white-space: normal;
+}
+.flex{
+  display: flex;
+  &__row{
+    flex-flow: row;
+  }
+  &__column{
+    flex-flow: column;
+  }
+}
