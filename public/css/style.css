@@ -75,6 +75,11 @@ html {
   .flex__column {
     flex-flow: column; }
 
+.shape {
+  background-color: red;
+  width: 100%;
+  height: 100%; }
+
 h1,
 h2,
 h3 {
@@ -93,10 +98,13 @@ h2 {
 h3 {
   font-size: 1.6em; }
 
-p {
+p, ol, li {
   font-family: 'PoppinsRegular';
   font-weight: normal;
   font-style: normal; }
+
+ol, li {
+  width: 50%; }
 
 #section__1--h1 {
   text-align: center;
@@ -137,6 +145,7 @@ p {
   padding-top: 60px; }
 
 .sidenav a {
+  white-space: nowrap;
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;

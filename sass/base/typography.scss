@@ -19,10 +19,14 @@ h3 {
   font-size: 1.6em;
 }
 
-p {
+p, ol, li {
   font-family: 'PoppinsRegular';
   font-weight: normal;
   font-style: normal;
+}
+
+ol, li {
+  width: 50%;
 }
 //custom h1's
 
@@ -54,4 +58,8 @@ p {
   font-size: 4rem;
   padding-top: 15rem;
   color: white;
+}
+.list{
+  // width: 50%;
+  // height: 50%;
 }
