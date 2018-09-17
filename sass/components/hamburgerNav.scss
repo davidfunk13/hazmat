@@ -1,46 +1,70 @@
-#pushNav{
-    &__container{
-      @include z-index(contentContainer);
-      transition: .5s
-    }
-}
-.sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: $c-black;
-    overflow: hidden;
+#pushNav {
+  &__container {
+    @include z-index(contentContainer);
     transition: 0.5s;
-    padding-top: 60px;
+  }
+}
 
+#opacity {
+  display: none;
+  position: fixed;
+  top: 0;
+  height: 100%;
+  width: 100vw;
+  background-color: rgba(0,0,0,0.4);
+  @include z-index(opacity);
+}
+
+#menu-toggle {
+  z-index: 10000;
+  height: 2rem;
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: $c-black;
+  overflow: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
 }
 
 .sidenav a {
   white-space: nowrap;
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
 }
 
 .sidenav a:hover {
-    color: #f1f1f1;
+  color: #f1f1f1;
 }
 
 .sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
 }
 
+//hamburgernav breakpoints
 @media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+  .sidenav {
+    padding-top: 15px;
+  }
+
+  .sidenav a {
+    font-size: 18px;
+  }
 }

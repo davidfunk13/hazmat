@@ -1,18 +1,14 @@
-.text{
-  white-space: normal;
-}
-.flex{
+
+.flex-row{
   display: flex;
-  &__row{
-    flex-flow: row;
-  }
-  &__column{
-    flex-flow: column;
-  }
+  align-items: center;
+  justify-content: space-around;
+}
+.flex-column{
+  display: flex;
+  flex-flow: column;
 }
 
 .shape{
   background-color: red;
-  width: 100%;
-  height: 100%;
 }

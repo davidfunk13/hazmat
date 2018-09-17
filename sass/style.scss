@@ -5,10 +5,12 @@
 //base
 @import 'base/base';
 @import 'base/variables';
-@import 'base/breakpoints';
 @import 'base/utilities';
-@import 'base/typography';
+//breakpoints
+@import 'breakpoints/breakpoints';
 //components
 @import 'components/hamburgerNav';
 @import 'components/header';
 @import 'components/section';
+
+@import 'typography/typography';
