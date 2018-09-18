@@ -47,7 +47,10 @@ table {
 
 body,
 html {
-  font-size: 1rem; }
+  font-size: 1rem;
+  font-family: 'PoppinsRegular';
+  font-weight: normal;
+  font-style: normal; }
 
 .flex-row {
   display: flex;
@@ -98,28 +101,29 @@ html {
 
 .sidenav a {
   white-space: nowrap;
-  padding: 8px 8px 8px 32px;
+  padding: 1rem;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 1rem;
   color: #818181;
   display: block;
   transition: 0.3s; }
 
+.sidenav a:first-child {
+  margin-bottom: 2rem; }
+
 .sidenav a:hover {
-  color: #f1f1f1; }
+  color: #fff7f7; }
 
 .sidenav .closebtn {
   position: absolute;
   top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px; }
+  font-size: 36px; }
 
 @media screen and (max-height: 450px) {
   .sidenav {
-    padding-top: 15px; }
+    text-align: center; }
   .sidenav a {
-    font-size: 18px; } }
+    font-size: 1rem; } }
 
 header {
   height: 100vh; }
@@ -195,13 +199,6 @@ h2 {
 
 h3 {
   font-size: 1.6em; }
-
-li,
-ol,
-p {
-  font-family: 'PoppinsRegular';
-  font-weight: normal;
-  font-style: normal; }
 
 li,
 ol {
