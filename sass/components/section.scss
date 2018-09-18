@@ -1,32 +1,58 @@
 .section {
+  padding: .5rem;
   @include z-index(section);
   &__1 {
     background-color: $c-hazmat-blue;
     height: 700px;
+    &--h1 {
+      text-align: center;
+      transition: 0.5s;
+      padding-bottom: 1rem
+    }
     &--shape{
       background-color: red;
       width: 5rem;
       height: 5rem;
+      flex: 0 50%;
     }
     &--paragraph{
-      width: 50%;
+            flex: 0 50%;
+    }
+    &--text2{
+      flex: 0 50%;
+    }
+    &--text3{
+      flex: 0 50%;
     }
   }
 
   &__2 {
     background-color: $c-hazmat-green;
     height: 700px;
+    &--h1 {
+      text-align: center;
+      transition: 0.5s;
+      padding-bottom: 1rem;
+    }
   }
 
   &__3 {
     background-color: $c-hazmat-orange;
     height: 700px;
-
+    &--h1 {
+      text-align: center;
+      transition: 0.5s;
+      padding-bottom: 1rem;
+    }
   }
 
   &__4 {
     background-color: $c-hazmat-blue;
     height: 700px;
-
+  }
+  &--h1 {
+    text-align: center;
+    transition: 0.5s;
+    padding-bottom: 1rem;
   }
 }

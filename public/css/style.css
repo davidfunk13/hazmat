@@ -51,15 +51,18 @@ html {
 
 .flex-row {
   display: flex;
+  flex-flow: row wrap;
   align-items: center;
-  justify-content: space-around; }
+  justify-content: space-evenly;
+  width: 100%;
+  height: 100%; }
 
 .flex-column {
   display: flex;
   flex-flow: column; }
 
-.shape {
-  background-color: red; }
+.text {
+  margin-left: auto; }
 
 #pushNav__container {
   z-index: 0;
@@ -135,25 +138,47 @@ video {
     height: initial; } }
 
 .section {
+  padding: .5rem;
   z-index: 0; }
   .section__1 {
     background-color: #0083d3;
     height: 700px; }
+    .section__1--h1 {
+      text-align: center;
+      transition: 0.5s;
+      padding-bottom: 1rem; }
     .section__1--shape {
       background-color: red;
       width: 5rem;
-      height: 5rem; }
+      height: 5rem;
+      flex: 0 50%; }
     .section__1--paragraph {
-      width: 50%; }
+      flex: 0 50%; }
+    .section__1--text2 {
+      flex: 0 50%; }
+    .section__1--text3 {
+      flex: 0 50%; }
   .section__2 {
     background-color: #5ea539;
     height: 700px; }
+    .section__2--h1 {
+      text-align: center;
+      transition: 0.5s;
+      padding-bottom: 1rem; }
   .section__3 {
     background-color: #fc7f04;
     height: 700px; }
+    .section__3--h1 {
+      text-align: center;
+      transition: 0.5s;
+      padding-bottom: 1rem; }
   .section__4 {
     background-color: #0083d3;
     height: 700px; }
+  .section--h1 {
+    text-align: center;
+    transition: 0.5s;
+    padding-bottom: 1rem; }
 
 h1,
 h2,
@@ -181,22 +206,6 @@ p {
 li,
 ol {
   width: 50%; }
-
-#section__1--h1 {
-  text-align: center;
-  transition: 0.5s; }
-
-#section__2--h1 {
-  text-align: center;
-  transition: 0.5s; }
-
-#section__3--h1 {
-  text-align: center;
-  transition: 0.5s; }
-
-#section__4--h1 {
-  text-align: center;
-  transition: 0.5s; }
 
 .banner-text {
   text-align: center;
