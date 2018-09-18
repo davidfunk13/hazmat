@@ -1,0 +1,38 @@
+h1,
+h2,
+h3 {
+  font-family: 'MontrealRegular';
+  font-weight: normal;
+  font-style: normal;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1.6em;
+}
+
+li,
+ol,
+p {
+
+}
+
+li,
+ol {
+  width: 50%;
+}
+//custom headings, positioning etc.
+
+.banner-text {
+  text-align: center;
+  font-size: 4rem;
+  padding-top: 15rem;
+  color: white;
+}

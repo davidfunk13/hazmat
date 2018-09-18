@@ -1,4 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -45,20 +45,40 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-html, body {
-  font-size: 1rem; }
+body,
+html {
+  font-size: 1rem;
+  font-family: 'PoppinsRegular';
+  font-weight: normal;
+  font-style: normal; }
 
-.container {
-  width: 100%; }
+.flex-row {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 100%; }
+
+.flex-column {
+  display: flex;
+  flex-flow: column; }
+
+.text {
+  margin-left: auto; }
+
+#pushNav__container {
+  z-index: 0;
+  transition: 0.5s; }
 
 #opacity {
   display: none;
   position: fixed;
   top: 0;
-  height: 100vh;
+  height: 100%;
   width: 100vw;
   background-color: rgba(0, 0, 0, 0.4);
-  z-index: 0; }
+  z-index: 2; }
 
 #menu-toggle {
   z-index: 10000;
@@ -67,18 +87,6 @@ html, body {
   top: 1rem;
   left: 1rem; }
 
-h1 {
-  font-size: 3.2em; }
-
-h2 {
-  font-size: 2.4em; }
-
-h3 {
-  font-size: 1.6em; }
-
-#pushNav__container {
-  transition: .5s; }
-
 .sidenav {
   height: 100%;
   width: 0;
@@ -86,34 +94,36 @@ h3 {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #111;
+  background-color: black;
   overflow: hidden;
   transition: 0.5s;
   padding-top: 60px; }
 
 .sidenav a {
-  padding: 8px 8px 8px 32px;
+  white-space: nowrap;
+  padding: 1rem;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 1rem;
   color: #818181;
   display: block;
   transition: 0.3s; }
 
+.sidenav a:first-child {
+  margin-bottom: 2rem; }
+
 .sidenav a:hover {
-  color: #f1f1f1; }
+  color: #fff7f7; }
 
 .sidenav .closebtn {
   position: absolute;
   top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px; }
+  font-size: 36px; }
 
 @media screen and (max-height: 450px) {
   .sidenav {
-    padding-top: 15px; }
+    text-align: center; }
   .sidenav a {
-    font-size: 18px; } }
+    font-size: 1rem; } }
 
 header {
   height: 100vh; }
@@ -131,10 +141,71 @@ video {
   video {
     height: initial; } }
 
-.section__1 {
-  background-color: #0083d3;
-  height: 700px; }
+.section {
+  padding: .5rem;
+  z-index: 0; }
+  .section__1 {
+    background-color: #0083d3;
+    height: 700px; }
+    .section__1--h1 {
+      text-align: center;
+      transition: 0.5s;
+      padding-bottom: 1rem; }
+    .section__1--shape {
+      background-color: red;
+      width: 5rem;
+      height: 5rem;
+      flex: 0 50%; }
+    .section__1--paragraph {
+      flex: 0 50%; }
+    .section__1--text2 {
+      flex: 0 50%; }
+    .section__1--text3 {
+      flex: 0 50%; }
+  .section__2 {
+    background-color: #5ea539;
+    height: 700px; }
+    .section__2--h1 {
+      text-align: center;
+      transition: 0.5s;
+      padding-bottom: 1rem; }
+  .section__3 {
+    background-color: #fc7f04;
+    height: 700px; }
+    .section__3--h1 {
+      text-align: center;
+      transition: 0.5s;
+      padding-bottom: 1rem; }
+  .section__4 {
+    background-color: #0083d3;
+    height: 700px; }
+  .section--h1 {
+    text-align: center;
+    transition: 0.5s;
+    padding-bottom: 1rem; }
 
-.section__2 {
-  background-color: #5ea539;
-  height: 700px; }
+h1,
+h2,
+h3 {
+  font-family: 'MontrealRegular';
+  font-weight: normal;
+  font-style: normal; }
+
+h1 {
+  font-size: 2em; }
+
+h2 {
+  font-size: 2em; }
+
+h3 {
+  font-size: 1.6em; }
+
+li,
+ol {
+  width: 50%; }
+
+.banner-text {
+  text-align: center;
+  font-size: 4rem;
+  padding-top: 15rem;
+  color: white; }

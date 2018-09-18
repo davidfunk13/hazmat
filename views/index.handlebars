@@ -1,25 +1,41 @@
-<div class="container">
-  <div id="pushNav" class="sidenav">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <a href="#">About</a>
-    <a href="#">Services</a>
-    <a href="#">Clients</a>
-    <a href="#">Contact</a>
-  </div>
-  {{!-- <button onclick="toggleNav()">NAV TOGGLE</button> --}}
-  <img id="menu-toggle" passive="true" src="/img/nav-logo.png" onclick="toggleNav()" alt="Hazmat Media: Menu">
-  <div id="opacity"></div>
-  <div id="pushNav__container">
-    <header>
-      <video id="video" autoplay loop>
+<img id="menu-toggle" passive="true" src="/img/nav-logo.png" onclick="toggleNav()" alt="Hazmat Media: Menu">
+<div id="pushNav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a id="link--top" >Top</a>
+  <a id='link--section__1'>Who We Are</a>
+  <a id="link--section__2">Who We Serve</a>
+  <a id="link--section__3">What We Do</a>
+  <a id="link--section__4">Another Section</a>
+</div>
+<header>
+  <p id="top" class="banner-text">HAZMAT MEDIA</p>
+  <video id="video" autoplay loop>
         <source src="/video/LA.webm" type="video/mp4"> Your browser does not support the video tag.
       </video>
-    </header>
-    <section class="section section__1">
-      <h1>Section</h1>
-    </section>
-    <section class="section section__2">
-      <h2>another section</h2>
-    </section>
-  </div>
+</header>
+<div id="pushNav__container">
+  <div id="opacity"></div>
+  <section id="1" class="section section__1">
+    <h1 class="section__1--h1">WHO WE ARE</h1>
+    <!-- <div class="flex flex__row"> -->
+    <div class="flex-row">
+      <p class="section__1--paragraph">Duis neque magna, laoreet in ullamcorper sed, iaculis in ipsum. Aenean mollis ultricies fermentum. Praesent condimentum est a ipsum accumsan, convallis tempor elit semper. Suspendisse in quam ut purus hendrerit
+        commodo. Donec consectetur orci
+        eu arcu congue, suscipit ullamcorper est vehicula. In nec iaculis orci. Integer vel ullamcorper enim, eu suscipit urna.</p>
+      <div class="section__1--shape"></div>
+      <p class="section__1--text2">text</p>
+      <p class="section__1--text3">text</p>
+    </div>
+
+    <!-- </div> -->
+  </section>
+  <section id="2" class="section section__2">
+    <h1 class="section__2--h1 ">WHO WE SERVE</h1>
+  </section>
+  <section id="3" class="section section__3">
+    <h1 class="section__3--h1">WHAT WE DO</h1>
+  </section>
+  <section id="4" class="section section__4">
+    <h1 class="section__4--h1">ANOTHER SECTION</h1>
+  </section>
 </div>
