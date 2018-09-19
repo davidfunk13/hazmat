@@ -5,28 +5,31 @@
   border-bottom: 0.03rem solid white;
 
   &__1 {
-border-top: 0.03rem solid white;
+    border-top: 0.03rem solid white;
     background-color: $c-hazmat-blue;
-    height: 700px;
+    height: auto;
+    margin-right: auto;
 
     &--h1 {
       transition: 0.5s;
-      padding-bottom: 1rem;
     }
 
     &__shapecontainer {
-      margin-left: auto;
+      display: flex;
+      flex-direction: column;
+      margin: auto;
 
       &--shape {
-        background-color: red;
-        width: 5rem;
-        height: 5rem;
-        flex: 0 50%;
+        background-color:$c-hazmat-orange;
+        width: 7rem;
+        height: 7rem;
+        margin-bottom: 1rem;
       }
     }
 
     &--paragraph {
       flex: 0 50%;
+      padding-left: .3rem;
     }
 
     &__listcontainer {
