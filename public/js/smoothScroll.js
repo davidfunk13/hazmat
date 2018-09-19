@@ -1,5 +1,4 @@
-let ids = [
-  {
+let ids = [{
     link: "#link--top",
     div: "#top"
   },
@@ -21,7 +20,19 @@ let ids = [
   }
 ]
 ids.map(id => {
-  $(id.link).click(function() {
-    $('html, body').animate({scrollTop: $(id.div).offset().top}, 1000)
+  $(id.link).click(function () {
+    $('html, body').animate({
+      scrollTop: $(id.div).offset().top
+    }, 1000)
   });
+})
+//figuring out menu container problems
+let oldY = null;
+$('#menu-toggle').on('click', () =>{
+  oldY = window.pageYOffset
+  console.log(`Y coordinates on open:  ${window.pageYOffset}`)
+})
+$('.closebtn').on('click', () => {
+  console.log(`Old Y coordinates to scroll to when closing!!!: ${oldY}`)
+  console.log(`Y coordinates on close:  ${window.pageYOffset}`)
 })
