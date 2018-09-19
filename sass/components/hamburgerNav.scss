@@ -34,7 +34,8 @@
   overflow: hidden;
   transition: 0.5s;
   padding-top: 60px;
-
+  font-variant: small-caps;
+  border-right: .09rem solid white;
 }
 
 .sidenav a {
@@ -63,7 +64,7 @@
 //hamburgernav breakpoints
 @media screen and (max-height: 450px) {
   .sidenav {
-    text-align: center;
+    // text-align: center;
   }
 
   .sidenav a {
