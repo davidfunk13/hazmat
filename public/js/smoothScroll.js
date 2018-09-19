@@ -21,7 +21,6 @@ let ids = [
   }
 ]
 ids.map(id => {
-  console.log(id);
   $(id.link).click(function() {
     $('html, body').animate({scrollTop: $(id.div).offset().top}, 1000)
   });

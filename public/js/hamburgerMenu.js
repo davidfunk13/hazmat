@@ -17,7 +17,6 @@ function openNav() {
   document.getElementById('1-flex-toggle').style.flexFlow = "column";
   //resizes section 1 shapes on toggle nav
   for (var i = 0; i < section1Shapes.length; i++) {
-    console.log(section1Shapes[i])
     section1Shapes[i].style.width = "3rem";
     section1Shapes[i].style.height = "3rem";
     section1Shapes[i].style.marginBottom = "0rem";
@@ -43,7 +42,6 @@ function closeNav() {
   document.getElementById('1-flex-toggle').style.flexFlow = "row wrap";
   //resizes section 1 shapes on toggle nav
   for (var i = 0; i < section1Shapes.length; i++) {
-    console.log(section1Shapes[i])
     section1Shapes[i].style.width = "7rem";
     section1Shapes[i].style.height = "7rem";
     section1Shapes[i].style.marginBottom = "1rem";
@@ -55,7 +53,6 @@ function closeNav() {
 }
 
 function toggleNav() {
-  console.log(toggle)
   switch (toggle) {
     case true:
       toggle = false;

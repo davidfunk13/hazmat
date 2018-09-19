@@ -2,15 +2,17 @@
   padding: 0.5rem;
   @include z-index(section);
   overflow: hidden;
-  border-bottom: 0.03rem solid white;
+  // border-bottom: 0.03rem solid white;
 
+  //content sections
   &__1 {
-    border-top: 0.03rem solid white;
+    // border-top: 0.03rem solid white;
     background-color: $c-hazmat-blue;
-    height: auto;
+    max-height: 500px;
     margin-right: auto;
 
     &--h1 {
+      white-space: pre;
       transition: 0.5s;
     }
 
@@ -20,7 +22,7 @@
       margin: auto;
 
       &--shape {
-        background-color:$c-hazmat-orange;
+        background-color: $c-hazmat-orange;
         width: 7rem;
         height: 7rem;
         margin-bottom: 1rem;
@@ -30,14 +32,7 @@
     &--paragraph {
       flex: 0 50%;
       padding-left: .3rem;
-    }
-
-    &__listcontainer {
-      flex: 0 50%;
-
-      &--list {
-        // text-align: right;
-      }
+      margin-bottom: .3rem;
     }
 
     &--text3 {
@@ -47,34 +42,55 @@
 
   &__2 {
     background-color: $c-hazmat-green;
-    height: 700px;
+    height: 400px;
 
     &--h1 {
-      // text-align: center;
+      white-space: pre;
       transition: 0.5s;
-      padding-bottom: 1rem;
     }
   }
 
   &__3 {
     background-color: $c-hazmat-orange;
-    height: 700px;
+    height: 400px;
 
     &--h1 {
-      // text-align: center;
+      white-space: pre;
       transition: 0.5s;
-      padding-bottom: 1rem;
     }
   }
 
   &__4 {
     background-color: $c-hazmat-blue;
-    height: 700px;
+    height: 400px;
+    
+      &--h1 {
+        white-space: pre;
+        transition: 0.5s;
+      }
   }
 
-  &--h1 {
-    // text-align: center;
-    transition: 0.5s;
-    padding-bottom: 1rem;
+  //inserts 
+  &__insert {
+    overflow: hidden;
+
+    &--1 {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      align-items: center;
+      font-weight: 900;
+      letter-spacing: .8rem;
+      width: 100%;
+      text-align: center;
+      font-size: 3rem;
+      height: 100px;
+      background-color: white;
+      color: black;
+    }
+
+    // &--footer{
+
+    // }
   }
 }

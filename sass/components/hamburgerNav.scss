@@ -17,7 +17,7 @@
 
 #menu-toggle {
   z-index: 10000;
-  height: 2rem;
+  height: 3rem;
   position: fixed;
   top: 1rem;
   left: 1rem;
@@ -40,7 +40,7 @@
 
 .sidenav a {
   white-space: nowrap;
-  padding: 1rem;
+  padding: 1rem 1rem 0 1rem;
   text-decoration: none;
   font-size: 1rem;
   color: #818181;
