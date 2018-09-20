@@ -26,13 +26,3 @@ ids.map(id => {
     }, 1000)
   });
 })
-//figuring out menu container problems
-let oldY = null;
-$('#menu-toggle').on('click', () =>{
-  oldY = window.pageYOffset
-  console.log(`Y coordinates on open:  ${window.pageYOffset}`)
-})
-$('.closebtn').on('click', () => {
-  console.log(`Old Y coordinates to scroll to when closing!!!: ${oldY}`)
-  console.log(`Y coordinates on close:  ${window.pageYOffset}`)
-})

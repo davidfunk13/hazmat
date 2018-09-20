@@ -1,14 +1,18 @@
 $z-index: (
-  pushNav: 200,
-  section: 0,
-  contentContainer: 0,
-  content:1,
-  opacity: 2,
-  video: -10,
+pushNav: 200,
+sideNavLinks: 150,
+opacity: 125,
+menuToggle: 100,
+content: 1,
+section: 0,
+contentContainer: 0,
+video: -10,
 );
+
 @function z-index($value) {
   @return map-get($z-index, $value);
 }
+
 @mixin z-index($value) {
   z-index: z-index($value);
 }

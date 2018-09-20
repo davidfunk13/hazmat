@@ -2,4 +2,16 @@
     @media screen and (min-width: 1024px) {
         @content        
     }
-}
+};
+
+@mixin portraitMode {
+    @media screen and (orientation: portrait) {
+        @content
+    }
+};
+
+@mixin landscapeMode {
+    @media screen and (orientation: landscape) {
+        @content
+    }
+};
