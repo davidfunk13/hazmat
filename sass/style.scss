@@ -2,7 +2,6 @@
 @import 'base/reset';
 @import 'base/z-index';
 @import 'base/breakpoints';
-//abstracts
 //base
 @import 'base/variables';
 @import 'base/utilities';
@@ -11,7 +10,5 @@
 @import 'components/hamburgerNav';
 @import 'components/header';
 @import 'components/section';
-
+//typeography
 @import 'typography/typography';
-
-//breakpoints

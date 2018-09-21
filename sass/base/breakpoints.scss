@@ -3,15 +3,14 @@
         @content        
     }
 };
-
 @mixin portraitMode {
-    @media screen and (orientation: portrait) and (max-width: 640px) {
+    @media screen and (orientation: portrait) {
         @content
     }
 };
 
 @mixin landscapeMode {
-    @media screen and (orientation: landscape) {
+    @media screen and (orientation: landscape) and (max-width: 640px) {
         @content
     }
 };
