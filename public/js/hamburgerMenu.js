@@ -1,26 +1,46 @@
 let toggle = false;
 let currentWidth = window.screen.availWidth;
-$(window).resize(function () {
-  currentWidth = window.screen.availWidth;
+//onclick fires toggle nav
+$('#closeNav').on('click', () => {
+  return toggleNav();
 });
-$(window).on('orientationchange', (e) => {
+//if orientation changes, this function will fire changing currentWidth in global scope
+$(window).resize(function () {
 
+  currentWidth = window.screen.availWidth;
+  console.log(lastClicked)
+  if (lastClicked === null) {
+    console.log(`Widow Resized or Re-oriented. lastClicked is currently ${lastClicked}`)
+  }
+  else {
+    console.log(`hit. lastClick: ${lastClicked}`);
+    $('html, body').animate({
+      scrollTop: $(lastClicked).offset().top
+    }, 0)
+  }
+});
+
+$(window).on('orientationchange', (e) => {
   if (toggle === true && e.target.innerWidth === 360) {
-    
     document.getElementById("pushNav__container").style.transform = "translateX(23%)";
-    $('#pushNav__container').css({'transition': 'none'})
+    $('#pushNav__container').css({
+      'transition': 'none'
+    })
   }
   if (toggle === true && e.target.innerWidth === 640) {
-    $('#pushNav__container').css({'transition': '.5s'})
+    $('#pushNav__container').css({
+      'transition': '.5s'
+    })
     document.getElementById("pushNav__container").style.transform = "translateX(42%)";
   }
-})
+});
 
 function openNav() {
-console.log($('#pushNav__container').css('transition'));
-if ($('#pushNav__container').css('transition') === 'none 0s ease 0s'){
-  $('#pushNav__container').css({'transition': 'all .5s ease 0s'})
-} 
+  if ($('#pushNav__container').css('transition') === 'none 0s ease 0s') {
+    $('#pushNav__container').css({
+      'transition': 'all .5s ease 0s'
+    })
+  }
   toggle = true;
   document.getElementById("pushNav").style.width = "150px";
   //this pushes sections and text

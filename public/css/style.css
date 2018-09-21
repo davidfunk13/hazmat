@@ -149,8 +149,7 @@ video {
     height: 500px;
     margin-right: auto; }
     .section__1--h1 {
-      white-space: pre;
-      transition: 0.5s; }
+      white-space: pre; }
     .section__1__shapecontainer {
       display: flex;
       flex-direction: column;
@@ -170,20 +169,17 @@ video {
     background-color: #5ea539;
     height: 400px; }
     .section__2--h1 {
-      white-space: pre;
-      transition: 0.5s; }
+      white-space: pre; }
   .section__3 {
     background-color: #fc7f04;
     height: 400px; }
     .section__3--h1 {
-      white-space: pre;
-      transition: 0.5s; }
+      white-space: pre; }
   .section__4 {
     background-color: #0083d3;
     height: 400px; }
     .section__4--h1 {
-      white-space: pre;
-      transition: 0.5s; }
+      white-space: pre; }
   .section__insert {
     overflow: hidden; }
     .section__insert--1 {

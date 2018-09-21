@@ -1,3 +1,4 @@
+//nav link ids
 let ids = [{
     link: "#link--top",
     div: "#top"
@@ -19,10 +20,15 @@ let ids = [{
     div: '#4',
   }
 ]
+//generate onclicks
+let lastClicked = null;
 ids.map(id => {
-  $(id.link).click(function () {
+  $(id.link).click(() => {
+    lastClicked = id.div;
+    console.log(`Changed lastClicked to ${lastClicked}`)
     $('html, body').animate({
       scrollTop: $(id.div).offset().top
+
     }, 1000)
   });
 })
