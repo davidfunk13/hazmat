@@ -1,16 +1,17 @@
 //reset always first
 @import 'base/reset';
 @import 'base/z-index';
+@import 'base/breakpoints';
 //abstracts
 //base
-@import 'base/base';
 @import 'base/variables';
 @import 'base/utilities';
-//breakpoints
-@import 'breakpoints/breakpoints';
+@import 'base/base';
 //components
 @import 'components/hamburgerNav';
 @import 'components/header';
 @import 'components/section';
 
 @import 'typography/typography';
+
+//breakpoints

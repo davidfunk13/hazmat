@@ -11,6 +11,25 @@ video {
   left: 50%;
   @include z-index(video)
 }
+#main-logo{
+  width: 75%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+//main logo landscape breakpoint mobile
+@include landscapeMode {
+  #main-logo{
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+//--> video media control
 @include videoDesktopBreakpoint {
   video{
     height: initial;

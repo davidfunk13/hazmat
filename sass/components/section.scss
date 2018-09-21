@@ -2,16 +2,13 @@
   padding: 0.5rem;
   @include z-index(section);
   overflow: hidden;
-  // border-bottom: 0.03rem solid white;
-
   //content sections
   &__1 {
-    // border-top: 0.03rem solid white;
-    background-color: $c-hazmat-blue;
+    background-color: $c-dark-grey;
     height: 500px;
     margin-right: auto;
-
     &--h1 {
+      color: $c-light-green;
       white-space: pre;
     }
 
@@ -21,7 +18,19 @@
       margin: auto;
 
       &--shape {
-        background-color: $c-hazmat-orange;
+        background-color: $c-light-grey;
+        width: 7rem;
+        height: 7rem;
+        margin-bottom: 1rem;
+      }
+      
+    }
+    &__imgcontainer{
+      display: flex;
+      flex-direction: column;
+      margin: auto;
+      &--img{
+        background-color: $c-light-grey;
         width: 7rem;
         height: 7rem;
         margin-bottom: 1rem;
@@ -40,30 +49,33 @@
   }
 
   &__2 {
-    background-color: $c-hazmat-green;
+    background-color: $c-middle-grey;
     height: 400px;
 
     &--h1 {
+      color: $c-light-green;
       white-space: pre;
     }
   }
 
   &__3 {
-    background-color: $c-hazmat-orange;
+    background-color: $c-dark-grey;
     height: 400px;
 
     &--h1 {
+      color: $c-light-green;
       white-space: pre;
     }
   }
 
   &__4 {
-    background-color: $c-hazmat-blue;
+    background-color: $c-light-grey;
     height: 400px;
-    
-      &--h1 {
-        white-space: pre;
-      }
+
+    &--h1 {
+      color: $c-light-green;
+      white-space: pre;
+    }
   }
 
   //inserts 
@@ -81,14 +93,23 @@
       text-align: center;
       font-size: 3rem;
       height: 100px;
-      background-color: white;
-      color: black;
+      background-color: $c-light-green;
+      color: $c-dark-grey;
     }
-
-    // &--footer{
-
-    // }
+  }
+  &__footer {
+    overflow: hidden;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      align-items: center;
+      font-weight: 900;
+      letter-spacing: .8rem;
+      width: 100%;
+      text-align: center;
+      font-size: 3rem;
+      height: 100px;
+      background-color: white;
+      color: $c-dark-grey;
   }
 }
-
-
