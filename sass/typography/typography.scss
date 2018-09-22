@@ -2,9 +2,9 @@
 h1,
 h2,
 h3 {
-  padding-top: 1rem;
   text-align: center;
-  padding-bottom: 1.5rem;
+  margin-top: .5rem;
+  margin-bottom: .5rem;
 }
 
 h1 {
@@ -22,9 +22,8 @@ h2 {
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
-  line-height: 30px;
   text-transform: uppercase;
-  color: white;
+  color: black;
 }
 
 h3 {
