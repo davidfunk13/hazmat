@@ -46,7 +46,7 @@ function openNav() {
   //this pushes sections and text
   console.log(currentWidth)
   if (currentWidth === 360) {
-    document.getElementById("pushNav__container").style.transform = "translateX(42%)";
+    document.getElementById("pushNav__container").style.transform = "translateX(41%)";
   };
   if (currentWidth === 640) {
     document.getElementById("pushNav__container").style.transform = "translateX(23%)";
