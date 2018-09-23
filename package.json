@@ -6,7 +6,8 @@
     "build-css": "node-sass-chokidar sass/style.scss -o public/css",
     "watch-css": "npm run build-css && node-sass-chokidar sass/style.scss -o public/css --watch --recursive",
     "start-js": "nodemon server.js",
-    "start": "npm-run-all -p watch-css start-js"
+    "dev": "npm-run-all -p watch-css start-js",
+    "start": "node server.js"
   },
   "dependencies": {
     "aos": "^2.3.3",
