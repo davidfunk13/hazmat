@@ -1,6 +1,8 @@
 # dependencies
 /node_modules
-
+#heroku
+/sass
+/project_resources
 # testing
 /coverage
 
