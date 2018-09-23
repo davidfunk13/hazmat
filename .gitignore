@@ -1,5 +1,7 @@
 # dependencies
 /node_modules
+/sass
+/project-resources
 
 # testing
 /coverage
