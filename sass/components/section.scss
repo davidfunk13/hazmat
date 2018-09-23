@@ -64,6 +64,7 @@
       margin-bottom: 2rem;
       margin-top: 1rem;
     }
+
     &__shapecontainer {
       display: flex;
       flex-flow: column;
@@ -78,16 +79,24 @@
         margin-bottom: 1rem;
         -webkit-clip-path: circle(50% at 50% 50%);
         clip-path: circle(50% at 50% 50%);
-        &--text-heading{
+
+        &--text-heading {
+          font-size: 2.2rem;
           position: absolute;
-          transform: translate(-50%,-50%);
-          top: 50%;
+          transform: translate(-50%, -50%);
+          color: $c-light-green;
+          line-height: 2.4rem;
+          top: 30%;
           left: 50%;
+          font-family: raleway, sans-serif;
+          font-style: normal;
+          font-weight: 900;
         }
-        &--text-content{
+
+        &--text-content {
           position: absolute;
-          transform: translate(-50%,-50%);
-          top: 60%;
+          transform: translate(-50%, -50%);
+          top: 50%;
           left: 50%;
         }
       }
@@ -101,7 +110,7 @@
     &--h1 {
       color: $c-light-green;
       white-space: pre;
-       margin-bottom: 2rem;
+      margin-bottom: 2rem;
       margin-top: 1rem;
     }
   }
