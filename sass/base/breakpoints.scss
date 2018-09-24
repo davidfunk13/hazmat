@@ -10,7 +10,7 @@
 };
 
 @mixin landscapeMode {
-    @media screen and (orientation: landscape) and (max-width: 640px) {
+    @media screen and (orientation: landscape) {
         @content
     }
 };
