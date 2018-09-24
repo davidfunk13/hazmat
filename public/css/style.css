@@ -129,7 +129,7 @@ header {
 
 video {
   transition: margin-left .5s;
-  height: 100%;
+  width: 100%;
   transform: translate(-50%, -50%);
   position: fixed;
   top: 50%;
