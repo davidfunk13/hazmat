@@ -22,16 +22,18 @@ $(window).resize(function () {
 
 $(window).on('orientationchange', (e) => {
   if (toggle === true && e.target.innerWidth === 360) {
-    document.getElementById("pushNav__container").style.transform = "translateX(23%)";
+    // document.getElementById("pushNav__container").style.transform = "translateX(23%)";
     $('#pushNav__container').css({
-      'transition': 'none'
+      'transition': 'none',
+      'transform': 'translate(23%)'
     })
   }
   if (toggle === true && e.target.innerWidth === 640) {
     $('#pushNav__container').css({
-      'transition': '.5s'
+      'transition': '.5s',
+      'transform': 'translateX(41%)'
     })
-    document.getElementById("pushNav__container").style.transform = "translateX(42%)";
+    // document.getElementById("pushNav__container").style.transform = "translateX(41%)";
   }
 });
 
