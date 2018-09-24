@@ -1,8 +1,14 @@
 # dependencies
 /node_modules
+<<<<<<< HEAD
 #heroku
 /sass
 /project_resources
+=======
+/sass
+/project-resources
+
+>>>>>>> 7d439b15c1986d620a2827574a4917c73528d5b1
 # testing
 /coverage
 
