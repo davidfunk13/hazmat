@@ -1,3 +1,10 @@
+var fixed = document.getElementById('video');
+
+fixed.addEventListener('touchmove', function(e) {
+
+        e.preventDefault();
+
+}, false);
 //nav link ids
 let ids = [{
     link: "#link--top",
