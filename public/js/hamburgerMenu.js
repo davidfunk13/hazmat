@@ -12,20 +12,20 @@ $('#closeNav').on('click', () => {
   return toggleNav();
 });
 //if orientation changes, this function will fire changing currentWidth in global scope
-// $(window).resize(function () {
+$(window).resize(function () {
 
-//   currentWidth = window.screen.availWidth;
-//   console.log(lastClicked)
-//   if (lastClicked === null) {
-//     console.log(`Widow Resized or Re-oriented. lastClicked is currently ${lastClicked}`)
-//   }
-//   else {
-//     console.log(`hit. lastClick: ${lastClicked}`);
-//     $('html, body').animate({
-//       scrollTop: $(lastClicked).offset().top
-//     }, 0)
-//   }
-// });
+  currentWidth = window.screen.availWidth;
+  console.log(lastClicked)
+  if (lastClicked === null) {
+    console.log(`Widow Resized or Re-oriented. lastClicked is currently ${lastClicked}`)
+  }
+  else {
+    console.log(`hit. lastClick: ${lastClicked}`);
+    $('html, body').animate({
+      scrollTop: $(lastClicked).offset().top
+    }, 0)
+  }
+});
 
 $(window).on('orientationchange', (e) => {
   if (toggle === true && e.target.innerWidth === 360) {
