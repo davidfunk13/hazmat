@@ -164,7 +164,8 @@ video {
     transform: translate(-50%, -50%); }
   video {
     min-height: 100%;
-    min-width: 100%; } }
+    min-width: 100%;
+    height: auto; } }
 
 @media screen and (min-width: 1024px) {
   video {
