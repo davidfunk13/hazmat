@@ -17,9 +17,9 @@ video {
 }
 
 #video-tint {
-  // position: absolute;
-  // top: 0;
-  // left: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
   @include z-index(videotint);
   background-color: rgba(0, 0, 0, 0.4);
   width: 100vw;

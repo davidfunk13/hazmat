@@ -140,6 +140,9 @@ video {
   z-index: -10; }
 
 #video-tint {
+  position: absolute;
+  top: 0;
+  left: 0;
   z-index: -5;
   background-color: rgba(0, 0, 0, 0.4);
   width: 100vw;
