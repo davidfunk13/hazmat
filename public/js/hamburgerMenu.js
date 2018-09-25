@@ -26,7 +26,7 @@ $(window).resize( function (e) {
 
     }, 0)
   }
-  orientationHandler()
+  // orientationHandler()
 
 
   // if (toggle === true) {
