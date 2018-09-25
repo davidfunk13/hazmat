@@ -5,18 +5,13 @@ $('#closeNav').on('click', () => {
   return toggleNav();
 });
 //if orientation changes, this function will fire changing currentWidth in global scope
-// window.addEventListener("orientationchange", function() {
-//   console.log('hit')
-//     console.log(`hit. lastClick: ${lastClicked}`);
-//     if (lastClicked === null) {
-//       return
-//     }
-//           $('html, body').animate({
-//             scrollTop: $(lastClicked).offset().top
-//           }, 500)
-// });
+window.addEventListener("orientationchange", function() {
+console.log('hit')
+          orientationHandler()
+
+});
 $(window).resize( function (e) {
-  currentWidth = window.screen.availWidth;
+  // currentWidth = window.screen.availWidth;
   console.log(`angle ${screen.orientation.angle}`)
   console.log(`last clicked : ${lastClicked}`)
   if (lastClicked === null) {
