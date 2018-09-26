@@ -24,7 +24,7 @@ $(window).resize(function (e) {
   }
 
 });
-$('#menu-toggle').on('click', () => {
+$('#menu-toggle').on('click', ()=>{
   toggleNav()
 })
 //open and close nav
@@ -32,17 +32,17 @@ function openNav() {
   //this pushes sections and text
   orientationHandler()
   //this is the opacity layer. needs to be on top z-index.
-  // document.getElementById('opacity').style.display = "block";
+  document.getElementById('opacity').style.display = "block";
   //for the logo
-  document.getElementById('menu-toggle').style.height = "0px";
+  document.getElementById('menu-toggle').style.display = "none";
 }
 
 function closeNav() {
   orientationHandler()
   //this is the opacity layer. needs to be on top z-index.
-  // document.getElementById('opacity').style.height = "0px";
+  document.getElementById('opacity').style.display = "none";
   //opacity layer. top z index
-  document.getElementById('menu-toggle').style.height = "3rem";
+  document.getElementById('menu-toggle').style.display = "block";
 }
 
 //resize listener functions
