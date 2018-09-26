@@ -54,14 +54,14 @@ function orientationHandler() {
     if (Math.abs(window.orientation) === 0) {
       console.log('vertical')
       document.getElementById("pushNav").style.width = "45%";
-      document.getElementById("pushNav__container").style.transform = "translateX(44%)";
+      document.getElementById("pushNav__container").style.transform = "translateX(45%)";
       //this pushes fixed video along with the rest of the document.
       document.getElementById("video").style.marginLeft = "45%";
     }
     if (Math.abs(window.orientation) === 90) {
       console.log('horizontal')
       document.getElementById("pushNav").style.width = "30%";
-      document.getElementById("pushNav__container").style.transform = "translateX(29%)";
+      document.getElementById("pushNav__container").style.transform = "translateX(30%)";
       //this pushes fixed video along with the rest of the document.
       document.getElementById("video").style.marginLeft = "30%";
     }
