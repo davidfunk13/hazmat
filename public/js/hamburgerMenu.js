@@ -6,8 +6,8 @@ $('#closeNav').on('click', () => {
 });
 //iphone support 
 let touchEvent = 'ontouchstart' in window ? 'touchstart' : 'click';
-$('#menu-toggle').on(touchEvent, toggleNav);
-$('#closeNav').on(touchEvent, toggleNav);
+$('#menu-toggle').on(touchEvent, toggleNav());
+$('#closeNav').on(touchEvent, toggleNav());
 
 //if orientation changes, this function will fire changing currentWidth in global scope
 window.addEventListener("orientationchange", function () {
