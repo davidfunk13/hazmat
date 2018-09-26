@@ -5,17 +5,16 @@ $('#closeNav').on('click', () => {
   return toggleNav();
 });
 //if orientation changes, this function will fire changing currentWidth in global scope
-window.addEventListener("orientationchange", function() {
-          console.log(`angle ${screen.orientation.angle}`)
-          console.log(`last clicked : ${lastClicked}`)
-          orientationHandler()
+window.addEventListener("orientationchange", function () {
+  console.log(`angle ${screen.orientation.angle}`)
+  console.log(`last clicked : ${lastClicked}`)
+  orientationHandler()
 });
-$(window).resize( function (e) {
+$(window).resize(function (e) {
   if (lastClicked === null) {
     console.log('is null')
-   return
-  }
-  else{
+    return
+  } else {
     console.log('is not null')
     console.log(lastClicked)
     $('html, body').animate({
@@ -25,7 +24,9 @@ $(window).resize( function (e) {
   }
 
 });
-
+$('#menu-toggle').on('click', ()=>{
+  toggleNav()
+})
 //open and close nav
 function openNav() {
   //this pushes sections and text
@@ -58,14 +59,14 @@ function orientationHandler() {
       //this pushes fixed video along with the rest of the document.
       document.getElementById("video").style.marginLeft = "45%";
     }
-    if (screen.orientation.angle === 90 ) {
+    if (screen.orientation.angle === 90) {
       console.log('horizontal')
       document.getElementById("pushNav").style.width = "30%";
       document.getElementById("pushNav__container").style.transform = "translateX(29%)";
       //this pushes fixed video along with the rest of the document.
       document.getElementById("video").style.marginLeft = "30%";
     }
-    if (screen.orientation.angle === 270 ) {
+    if (screen.orientation.angle === 270) {
       console.log('horizontal')
       document.getElementById("pushNav").style.width = "30%";
       document.getElementById("pushNav__container").style.transform = "translateX(30%)";
@@ -81,6 +82,7 @@ function orientationHandler() {
     document.getElementById("video").style.marginLeft = "0%";
   }
 }
+
 function toggleNav() {
   switch (toggle) {
     case true:
