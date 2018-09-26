@@ -32,17 +32,17 @@ function openNav() {
   //this pushes sections and text
   orientationHandler()
   //this is the opacity layer. needs to be on top z-index.
-  document.getElementById('opacity').style.display = "block";
+  // document.getElementById('opacity').style.display = "block";
   //for the logo
-  document.getElementById('menu-toggle').style.display = "none";
+  document.getElementById('menu-toggle').style.height = "0px";
 }
 
 function closeNav() {
   orientationHandler()
   //this is the opacity layer. needs to be on top z-index.
-  document.getElementById('opacity').style.display = "none";
+  // document.getElementById('opacity').style.height = "0px";
   //opacity layer. top z index
-  document.getElementById('menu-toggle').style.display = "block";
+  document.getElementById('menu-toggle').style.height = "3rem";
 }
 
 //resize listener functions
