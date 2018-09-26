@@ -90,8 +90,7 @@ p {
   height: 3rem;
   position: fixed;
   top: 1rem;
-  left: 1rem;
-  cursor: pointer; }
+  left: 1rem; }
 
 .sidenav {
   height: 100%;

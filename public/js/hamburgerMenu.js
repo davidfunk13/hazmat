@@ -7,7 +7,7 @@ $('#closeNav').on('click', () => {
 
 //if orientation changes, this function will fire changing currentWidth in global scope
 window.addEventListener("orientationchange", function () {
-  console.log(`angle ${screen.orientation.angle}`)
+  console.log(`angle ${Math.abs(window.orientation)}`)
   console.log(`last clicked : ${lastClicked}`)
   orientationHandler()
 });
@@ -20,11 +20,12 @@ $(window).resize(function (e) {
     console.log(lastClicked)
     $('html, body').animate({
       scrollTop: $(lastClicked).offset().top
+
     }, 0)
   }
 
 });
-$('#menu-toggle').on('click', ()=>{
+$('#menu-toggle').on('click', () => {
   toggleNav()
 })
 //open and close nav
@@ -48,28 +49,19 @@ function closeNav() {
 //resize listener functions
 function orientationHandler() {
   // if closed, open
-  console.log(screen.orientation.angle)
+  console.log(Math.abs(window.orientation))
   if (toggle === true) {
-
-    if (screen.orientation.angle === 0) {
+    if (Math.abs(window.orientation) === 0) {
       console.log('vertical')
       document.getElementById("pushNav").style.width = "45%";
-
       document.getElementById("pushNav__container").style.transform = "translateX(44%)";
       //this pushes fixed video along with the rest of the document.
       document.getElementById("video").style.marginLeft = "45%";
     }
-    if (screen.orientation.angle === 90) {
+    if (Math.abs(window.orientation) === 90) {
       console.log('horizontal')
       document.getElementById("pushNav").style.width = "30%";
       document.getElementById("pushNav__container").style.transform = "translateX(29%)";
-      //this pushes fixed video along with the rest of the document.
-      document.getElementById("video").style.marginLeft = "30%";
-    }
-    if (screen.orientation.angle === 270) {
-      console.log('horizontal')
-      document.getElementById("pushNav").style.width = "30%";
-      document.getElementById("pushNav__container").style.transform = "translateX(30%)";
       //this pushes fixed video along with the rest of the document.
       document.getElementById("video").style.marginLeft = "30%";
     }
