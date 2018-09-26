@@ -35,7 +35,6 @@ ids.map(id => {
     console.log(`Changed lastClicked to ${lastClicked}`)
     $('html, body').animate({
       scrollTop: $(id.div).offset().top
-
     }, 1000)
   });
 })

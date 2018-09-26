@@ -75,15 +75,6 @@ p {
   z-index: 0;
   transition: 0.5s; }
 
-#opacity {
-  display: none;
-  position: absolute;
-  top: 0;
-  height: 100%;
-  width: 100vw;
-  background-color: rgba(0, 0, 0, 0.4);
-  z-index: 125; }
-
 #menu-toggle {
   z-index: 250;
   height: 3rem;
