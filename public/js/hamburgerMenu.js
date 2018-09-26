@@ -11,20 +11,7 @@ window.addEventListener("orientationchange", function () {
   console.log(`last clicked : ${lastClicked}`)
   orientationHandler()
 });
-$(window).resize(function (e) {
-  if (lastClicked === null) {
-    console.log('is null')
-    return
-  } else {
-    console.log('is not null')
-    console.log(lastClicked)
-    $('html, body').animate({
-      scrollTop: $(lastClicked).offset().top
 
-    }, 0)
-  }
-
-});
 $('#menu-toggle').on('click', () => {
   toggleNav()
 })
@@ -51,6 +38,14 @@ function orientationHandler() {
   // if closed, open
   console.log(Math.abs(window.orientation))
   if (toggle === true) {
+    if (lastClicked === null) {
+      console.log('isnull')
+    }
+    if (lastClicked !== null) {
+      $('html, body').animate({
+        scrollTop: $(lastClicked).offset().top
+      }, 0)
+    }
     if (Math.abs(window.orientation) === 0) {
       console.log('vertical')
       document.getElementById("pushNav").style.width = "45%";
