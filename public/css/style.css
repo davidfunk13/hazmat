@@ -152,17 +152,14 @@ video {
 #main-logo {
   width: 75%;
   position: absolute;
+  z-index: 3;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%); }
 
 @media screen and (orientation: landscape) {
   #main-logo {
-    width: 50%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); }
+    width: 50%; }
   video {
     min-height: 100%;
     min-width: 100%;
@@ -174,7 +171,7 @@ video {
 
 .section {
   padding: 0.5rem;
-  z-index: 4;
+  z-index: 10;
   overflow: hidden; }
   .section__1 {
     background-color: #222629;

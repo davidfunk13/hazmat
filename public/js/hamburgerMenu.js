@@ -1,20 +1,22 @@
 let toggle = false;
 let currentWidth = window.screen.availWidth;
 //onclick fires toggle nav
+$('#menu-toggle').on('click', () => {
+ return toggleNav()
+})
+
 $('#closeNav').on('click', () => {
   return toggleNav();
 });
 
-//if orientation changes, this function will fire changing currentWidth in global scope
+//if orientation changes, orientation function fires.
 window.addEventListener("orientationchange", function () {
   console.log(`angle ${Math.abs(window.orientation)}`)
   console.log(`last clicked : ${lastClicked}`)
   orientationHandler()
 });
 
-$('#menu-toggle').on('click', () => {
-  toggleNav()
-})
+
 //open and close nav
 function openNav() {
   //this pushes sections and text
@@ -35,9 +37,10 @@ function closeNav() {
 
 //resize listener functions
 function orientationHandler() {
-  // if closed, open
+  // TRUE means menu is currently OPEN
   console.log(Math.abs(window.orientation))
   if (toggle === true) {
+    console.log('toggle true')
     if (lastClicked !== null) {
       $('html, body').animate({
         scrollTop: $(lastClicked).offset().top
@@ -45,29 +48,30 @@ function orientationHandler() {
     }
     if (Math.abs(window.orientation) === 0) {
       console.log('vertical')
+      //PORTRAIT MODE pushes elements that need to be pushed and exposes nav
       document.getElementById("pushNav").style.width = "45%";
       document.getElementById("pushNav__container").style.transform = "translateX(45%)";
-      //this pushes fixed video along with the rest of the document.
       document.getElementById("video").style.marginLeft = "45%";
     }
     if (Math.abs(window.orientation) === 90) {
       console.log('horizontal')
+      //LANDSCAPE MODE pushes elements that need to be pushed and exposes nav
       document.getElementById("pushNav").style.width = "30%";
       document.getElementById("pushNav__container").style.transform = "translateX(30%)";
-      //this pushes fixed video along with the rest of the document.
       document.getElementById("video").style.marginLeft = "30%";
     }
   }
-  // if open, close
+  // FALSE means menu is currently closed
   if (toggle === false) {
+    console.log('toggle false')
     if (lastClicked !== null) {
       $('html, body').animate({
         scrollTop: $(lastClicked).offset().top
       }, 0)
     }
+    // resets pushed elements back to their normal position
     document.getElementById("pushNav").style.width = "0%";
     document.getElementById("pushNav__container").style.transform = "translateX(0%)";
-    //this pushes fixed video along with the rest of the document.
     document.getElementById("video").style.marginLeft = "0%";
   }
 }

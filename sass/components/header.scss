@@ -13,7 +13,6 @@ video {
   top: 50%;
   left: 50%;
   @include z-index(video);
-
 }
 
 #video-tint {
@@ -24,13 +23,12 @@ video {
   background-color: rgba(0, 0, 0, 0.4);
   width: 100vw;
   height: 100vh;
-
-
 }
 
 #main-logo {
   width: 75%;
   position: absolute;
+  @include z-index(logo);
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -40,10 +38,6 @@ video {
 @include landscapeMode {
   #main-logo {
     width: 50%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
   }
 
   video {
