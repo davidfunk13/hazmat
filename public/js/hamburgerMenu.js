@@ -38,7 +38,11 @@ function orientationHandler() {
   // if closed, open
   console.log(Math.abs(window.orientation))
   if (toggle === true) {
-
+    if (lastClicked !== null) {
+      $('html, body').animate({
+        scrollTop: $(lastClicked).offset().top
+      }, 0)
+    }
     if (Math.abs(window.orientation) === 0) {
       console.log('vertical')
       document.getElementById("pushNav").style.width = "45%";
@@ -56,9 +60,6 @@ function orientationHandler() {
   }
   // if open, close
   if (toggle === false) {
-    if (lastClicked === null) {
-      console.log('isnull')
-    }
     if (lastClicked !== null) {
       $('html, body').animate({
         scrollTop: $(lastClicked).offset().top
