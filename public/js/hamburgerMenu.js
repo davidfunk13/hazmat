@@ -4,6 +4,9 @@ let currentWidth = window.screen.availWidth;
 $('#closeNav').on('click', () => {
   return toggleNav();
 });
+$('#closeNav').on('touchstart', () => {
+  return toggleNav();
+});
 
 //if orientation changes, this function will fire changing currentWidth in global scope
 window.addEventListener("orientationchange", function () {
@@ -25,6 +28,9 @@ $(window).resize(function (e) {
 
 });
 $('#menu-toggle').on('click', ()=>{
+  toggleNav()
+})
+$('#menu-toggle').on('touchstart', ()=>{
   toggleNav()
 })
 //open and close nav
