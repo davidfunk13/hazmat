@@ -42,8 +42,10 @@ function orientationHandler() {
   if (toggle === true) {
     console.log('toggle true')
     if (lastClicked !== null) {
+      console.log('hi!')
+      console.log($(lastClicked).position().top)
       $('html, body').animate({
-        scrollTop: $(lastClicked).offset().top
+        scrollTop: $(lastClicked).position().top
       }, 0)
     }
     if (Math.abs(window.orientation) === 0) {
