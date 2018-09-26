@@ -1,9 +1,5 @@
 .section {
   padding: 0.5rem;
-  @include z-index(section);
-  overflow: hidden;
-  //content sections
-  //section 1
   &__1 {
     background-color: $c-dark-grey;
     margin-right: auto;
@@ -12,7 +8,7 @@
       color: $c-light-green;
       white-space: pre;
       margin-bottom: 2rem;
-      margin-top: 1rem;
+      // margin-top: 1rem;
     }
 
     &--paragraph {
@@ -49,7 +45,7 @@
       color: $c-light-green;
       white-space: pre;
       margin-bottom: 2rem;
-      margin-top: 1rem;
+      // margin-top: 1rem;
     }
 
     &__shapecontainer {
@@ -98,7 +94,7 @@
       color: white;
       white-space: pre;
       margin-bottom: 2rem;
-      margin-top: 1rem;
+      // margin-top: 1rem;
     }
 
     &__container {
@@ -141,7 +137,7 @@
       color: $c-light-green;
       white-space: pre;
       margin-bottom: 2rem;
-      margin-top: 1rem;
+      // margin-top: 1rem;
     }
   }
 

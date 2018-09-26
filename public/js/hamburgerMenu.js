@@ -2,7 +2,7 @@ let toggle = false;
 let currentWidth = window.screen.availWidth;
 //onclick fires toggle nav
 $('#menu-toggle').on('click', () => {
- return toggleNav()
+  return toggleNav()
 })
 
 $('#closeNav').on('click', () => {
@@ -21,16 +21,12 @@ window.addEventListener("orientationchange", function () {
 function openNav() {
   //this pushes sections and text
   orientationHandler()
-  //this is the opacity layer. needs to be on top z-index.
-  document.getElementById('opacity').style.display = "block";
   //for the logo
   document.getElementById('menu-toggle').style.display = "none";
 }
 
 function closeNav() {
   orientationHandler()
-  //this is the opacity layer. needs to be on top z-index.
-  document.getElementById('opacity').style.display = "none";
   //opacity layer. top z index
   document.getElementById('menu-toggle').style.display = "block";
 }
@@ -38,14 +34,15 @@ function closeNav() {
 //resize listener functions
 function orientationHandler() {
   // TRUE means menu is currently OPEN
+
   console.log(Math.abs(window.orientation))
   if (toggle === true) {
     console.log('toggle true')
     if (lastClicked !== null) {
       console.log('hi!')
-      console.log($(lastClicked).position().top)
+      console.log($(lastClicked).offset().top)
       $('html, body').animate({
-        scrollTop: $(lastClicked).position().top
+        scrollTop: $(lastClicked).offset().top
       }, 0)
     }
     if (Math.abs(window.orientation) === 0) {
@@ -58,9 +55,9 @@ function orientationHandler() {
     if (Math.abs(window.orientation) === 90) {
       console.log('horizontal')
       //LANDSCAPE MODE pushes elements that need to be pushed and exposes nav
-      document.getElementById("pushNav").style.width = "30%";
-      document.getElementById("pushNav__container").style.transform = "translateX(30%)";
-      document.getElementById("video").style.marginLeft = "30%";
+      document.getElementById("pushNav").style.width = "25%";
+      document.getElementById("pushNav__container").style.transform = "translateX(25%)";
+      document.getElementById("video").style.marginLeft = "25%";
     }
   }
   // FALSE means menu is currently closed

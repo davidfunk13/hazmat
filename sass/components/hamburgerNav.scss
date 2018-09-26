@@ -5,16 +5,6 @@
   }
 }
 
-#opacity {
-  display: none;
-  position: absolute;
-  top: 0;
-  height: 100%;
-  width: 100vw;
-  background-color: rgba(0,0,0,0.4);
-  @include z-index(opacity);
-}
-
 #menu-toggle {
   @include z-index(menuToggle);
   height: 3rem;
