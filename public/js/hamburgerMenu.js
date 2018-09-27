@@ -10,7 +10,7 @@ $('#closeNav').on('click', () => {
 });
 
 //if orientation changes, orientation function fires.
-window.addEventListener("orientationchange", function () {
+$(window).resize(function () {
   console.log(`angle ${Math.abs(window.orientation)}`)
   console.log(`last clicked : ${lastClicked}`)
   orientationHandler()
@@ -22,7 +22,7 @@ function openNav() {
   //this pushes sections and text
   orientationHandler()
    //this is the opacity layer. needs to be on top z-index.
-  //  document.getElementById('opacity').style.display = "block";
+   document.getElementById('opacity').style.display = "block";
   //for the logo
   document.getElementById('menu-toggle').style.display = "none";
 }
@@ -31,7 +31,7 @@ function closeNav() {
   // console.log($(lastClicked).offset().top)
   orientationHandler()
    //this is the opacity layer. needs to be on top z-index.
-  //  document.getElementById('opacity').style.display = "none";
+   document.getElementById('opacity').style.display = "none";
   //opacity layer. top z index
   document.getElementById('menu-toggle').style.display = "block";
 }
