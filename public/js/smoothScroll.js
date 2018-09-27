@@ -25,7 +25,6 @@ let lastClicked = null;
 ids.map(id => {
   $(id.link).click(() => {
     lastClicked = id.div;
-    console.log(`Changed lastClicked to ${lastClicked}`)
     $('html, body').animate({
       scrollTop: $(id.div).offset().top
     }, 1000)
