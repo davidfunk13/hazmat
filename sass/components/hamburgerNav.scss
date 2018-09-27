@@ -1,6 +1,6 @@
 #pushNav {
   &__container {
-    @include z-index(contentContainer);
+    // @include z-index(contentContainer);
     transition: 0.5s;
   }
 }
@@ -11,7 +11,9 @@
   height: 100%;
   width: 100vw;
   background-color: rgba(0, 0, 0, 0.4);
-  z-index: 125; }
+  @include z-index(opacity)
+ }
+ 
 #menu-toggle {
   @include z-index(menuToggle);
   height: 3rem;

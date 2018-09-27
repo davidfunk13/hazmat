@@ -1,5 +1,7 @@
 .section {
   padding: 0.5rem;
+  position: relative;
+
   &__1 {
     background-color: $c-dark-grey;
     margin-right: auto;
@@ -121,7 +123,8 @@
       &--text {
         margin-top: .2rem;
         line-height: 1.6rem;
-        &--right{
+
+        &--right {
           line-height: 1.6rem;
           text-align: right;
         }
@@ -131,7 +134,7 @@
 
   &__4 {
     background-color: $c-light-grey;
-    height: 400px;
+    height: 700px;
 
     &--h1 {
       color: $c-light-green;

@@ -1,14 +1,14 @@
 $z-index: (
-pushNav: 200,
-sideNavLinks: 150,
-opacity: 125,
-menuToggle: 100,
-section: 10,
-content: 8,
-logo: 3,
-videotint: 2,
-video: 1,
-contentContainer: 0,
+// pushNav: 200,
+sideNavLinks: 6,
+opacity: 5,
+menuToggle: 4,
+// section: 10,
+content: 3,
+logo: 2,
+videotint: 1,
+// contentContainer: 0,
+// video: -1,
 );
 
 @function z-index($value) {

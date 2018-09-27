@@ -9,10 +9,9 @@ video {
   transition: margin-left .5s;
   height: 100%;
   transform: translate(-50%, -50%);
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
-  @include z-index(video);
 }
 
 #video-tint {
