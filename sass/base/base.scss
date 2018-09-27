@@ -10,15 +10,7 @@ html {
   background-color: black;
   position: relative;
 }
-body:before, body:after {
-  content: "";
-  position: fixed;
-  background:black;
-  left: 0;
-  right: 0;
-  min-height: 100%;
-  min-width: 100%;
-}
+
 p{
   font-size: 16px;
 }

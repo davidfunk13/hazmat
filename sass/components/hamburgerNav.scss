@@ -2,6 +2,7 @@
   &__container {
     // @include z-index(contentContainer);
     transition: 0.5s;
+    animation-fill-mode: backwards;
   }
 }
 #opacity {
@@ -32,6 +33,7 @@
   background-color: $c-black;
   overflow: hidden;
   transition: 0.5s;
+  animation-fill-mode: backwards;
   padding-top: 60px;
   font-variant: small-caps;
   // border-right: .09rem solid white;
