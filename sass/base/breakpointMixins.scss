@@ -1,10 +1,25 @@
 @mixin mainLogoMobileLandscapeSmall {
-    #main-logo{
+    #main-logo {
         width: 50%;
     }
 }
+
 @mixin hideMobileNav {
-    #menu-toggle{
+    #menu-toggle {
+        display: none;
+    }
+    #pushNav {
+        display: none;
+    }
+}
+@mixin showDesktopNav {
+    .desktop-nav{
+        display: flex;
+    }
+}
+
+@mixin hideDesktopNav {
+    .desktop-nav {
         display: none;
     }
 }
