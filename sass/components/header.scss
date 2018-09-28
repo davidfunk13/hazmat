@@ -34,6 +34,18 @@ video {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+.desktop-nav {
+  position: fixed;
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: .5rem;
+  @include z-index(desktopNav);
+  height: 2rem;
+  width: 100%;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.7);
+}
 //main logo landscape breakpoint mobile
 // @include landscapeMode {
 //   #main-logo {

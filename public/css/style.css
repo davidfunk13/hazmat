@@ -161,6 +161,17 @@ video {
   left: 50%;
   transform: translate(-50%, -50%); }
 
+.desktop-nav {
+  position: fixed;
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: .5rem;
+  z-index: 7;
+  height: 2rem;
+  width: 100%;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.7); }
+
 .section {
   padding: 0.5rem;
   position: relative; }
@@ -323,13 +334,15 @@ ol,
 ul {
   list-style: georgian; }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1023px) {
   #menu-toggle {
     display: none; }
   #pushNav {
-    display: none; } }
+    display: none; }
+  .desktop-nav {
+    display: flex; } }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1023px) {
   .desktop-nav {
     display: none; } }
 
