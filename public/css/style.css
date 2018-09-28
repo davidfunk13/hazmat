@@ -161,18 +161,6 @@ video {
   left: 50%;
   transform: translate(-50%, -50%); }
 
-@media screen and (orientation: landscape) {
-  #main-logo {
-    width: 50%; }
-  video {
-    min-height: 100%;
-    min-width: 100%;
-    height: auto; } }
-
-@media screen and (min-width: 1024px) {
-  video {
-    height: initial; } }
-
 .section {
   padding: 0.5rem;
   position: relative; }
@@ -334,3 +322,11 @@ li,
 ol,
 ul {
   list-style: georgian; }
+
+@media screen and (min-width: 1024px) {
+  #menu-toggle {
+    display: none; } }
+
+@media screen and (max-width: 640px) and (max-height: 360px) {
+  #main-logo {
+    width: 50%; } }

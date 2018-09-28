@@ -1,7 +1,6 @@
 //reset always first
 @import 'base/reset';
 @import 'base/z-index';
-@import 'base/breakpoints';
 //base
 @import 'base/variables';
 @import 'base/utilities';
@@ -12,3 +11,5 @@
 @import 'components/section';
 //typeography
 @import 'typography/typography';
+@import 'base/breakpointMixins';
+@import 'base/breakpoints';

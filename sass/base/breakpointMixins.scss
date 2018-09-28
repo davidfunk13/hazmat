@@ -1,0 +1,10 @@
+@mixin mainLogoMobileLandscapeSmall {
+    #main-logo{
+        width: 50%;
+    }
+}
+@mixin hideMobileNav {
+    #menu-toggle{
+        display: none;
+    }
+}

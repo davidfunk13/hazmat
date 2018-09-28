@@ -58,11 +58,11 @@ function orientationHandler() {
   }
   // FALSE means menu is currently closed
   if (toggle === false) {
-    if (lastClicked !== null) {
-      $('html, body').animate({
-        scrollTop: $(lastClicked).offset().top
-      }, 0)
-    }
+    // if (lastClicked !== null) {
+    //   $('html, body').animate({
+    //     scrollTop: $(lastClicked).offset().top
+    //   }, 0)
+    // }
     // resets pushed elements back to their normal position
     document.getElementById("pushNav").style.width = "0%";
     document.getElementById("pushNav__container").style.transform = "translateX(0%)";
