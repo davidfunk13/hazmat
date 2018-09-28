@@ -8,13 +8,32 @@ $('#menu-toggle').on('click', () => {
 $('#closeNav').on('click', () => {
   return toggleNav();
 });
-
+if ($(window).width() >= 1024) {
+  desktop()
+}
+if ($(window).width() <= 1024) {
+  mobile()
+}
 //if orientation changes, orientation function fires.
 $(window).resize(() => {
+  console.log($(window).width());
+  console.log($(window).height());
+ 
+ 
   orientationHandler()
 });
 
-
+function desktop() {
+  console.log('hello')
+  closeNav();
+  document.getElementById('menu-toggle').style.display = "none";
+}
+function mobile(){
+  
+    document.getElementById('menu-toggle').style.display = "block";
+    document.getElementById('opacity').style.display = "none";
+    document.getElementById("pushNav__container").style.transform = "translateX(0%)";
+}
 //open and close nav
 function openNav() {
   //this pushes sections and text

@@ -25,7 +25,10 @@
 
 //desktop nav, hides mobile nav
 @media screen and (min-width: 1024px)  {
-    @include hideMobileNav
+    @include hideMobileNav;
+}
+@media screen and (max-width: 1024px) {
+    @include hideDesktopNav;
 }
 //mobile phone landscape small
 @media screen and (max-width: 640px) and (max-height: 360px) {

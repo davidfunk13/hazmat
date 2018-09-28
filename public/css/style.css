@@ -325,6 +325,12 @@ ul {
 
 @media screen and (min-width: 1024px) {
   #menu-toggle {
+    display: none; }
+  #pushNav {
+    display: none; } }
+
+@media screen and (max-width: 1024px) {
+  .desktop-nav {
     display: none; } }
 
 @media screen and (max-width: 640px) and (max-height: 360px) {
