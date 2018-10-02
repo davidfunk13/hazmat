@@ -62,8 +62,7 @@ body,
 html {
   overflow-x: hidden;
   font-family: Lato, sans-serif;
-  font-style: normal;
-  letter-spacing: normal;
+  letter-spacing: .1rem;
   line-height: 20px;
   text-transform: none;
   color: white;
@@ -106,13 +105,14 @@ p {
   transition: 0.5s;
   animation-fill-mode: backwards;
   padding-top: 60px;
-  font-variant: small-caps; }
+  font-variant: small-caps;
+  font-family: Lato, sans-serif; }
 
 .sidenav a {
   white-space: nowrap;
   padding: 1rem 1rem 0 1rem;
   text-decoration: none;
-  font-size: 1rem;
+  font-size: .8rem;
   color: #818181;
   display: block;
   transition: 0.3s; }
@@ -154,12 +154,13 @@ video {
   height: 100vh; }
 
 #main-logo {
-  width: 75%;
+  width: 50%;
   position: absolute;
   z-index: 2;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%); }
+  transform: translate(-50%, -50%);
+  transition: margin-left .5s; }
 
 .desktop-nav {
   position: fixed;
@@ -172,32 +173,42 @@ video {
   text-align: center;
   background: rgba(0, 0, 0, 0.7); }
 
+.desktop-nav a:hover {
+  text-decoration: underline; }
+
 .section {
   padding: 0.5rem;
   position: relative; }
   .section__1 {
     background-color: #222629;
-    margin-right: auto; }
+    width: 100%; }
     .section__1--h1 {
       color: #86c232;
       white-space: pre;
       margin-bottom: 2rem; }
+    .section__1--h2 {
+      color: #86c232;
+      font-size: 1rem; }
     .section__1--paragraph {
-      padding-left: .3rem;
       margin-bottom: .3rem; }
+    .section__1__container {
+      display: flex;
+      margin: auto;
+      padding: .5rem; }
     .section__1__imgcontainer {
       display: flex;
       flex-direction: column;
-      margin: auto; }
+      align-content: center;
+      justify-content: flex-start; }
       .section__1__imgcontainer--img {
         background-color: #6b6e70;
         width: 10rem;
-        height: 7rem;
-        margin-bottom: 1rem; }
+        height: 9rem;
+        margin-bottom: 1rem;
+        margin: 1rem; }
     .section__1__textcontainer {
-      display: flex;
-      flex-direction: column;
-      width: 50%; }
+      justify-content: space-evenly;
+      padding-bottom: .5rem; }
   .section__2 {
     background-color: #474b4f; }
     .section__2--h1 {
@@ -206,7 +217,7 @@ video {
       margin-bottom: 2rem; }
     .section__2__shapecontainer {
       display: flex;
-      flex-flow: column;
+      flex-flow: row wrap;
       align-content: center; }
       .section__2__shapecontainer--shape {
         position: relative;
@@ -239,13 +250,13 @@ video {
       color: white;
       white-space: pre;
       margin-bottom: 2rem; }
-    .section__3__container {
+    .section__3__container__mobile {
       display: flex;
       flex-flow: column;
       align-content: center;
       height: 100%;
       padding: .2rem; }
-      .section__3__container--bold-text {
+      .section__3__container__mobile--bold-text {
         margin-top: .5rem;
         margin-bottom: .5rem;
         color: #61892f;
@@ -253,21 +264,76 @@ video {
         font-weight: 900;
         font-size: 1.99rem;
         line-height: 2.3rem; }
-        .section__3__container--bold-text--right {
+        .section__3__container__mobile--bold-text--right {
           text-align: right; }
-      .section__3__container--text {
-        margin-top: .2rem;
-        line-height: 1.6rem; }
-        .section__3__container--text--right {
+      .section__3__container__mobile--text {
+        margin-top: .2rem; }
+        .section__3__container__mobile--text--right {
           line-height: 1.6rem;
           text-align: right; }
+    .section__3__container__desktop {
+      display: none;
+      flex-flow: row;
+      margin: auto;
+      padding: 1rem; }
+      .section__3__container__desktop__left {
+        display: flex;
+        flex-flow: column;
+        width: 50%; }
+        .section__3__container__desktop__left--bold-text {
+          margin-top: .5rem;
+          margin-bottom: .5rem;
+          color: #61892f;
+          font-family: "raleway", sans-serif;
+          font-weight: 900;
+          font-size: 1.99rem;
+          line-height: 2.3rem; }
+          .section__3__container__desktop__left--bold-text--right {
+            text-align: right; }
+        .section__3__container__desktop__left--text {
+          margin-top: .2rem; }
+          .section__3__container__desktop__left--text--right {
+            line-height: 1.6rem;
+            text-align: right; }
+      .section__3__container__desktop__right {
+        display: flex;
+        flex-flow: column;
+        align-content: center;
+        margin: auto;
+        justify-content: center; }
+        .section__3__container__desktop__right--item {
+          background-color: green;
+          width: 15rem;
+          height: 15rem;
+          margin-bottom: 5rem; }
   .section__4 {
     background-color: #6b6e70;
-    height: 700px; }
+    padding-bottom: 7rem; }
     .section__4--h1 {
+      color: white;
+      line-height: 2.5rem;
+      margin-bottom: 1rem; }
+    .section__4--h2 {
+      margin-top: .5rem;
+      margin-bottom: .5rem;
       color: #86c232;
-      white-space: pre;
-      margin-bottom: 2rem; }
+      font-family: "raleway", sans-serif;
+      font-weight: 600;
+      font-size: 1.8rem;
+      line-height: 2.3rem; }
+    .section__4--faq-heading {
+      margin-top: .5rem;
+      margin-bottom: .5rem;
+      color: #86c232;
+      font-family: "raleway", sans-serif;
+      font-weight: 600;
+      font-size: 1rem; }
+    .section__4__container {
+      display: flex;
+      flex-flow: column;
+      align-content: center;
+      height: 100%;
+      padding: .2rem; }
   .section__insert {
     overflow: hidden; }
     .section__insert--1 {
@@ -304,7 +370,8 @@ h3 {
 h1 {
   font-family: Lato, sans-serif;
   font-size: 35px;
-  font-weight: 900;
+  font-style: normal;
+  font-weight: 700;
   letter-spacing: .3rem;
   text-transform: uppercase;
   color: white;
@@ -334,12 +401,24 @@ ol,
 ul {
   list-style: georgian; }
 
-@media screen and (min-width: 1023px) {
+@media screen and (min-width: 1024px) {
   #menu-toggle {
     display: none; }
   #pushNav {
     display: none; }
-  .desktop-nav {
+  .section__1__container {
+    flex-direction: column; }
+  .section__1__imgcontainer {
+    flex-direction: row;
+    justify-content: space-evenly; }
+    .section__1__imgcontainer--img {
+      width: 20rem;
+      height: 13rem; }
+  .section__1__textcontainer {
+    flex-direction: row; }
+  .section__3__container__mobile {
+    display: none; }
+  .section__3__container__desktop {
     display: flex; } }
 
 @media screen and (max-width: 1023px) {

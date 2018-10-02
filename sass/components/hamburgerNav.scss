@@ -35,14 +35,15 @@
   animation-fill-mode: backwards;
   padding-top: 60px;
   font-variant: small-caps;
-  // border-right: .09rem solid white;
+  font-family: Lato, sans-serif;
+  
 }
 
 .sidenav a {
   white-space: nowrap;
   padding: 1rem 1rem 0 1rem;
   text-decoration: none;
-  font-size: 1rem;
+  font-size: .8rem;
   color: #818181;
   display: block;
   transition: 0.3s;

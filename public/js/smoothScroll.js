@@ -1,3 +1,9 @@
+			AOS.init({
+				easing: 'ease-out-back',
+        duration: 1000,
+        once: false, // whether animation should happen only once - while scrolling down
+        mirror: true, // whether elements should animate out while scrolling past them
+			});
 //nav link ids
 let ids = [{
     link: ".link--top",

@@ -1,32 +1,9 @@
-// @mixin videoDesktopBreakpoint {
-//     @media screen and (min-width: 1024px) {
-//         @content        
-//     }
-// };
-// @mixin portraitMode {
-//     @media screen and (orientation: portrait) {
-//         @content
-//     }
-// };
-
-// @mixin landscapeMode {
-//     @media screen and (orientation: landscape) {
-//         @content
-//     }
-// };
-
-// @mixin mainLogoBreakpointLandscape {
-//     @media screen and (min-height: 655px) {
-//         #main-logo{
-//             width: 50%;
-//         }
-//     }
-// }
 
 //desktop nav, hides mobile nav
 @media screen and (min-width: 1024px)  {
     @include hideMobileNav;
-    @include showMobileNav;
+    @include section1Images;
+    @include section3Desktop;
 }
 @media screen and (max-width: 1023px) {
     @include hideDesktopNav;
@@ -35,3 +12,5 @@
 @media screen and (max-width: 640px) and (max-height: 360px) {
     @include mainLogoMobileLandscapeSmall;
 }
+
+//standard desktop resolutions
