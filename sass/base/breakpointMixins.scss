@@ -3,7 +3,6 @@
         width: 50%;
     }
 }
-
 @mixin hideMobileNav {
     #menu-toggle {
         display: none;
@@ -21,5 +20,49 @@
 @mixin hideDesktopNav {
     .desktop-nav {
         display: none;
+    }
+}
+@mixin mainLogoDesktop{
+    #main-logo{
+        width: 50%;
+    }
+}
+//section 1 
+@mixin section1Images{
+    .section {
+        &__1 {
+            &__container{
+                flex-direction: column;
+            }
+          &__imgcontainer {
+              flex-direction: row;
+              justify-content: space-evenly;
+            &--img {
+              width: 20rem;
+              height: 13rem;
+            }
+          }
+          &__textcontainer{
+              flex-direction: row;
+          }
+        }
+    }
+}
+
+//section 3 
+@mixin section3Desktop{
+    .section {
+        &__3 {
+            &__container__mobile {
+                display: none;
+            }
+        }
+    }
+    .section {
+        &__3 {
+            &__container__desktop {
+                display: flex;
+            }
+        }
     }
 }
