@@ -1,7 +1,7 @@
 .section {
   padding: 0.5rem;
   position: relative;
-
+min-height: 100vh;
   &__1 {
     background-color: $c-dark-grey;
     width: 100%;
@@ -231,7 +231,7 @@
   //inserts 
   &__insert {
     overflow: hidden;
-
+    min-height: 10rem;
     &--1 {
       display: flex;
       flex-flow: row wrap;

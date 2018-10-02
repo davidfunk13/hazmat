@@ -178,7 +178,8 @@ video {
 
 .section {
   padding: 0.5rem;
-  position: relative; }
+  position: relative;
+  min-height: 100vh; }
   .section__1 {
     background-color: #222629;
     width: 100%; }
@@ -335,7 +336,8 @@ video {
       height: 100%;
       padding: .2rem; }
   .section__insert {
-    overflow: hidden; }
+    overflow: hidden;
+    min-height: 10rem; }
     .section__insert--1 {
       display: flex;
       flex-flow: row wrap;
