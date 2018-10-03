@@ -4,6 +4,7 @@
     @include hideMobileNav;
     @include section1Images;
     @include section3Desktop;
+    @include mainLogoDesktop;
 }
 @media screen and (max-width: 1023px) {
     @include hideDesktopNav;

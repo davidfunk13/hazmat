@@ -46,18 +46,6 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-.flex-row {
-  display: flex;
-  flex-flow: row wrap;
-  margin: auto; }
-
-.flex-column {
-  display: flex;
-  flex-flow: column wrap; }
-
-.text {
-  margin-left: auto; }
-
 body,
 html {
   overflow-x: hidden;
@@ -66,8 +54,7 @@ html {
   line-height: 20px;
   text-transform: none;
   color: white;
-  background-color: black;
-  position: relative; }
+  background-color: black; }
 
 p {
   font-size: 16px; }
@@ -177,86 +164,50 @@ video {
   text-decoration: underline; }
 
 .section {
-  padding: 0.5rem;
-  position: relative;
-  min-height: 100vh; }
+  min-height: 100vh;
+  height: 100%;
+  padding: 1rem 1.2rem 1rem 1.2rem; }
   .section__1 {
-    background-color: #222629;
-    width: 100%; }
+    background-color: #222629; }
+    .section__1 h3:nth-of-type(1) {
+      text-align: left; }
+    .section__1 h3:nth-of-type(2) {
+      text-align: right; }
     .section__1--h1 {
       color: #86c232;
       white-space: pre;
-      margin-bottom: 2rem; }
-    .section__1--h2 {
-      color: #86c232;
-      font-size: 1rem; }
-    .section__1--paragraph {
-      margin-bottom: .3rem; }
-    .section__1__container {
+      margin-bottom: 1rem; }
+    .section__1__img {
+      height: 10rem;
+      width: 18rem; }
+    .section__1__mobile {
       display: flex;
+      flex-flow: wrap;
+      margin: auto;
+      justify-content: center; }
+      .section__1__mobile--col-1 {
+        margin-bottom: 1rem; }
+        .section__1__mobile--col-1 p:nth-child(4) {
+          text-align: right; }
+    .section__1__desktop {
+      display: none;
       margin: auto;
       padding: .5rem; }
-    .section__1__imgcontainer {
-      display: flex;
-      flex-direction: column;
-      align-content: center;
-      justify-content: flex-start; }
-      .section__1__imgcontainer--img {
-        background-color: #6b6e70;
-        width: 10rem;
-        height: 9rem;
-        margin-bottom: 1rem;
-        margin: 1rem; }
-    .section__1__textcontainer {
-      justify-content: space-evenly;
-      padding-bottom: .5rem; }
   .section__2 {
     background-color: #474b4f; }
     .section__2--h1 {
       color: #86c232;
       white-space: pre;
       margin-bottom: 2rem; }
-    .section__2__shapecontainer {
-      display: flex;
-      flex-flow: row wrap;
-      align-content: center; }
-      .section__2__shapecontainer--shape {
-        position: relative;
-        margin: auto;
-        background-color: #6b6e70;
-        width: 20rem;
-        height: 20rem;
-        margin-bottom: 1rem;
-        -webkit-clip-path: circle(50% at 50% 50%);
-        clip-path: circle(50% at 50% 50%); }
-        .section__2__shapecontainer--shape--text-heading {
-          font-family: "raleway", sans-serif;
-          font-weight: 900;
-          font-size: 2.5rem;
-          position: absolute;
-          transform: translate(-50%, -50%);
-          color: #86c232;
-          line-height: 2.4rem;
-          top: 50%;
-          left: 50%;
-          text-align: center; }
-        .section__2__shapecontainer--shape--text-content {
-          position: absolute;
-          transform: translate(-50%, -50%);
-          top: 50%;
-          left: 50%; }
   .section__3 {
     background-color: #222629; }
     .section__3--h1 {
       color: white;
-      white-space: pre;
-      margin-bottom: 2rem; }
+      white-space: pre; }
     .section__3__container__mobile {
       display: flex;
       flex-flow: column;
-      align-content: center;
-      height: 100%;
-      padding: .2rem; }
+      align-content: center; }
       .section__3__container__mobile--bold-text {
         margin-top: .5rem;
         margin-bottom: .5rem;
@@ -314,52 +265,33 @@ video {
       color: white;
       line-height: 2.5rem;
       margin-bottom: 1rem; }
-    .section__4--h2 {
-      margin-top: .5rem;
-      margin-bottom: .5rem;
-      color: #86c232;
-      font-family: "raleway", sans-serif;
-      font-weight: 600;
-      font-size: 1.8rem;
-      line-height: 2.3rem; }
-    .section__4--faq-heading {
-      margin-top: .5rem;
-      margin-bottom: .5rem;
-      color: #86c232;
-      font-family: "raleway", sans-serif;
-      font-weight: 600;
-      font-size: 1rem; }
-    .section__4__container {
-      display: flex;
-      flex-flow: column;
-      align-content: center;
-      height: 100%;
-      padding: .2rem; }
-  .section__insert {
-    overflow: hidden;
-    min-height: 10rem; }
-    .section__insert--1 {
-      display: flex;
-      flex-flow: row wrap;
-      justify-content: center;
-      align-items: center;
-      width: 100%;
-      text-align: center;
-      height: 100px;
-      background-color: #86c232; }
-      .section__insert--1--text {
-        color: #222629;
-        font-size: 3rem;
-        font-weight: 900;
-        letter-spacing: .8rem; }
-  .section__footer {
+
+.insert {
+  overflow: hidden; }
+  .insert--1 {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    height: 100px;
+    background-color: #86c232; }
+    .insert--1--text {
+      color: #222629;
+      font-size: 3rem;
+      font-weight: 900;
+      letter-spacing: .8rem; }
+  .insert__footer {
     overflow: hidden;
     display: flex;
     flex-flow: column;
     width: 100%;
     background-color: white;
     font-size: 5rem; }
-    .section__footer--text {
+    .insert__footer--h2 {
+      color: black; }
+    .insert__footer--text {
       color: #222629;
       letter-spacing: .1rem;
       text-align: center; }
@@ -376,27 +308,21 @@ h1 {
   font-weight: 700;
   letter-spacing: .3rem;
   text-transform: uppercase;
-  color: white;
-  padding-top: 1rem; }
+  color: white; }
 
 h2 {
-  font-family: Lato, sans-serif;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: normal;
-  letter-spacing: normal;
-  text-transform: uppercase;
-  color: black; }
+  margin-bottom: .5rem;
+  font-family: "raleway", sans-serif;
+  font-weight: 900;
+  font-size: 1.99rem;
+  line-height: 2.3rem; }
 
 h3 {
-  font-family: Lato, sans-serif;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: normal;
-  letter-spacing: normal;
-  line-height: 30px;
-  text-transform: uppercase;
-  color: white; }
+  margin-bottom: .5rem;
+  font-family: "raleway", sans-serif;
+  font-weight: 900;
+  font-size: 1.2rem;
+  line-height: 2.3rem; }
 
 li,
 ol,
@@ -421,7 +347,9 @@ ul {
   .section__3__container__mobile {
     display: none; }
   .section__3__container__desktop {
-    display: flex; } }
+    display: flex; }
+  #main-logo {
+    width: 40%; } }
 
 @media screen and (max-width: 1023px) {
   .desktop-nav {
