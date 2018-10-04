@@ -46,6 +46,9 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+.text-right {
+  text-align: right; }
+
 body,
 html {
   overflow-x: hidden;
@@ -141,12 +144,12 @@ video {
   height: 100vh; }
 
 #main-logo {
-  width: 50%;
   position: absolute;
-  z-index: 2;
+  width: 55%;
+  transform: translate(-50%, -50%);
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  z-index: 2;
   transition: margin-left .5s; }
 
 .desktop-nav {
@@ -169,6 +172,8 @@ video {
   padding: 1rem 1.2rem 1rem 1.2rem; }
   .section__1 {
     background-color: #222629; }
+    .section__1 h3 {
+      color: #61892f; }
     .section__1 h3:nth-of-type(1) {
       text-align: left; }
     .section__1 h3:nth-of-type(2) {
@@ -189,6 +194,12 @@ video {
         margin-bottom: 1rem; }
         .section__1__mobile--col-1 p:nth-child(4) {
           text-align: right; }
+      .section__1__mobile--col-2 {
+        display: flex;
+        flex-flow: column;
+        justify-content: center; }
+        .section__1__mobile--col-2 img:first-child {
+          padding-bottom: 1rem; }
     .section__1__desktop {
       display: none;
       margin: auto;
@@ -204,56 +215,38 @@ video {
     .section__3--h1 {
       color: white;
       white-space: pre; }
-    .section__3__container__mobile {
+    .section__3--bold-text {
+      margin-top: .5rem;
+      margin-bottom: .5rem;
+      color: #61892f;
+      font-family: "raleway", sans-serif;
+      font-weight: 900;
+      font-size: 1.99rem;
+      line-height: 2.3rem; }
+    .section__3--text {
+      margin-top: .2rem; }
+      .section__3--text--right {
+        text-align: right; }
+    .section__3__mobile {
       display: flex;
       flex-flow: column;
       align-content: center; }
-      .section__3__container__mobile--bold-text {
-        margin-top: .5rem;
-        margin-bottom: .5rem;
-        color: #61892f;
-        font-family: "raleway", sans-serif;
-        font-weight: 900;
-        font-size: 1.99rem;
-        line-height: 2.3rem; }
-        .section__3__container__mobile--bold-text--right {
-          text-align: right; }
-      .section__3__container__mobile--text {
-        margin-top: .2rem; }
-        .section__3__container__mobile--text--right {
-          line-height: 1.6rem;
-          text-align: right; }
-    .section__3__container__desktop {
+    .section__3__desktop {
       display: none;
       flex-flow: row;
       margin: auto;
       padding: 1rem; }
-      .section__3__container__desktop__left {
+      .section__3__desktop--col-1 {
         display: flex;
         flex-flow: column;
-        width: 50%; }
-        .section__3__container__desktop__left--bold-text {
-          margin-top: .5rem;
-          margin-bottom: .5rem;
-          color: #61892f;
-          font-family: "raleway", sans-serif;
-          font-weight: 900;
-          font-size: 1.99rem;
-          line-height: 2.3rem; }
-          .section__3__container__desktop__left--bold-text--right {
-            text-align: right; }
-        .section__3__container__desktop__left--text {
-          margin-top: .2rem; }
-          .section__3__container__desktop__left--text--right {
-            line-height: 1.6rem;
-            text-align: right; }
-      .section__3__container__desktop__right {
+        padding-right: 1rem; }
+      .section__3__desktop--col-2 {
         display: flex;
         flex-flow: column;
         align-content: center;
         margin: auto;
         justify-content: center; }
-        .section__3__container__desktop__right--item {
+        .section__3__desktop--col-2--item {
           background-color: green;
           width: 15rem;
           height: 15rem;
@@ -308,7 +301,8 @@ h1 {
   font-weight: 700;
   letter-spacing: .3rem;
   text-transform: uppercase;
-  color: white; }
+  color: white;
+  margin-bottom: 1rem; }
 
 h2 {
   margin-bottom: .5rem;
@@ -344,9 +338,9 @@ ul {
       height: 13rem; }
   .section__1__textcontainer {
     flex-direction: row; }
-  .section__3__container__mobile {
+  .section__3__mobile {
     display: none; }
-  .section__3__container__desktop {
+  .section__3__desktop {
     display: flex; }
   #main-logo {
     width: 40%; } }

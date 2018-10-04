@@ -53,14 +53,14 @@
 @mixin section3Desktop{
     .section {
         &__3 {
-            &__container__mobile {
+            &__mobile {
                 display: none;
             }
         }
     }
     .section {
         &__3 {
-            &__container__desktop {
+            &__desktop {
                 display: flex;
             }
         }
