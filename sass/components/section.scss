@@ -7,9 +7,9 @@
   &__1 {
     background-color: $c-dark-grey;
 
-    h3 {
-      color: $c-dark-green;
-    }
+    // h3 {
+    //   color: $c-dark-green;
+    // }
 
     h3:nth-of-type(1) {
       text-align: left;
@@ -69,13 +69,27 @@
 
   //section2
   &__2 {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
     background-color: $c-middle-grey;
 
     //globals
     &--h1 {
       color: $c-light-green;
       white-space: pre;
-      margin-bottom: 2rem;
+    }
+    p{
+      margin-bottom: .5rem;
+    }
+    img {
+      width: 20rem;
+    }
+
+    //psuedo
+    h3:not(:first-child) {
+      color: $c-light-green;
+      padding-top: .5rem;
     }
 
     //containers
@@ -106,8 +120,7 @@
     }
 
     &--text {
-      margin-top: .2rem;
-      &--right{
+      &--right {
         text-align: right;
       }
     }

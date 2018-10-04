@@ -172,8 +172,6 @@ video {
   padding: 1rem 1.2rem 1rem 1.2rem; }
   .section__1 {
     background-color: #222629; }
-    .section__1 h3 {
-      color: #61892f; }
     .section__1 h3:nth-of-type(1) {
       text-align: left; }
     .section__1 h3:nth-of-type(2) {
@@ -205,11 +203,20 @@ video {
       margin: auto;
       padding: .5rem; }
   .section__2 {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
     background-color: #474b4f; }
     .section__2--h1 {
       color: #86c232;
-      white-space: pre;
-      margin-bottom: 2rem; }
+      white-space: pre; }
+    .section__2 p {
+      margin-bottom: .5rem; }
+    .section__2 img {
+      width: 20rem; }
+    .section__2 h3:not(:first-child) {
+      color: #86c232;
+      padding-top: .5rem; }
   .section__3 {
     background-color: #222629; }
     .section__3--h1 {
@@ -223,10 +230,8 @@ video {
       font-weight: 900;
       font-size: 1.99rem;
       line-height: 2.3rem; }
-    .section__3--text {
-      margin-top: .2rem; }
-      .section__3--text--right {
-        text-align: right; }
+    .section__3--text--right {
+      text-align: right; }
     .section__3__mobile {
       display: flex;
       flex-flow: column;
@@ -328,20 +333,14 @@ ul {
     display: none; }
   #pushNav {
     display: none; }
-  .section__1__container {
-    flex-direction: column; }
-  .section__1__imgcontainer {
-    flex-direction: row;
-    justify-content: space-evenly; }
-    .section__1__imgcontainer--img {
-      width: 20rem;
-      height: 13rem; }
-  .section__1__textcontainer {
-    flex-direction: row; }
+  .section__1__mobile {
+    display: none; }
+  .section__2__mobile {
+    display: none; }
   .section__3__mobile {
     display: none; }
-  .section__3__desktop {
-    display: flex; }
+  .section__4__mobile {
+    display: none; }
   #main-logo {
     width: 40%; } }
 
@@ -351,4 +350,15 @@ ul {
 
 @media screen and (max-width: 640px) and (max-height: 360px) {
   #main-logo {
-    width: 50%; } }
+    width: 40%; }
+  .section__1 img {
+    padding-left: .5rem; }
+  .section__1__mobile--col-2 {
+    display: flex;
+    flex-flow: row; }
+  .section__2 img {
+    width: 25rem; }
+  .section__2__mobile {
+    display: flex;
+    flex-flow: column;
+    align-items: center; } }
