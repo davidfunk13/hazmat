@@ -23,7 +23,6 @@
     &--h1 {
       color: $c-light-green;
       white-space: pre;
-      margin-bottom: 1rem
     }
 
     &__img {
@@ -79,11 +78,10 @@
       color: $c-light-green;
       white-space: pre;
     }
-    p{
-      margin-bottom: .5rem;
-    }
+
     img {
       width: 20rem;
+      padding-top: .5rem;
     }
 
     //psuedo
@@ -166,12 +164,51 @@
 
   &__4 {
     background-color: $c-light-grey;
-    padding-bottom: 7rem;
 
+    //globals
     &--h1 {
       color: white;
       line-height: 2.5rem;
-      margin-bottom: 1rem;
+    }
+
+    &--h3 {
+      color: $c-light-green;
+    }
+
+    //containers
+    //mobile
+    &__mobile {
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+
+      img {
+        width: 20rem;
+        margin-top: .5rem;
+        margin-bottom: .5rem;
+      }
+      .img-flex{
+        display: flex;
+        flex-flow: row;
+        justify-content: center;
+        align-content: space-around;
+      }
+
+      &--col-1 {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+      }
+
+      &--col-2 {
+        flex-shrink: 1.1
+      }
+
+    }
+
+    //desktop layout
+    &__desktop {
+      display: none;
     }
   }
 }
@@ -201,18 +238,25 @@
     overflow: hidden;
     display: flex;
     flex-flow: column;
+    align-items: center;
+    text-align: center;
+    padding: .4rem;
     width: 100%;
     background-color: white;
     font-size: 5rem;
 
-    &--h2 {
+    &--h3 {
       color: black;
+    }
+
+    p {
+      margin-bottom: -.1rem;
     }
 
     &--text {
       color: $c-dark-grey;
       letter-spacing: .1rem;
-      text-align: center;
+      // text-align: center;
     }
   }
 }

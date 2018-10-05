@@ -13,11 +13,10 @@ h1 {
   letter-spacing: .3rem;
   text-transform: uppercase;
   color: white;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 h2 {
-  margin-bottom: .5rem;
   font-family: "raleway", sans-serif;
   font-weight: 900;
   font-size: 1.99rem;
@@ -25,11 +24,13 @@ h2 {
 }
 
 h3 {
-  margin-bottom: .5rem;
   font-family: "raleway", sans-serif;
   font-weight: 900;
   font-size: 1.2rem;
-  line-height: 2.3rem;
+  margin-bottom: .5rem;
+}
+p{
+  margin-bottom: .5rem;
 }
 
 li,
