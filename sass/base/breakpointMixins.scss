@@ -42,6 +42,9 @@
             &__mobile {
                 display: none;
             }
+            &__desktop{
+                display: flex;
+            }
         }
     }
 
@@ -73,6 +76,9 @@
             &__mobile {
                 display: none;
             }
+            &__desktop{
+                display: flex;
+            }
         }
     }
 }
@@ -100,6 +106,9 @@
             &__mobile {
                 display: none;
             }
+            &__desktop{
+                display: flex;
+            }
         }
     }
 }
@@ -112,6 +121,9 @@
         &__4 {
             &__mobile {
                 display: none;
+            }
+            &__desktop{
+                display: flex;
             }
         }
     }
