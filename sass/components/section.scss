@@ -111,9 +111,6 @@
 
   //section2
   &__2 {
-    display: flex;
-    flex-flow: column;
-    align-items: center;
     background-color: $c-middle-grey;
 
     //globals
@@ -135,7 +132,16 @@
 
     //containers
     //mobile
-    &__mobile {}
+    &__mobile {
+      display: flex;
+      flex-flow: column;
+      // margin: auto;
+      justify-content: center;
+      img {
+        width: 15rem;
+        padding-top: .5rem;
+      }
+    }
 
     //desktop
     &__desktop {

@@ -96,6 +96,18 @@
         }
     }
 }
+@mixin section2MobilePortrait{
+    .section {
+        &__2 {
+
+            &__mobile{
+                    display: flex;
+                    flex-flow: column;
+                    align-items: center;
+            }
+        }
+    }
+}
 
 //section 3 
 @mixin section3Desktop {

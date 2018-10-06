@@ -256,9 +256,6 @@ video {
           -webkit-clip-path: circle(50% at 50% 50%);
           clip-path: circle(50% at 50% 50%); }
   .section__2 {
-    display: flex;
-    flex-flow: column;
-    align-items: center;
     background-color: #474b4f; }
     .section__2--h1 {
       color: #86c232;
@@ -269,6 +266,13 @@ video {
     .section__2 h3:not(:first-child) {
       color: #86c232;
       padding-top: .5rem; }
+    .section__2__mobile {
+      display: flex;
+      flex-flow: column;
+      justify-content: center; }
+      .section__2__mobile img {
+        width: 15rem;
+        padding-top: .5rem; }
     .section__2__desktop {
       display: none;
       margin: auto;
@@ -446,7 +450,28 @@ ul {
   .desktop-nav {
     display: none; } }
 
-@media screen and (max-width: 1023px) and (max-height: 580px) {
+@media screen and (max-width: 425px) and (max-height: 800px) {
+  .section__2__mobile {
+    display: flex;
+    flex-flow: column;
+    align-items: center; } }
+
+@media screen and (max-width: 640px) and (max-height: 360px) {
+  #main-logo {
+    width: 40%; }
+  .section__1 img {
+    padding-left: .5rem; }
+  .section__1__mobile--col-2 {
+    display: flex;
+    flex-flow: row; }
+  .section__2 img {
+    width: 25rem; }
+  .section__2__mobile {
+    display: flex;
+    flex-flow: column;
+    align-items: center; } }
+
+@media screen and (max-width: 736px) and (max-height: 414px) {
   #main-logo {
     width: 40%; }
   .section__1 img {
