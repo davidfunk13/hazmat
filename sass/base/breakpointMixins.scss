@@ -1,18 +1,29 @@
+//logo
 @mixin mainLogoMobileLandscapeSmall {
     #main-logo {
-        width: 50%;
+        width: 40%;
     }
 }
+
+@mixin mainLogoDesktop {
+    #main-logo {
+        width: 40%;
+    }
+}
+
+//nav
 @mixin hideMobileNav {
     #menu-toggle {
         display: none;
     }
+
     #pushNav {
         display: none;
     }
 }
+
 @mixin showDesktopNav {
-    .desktop-nav{
+    .desktop-nav {
         display: flex;
     }
 }
@@ -22,45 +33,96 @@
         display: none;
     }
 }
-@mixin mainLogoDesktop{
-    #main-logo{
-        width: 50%;
-    }
-}
+
 //section 1 
-@mixin section1Images{
+@mixin section1Desktop {
+    //hide Mobile
     .section {
         &__1 {
-            &__container{
-                flex-direction: column;
+            &__mobile {
+                display: none;
             }
-          &__imgcontainer {
-              flex-direction: row;
-              justify-content: space-evenly;
-            &--img {
-              width: 20rem;
-              height: 13rem;
+            &__desktop{
+                display: flex;
             }
-          }
-          &__textcontainer{
-              flex-direction: row;
-          }
+        }
+    }
+
+    //display desktop
+
+}
+@mixin section1MobileLandscape{
+    .section {
+        &__1 {
+            img{
+                padding-left: .5rem;
+            }
+            &__mobile {
+                &--col-2{
+                    display: flex;
+                    flex-flow: row;
+                }
+            }
+        }
+    }
+}
+
+//section 2 
+@mixin section2Desktop {
+
+    //hide Mobile
+    .section {
+        &__2 {
+            &__mobile {
+                display: none;
+            }
+            &__desktop{
+                display: flex;
+            }
+        }
+    }
+}
+@mixin section2MobileLandscape{
+    .section {
+        &__2 {
+            img{
+                width: 25rem;
+            }
+            &__mobile{
+                    display: flex;
+                    flex-flow: column;
+                    align-items: center;
+            }
         }
     }
 }
 
 //section 3 
-@mixin section3Desktop{
+@mixin section3Desktop {
+
+    //hide Mobile
     .section {
         &__3 {
-            &__container__mobile {
+            &__mobile {
                 display: none;
+            }
+            &__desktop{
+                display: flex;
             }
         }
     }
+}
+
+//section 4 
+@mixin section4Desktop {
+
+    //hide Mobile
     .section {
-        &__3 {
-            &__container__desktop {
+        &__4 {
+            &__mobile {
+                display: none;
+            }
+            &__desktop{
                 display: flex;
             }
         }

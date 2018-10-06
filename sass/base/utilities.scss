@@ -1,14 +1,37 @@
-.flex-row {
-  display: flex;
-  flex-flow: row wrap;
-  margin: auto;
+//margins
+.margin-bottom-sm {
+    margin-bottom: .5rem;
 }
 
-.flex-column {
-  display: flex;
-  flex-flow: column wrap;
+.margin-bottom-md {
+    margin-bottom: 1rem;
 }
 
-.text {
-  margin-left: auto;
+.margin-top-sm {
+    margin-bottom: .5rem;
+}
+
+.margin-top-md {
+    margin-bottom: 1rem;
+}
+
+.margin-left-sm {
+    margin-bottom: .5rem;
+}
+
+.margin-left-md {
+    margin-bottom: 1rem;
+}
+
+.margin-right-sm {
+    margin-bottom: .5rem;
+}
+
+.margin-right-md {
+    margin-bottom: 1rem;
+}
+
+//text indentation
+.text-right {
+    text-align: right;
 }
