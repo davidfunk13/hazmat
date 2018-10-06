@@ -75,7 +75,8 @@
       &--col-2 {
         display: flex;
         flex-flow: column;
-        img:first-child{
+
+        img:first-child {
           padding-bottom: 1rem;
         }
       }
@@ -96,7 +97,7 @@
         margin-top: 5rem;
 
         &--item {
-          background-color:$c-light-grey;
+          background-color: $c-light-grey;
           width: 14rem;
           height: 14rem;
           margin-right: 1rem;
@@ -141,6 +142,12 @@
       display: none;
       margin: auto;
       padding: .5rem;
+
+      &--col-1 {
+        margin-right: 1rem;
+        display: flex;
+        flex-flow: column;
+      }
     }
   }
 
