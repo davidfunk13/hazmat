@@ -75,6 +75,7 @@ table {
 
 body,
 html {
+  -webkit-text-size-adjust: 100%;
   overflow-x: hidden;
   font-family: Lato, sans-serif;
   letter-spacing: .1rem;
