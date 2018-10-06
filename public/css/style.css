@@ -226,8 +226,10 @@ video {
       flex-flow: row wrap;
       padding: .5rem; }
       .section__1__desktop--col-1 {
-        align-items: center;
-        width: 60vw; }
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        width: 45vw; }
       .section__1__desktop--col-2 {
         display: flex;
         flex-flow: column; }
@@ -246,9 +248,10 @@ video {
         align-items: center;
         margin-top: 5rem; }
         .section__1__desktop--row-2--item {
-          background-color: green;
-          width: 15rem;
-          height: 15rem;
+          background-color: #6b6e70;
+          width: 14rem;
+          height: 14rem;
+          margin-right: 1rem;
           margin-bottom: 5rem;
           -webkit-clip-path: circle(50% at 50% 50%);
           clip-path: circle(50% at 50% 50%); }

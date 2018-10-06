@@ -66,8 +66,10 @@
       padding: .5rem;
 
       &--col-1 {
-      align-items: center;
-        width: 60vw;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        width: 45vw;
       }
 
       &--col-2 {
@@ -94,9 +96,10 @@
         margin-top: 5rem;
 
         &--item {
-          background-color: green;
-          width: 15rem;
-          height: 15rem;
+          background-color:$c-light-grey;
+          width: 14rem;
+          height: 14rem;
+          margin-right: 1rem;
           margin-bottom: 5rem;
           -webkit-clip-path: circle(50% at 50% 50%);
           clip-path: circle(50% at 50% 50%);
