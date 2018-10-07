@@ -25,11 +25,6 @@
       white-space: pre;
     }
 
-    &__img {
-      height: 10rem;
-      width: 18rem;
-    }
-
     //containers
     //mobile layout
     &__mobile {
@@ -37,7 +32,9 @@
       flex-flow: wrap;
       margin: auto;
       justify-content: center;
-
+img{
+  width: 100%;
+}
       &--col-1 {
         margin-bottom: 1rem;
 
@@ -118,12 +115,6 @@
       color: $c-light-green;
       white-space: pre;
     }
-
-    img {
-      width: 20rem;
-      padding-top: .5rem;
-    }
-
     //psuedo
     h3:not(:first-child) {
       color: $c-light-green;
@@ -138,7 +129,7 @@
       // margin: auto;
       justify-content: center;
       img {
-        width: 15rem;
+        width: 100%;
         padding-top: .5rem;
       }
     }
@@ -242,7 +233,7 @@
       justify-content: center;
 
       img {
-        width: 20rem;
+        width: 100%;
         margin-top: .5rem;
         margin-bottom: .5rem;
       }

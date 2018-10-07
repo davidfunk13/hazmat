@@ -38,7 +38,7 @@ video {
 
 .desktop-nav {
   position: fixed;
-  display: flex;
+  display: none;
   justify-content: space-evenly;
   padding-top: .5rem;
   @include z-index(desktopNav);

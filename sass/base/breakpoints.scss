@@ -8,9 +8,9 @@
     @include section4Desktop;
     @include mainLogoDesktop;
 }
-@media screen and (max-width: 1023px) {
-    @include hideDesktopNav;
-}
+// @media screen and (max-width: 1023px) {
+    // @include hideDesktopNav;
+// }
 //portrait small, root design so N/A.
 
 //portrait large

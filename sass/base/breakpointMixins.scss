@@ -20,17 +20,8 @@
     #pushNav {
         display: none;
     }
-}
-
-@mixin showDesktopNav {
     .desktop-nav {
         display: flex;
-    }
-}
-
-@mixin hideDesktopNav {
-    .desktop-nav {
-        display: none;
     }
 }
 
