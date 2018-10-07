@@ -1,18 +1,8 @@
-//logo
-@mixin mainLogoMobileLandscapeSmall {
-    #main-logo {
-        width: 40%;
-    }
-}
-
-@mixin mainLogoDesktop {
-    #main-logo {
-        width: 40%;
-    }
-}
-
 //nav
 @mixin hideMobileNav {
+    #main-logo{
+        width: 40%;
+    }
     #menu-toggle {
         display: none;
     }
@@ -20,113 +10,124 @@
     #pushNav {
         display: none;
     }
+
     .desktop-nav {
         display: flex;
     }
 }
-
-//section 1 
-@mixin section1Desktop {
-    //hide Mobile
-    .section {
-        &__1 {
-            &__mobile {
+//breakpoints width
+//landscape small
+@mixin landscapeSmall {
+    #main-logo{
+        width: 40%;
+    }
+    .section{
+        &__1{
+            &__small{
                 display: none;
             }
-            &__desktop{
+            &__med{
+                display: none;
+            }
+            &__mlg{
+                display: none;
+            }
+            &__lg{
+                display: none;
+            }
+            &__landscape{
+                display: block;
+            }
+        }
+        &__2{
+            &__small{
+                display: none;
+            }
+            &__med{
+                display: none;
+                flex-flow: column;
+            }
+            &__mlg{
+                display: none;
+            }
+            &__lg{
+                display: none;
+            }
+            &__landscape{
+                display: block;
+            }
+        }
+        &__3{
+            &__small{
+                display: none;
+            }
+            &__med{
+                display: none;   
+                flex-flow: column;
+            }
+            &__mlg{
+                display: none;
+            }
+            &__lg{
+                display: none;
+            }
+            &__landscape{
+                display: block;
+            }
+        }
+        &__4{
+            &__small{
+                display: none;
+            }
+            &__med{
+             display: none;   
+            }
+            &__mlg{
+                display: none;
+            }
+            &__lg{
+                display: none;
+            }
+            &__landscape{
+                display: block;
+            }
+        }
+    }
+}
+@mixin lg{
+    .section{
+        &__1{
+            &__mlg{
+                display: none;
+            }
+            &__lg{
                 display: flex;
             }
         }
-    }
-
-    //display desktop
-
-}
-@mixin section1MobileLandscape{
-    .section {
-        &__1 {
-            img{
-                padding-left: .5rem;
-            }
-            &__mobile {
-                &--col-2{
-                    display: flex;
-                    flex-flow: row;
-                }
-            }
-        }
-    }
-}
-
-//section 2 
-@mixin section2Desktop {
-
-    //hide Mobile
-    .section {
-        &__2 {
-            &__mobile {
+        &__2{
+            &__mlg{
                 display: none;
             }
-            &__desktop{
+            &__lg{
                 display: flex;
+                flex-flow: column;
             }
         }
-    }
-}
-@mixin section2MobileLandscape{
-    .section {
-        &__2 {
-            img{
-                width: 25rem;
-            }
-            &__mobile{
-                    display: flex;
-                    flex-flow: column;
-                    align-items: center;
-            }
-        }
-    }
-}
-@mixin section2MobilePortrait{
-    .section {
-        &__2 {
-
-            &__mobile{
-                    display: flex;
-                    flex-flow: column;
-                    align-items: center;
-            }
-        }
-    }
-}
-
-//section 3 
-@mixin section3Desktop {
-
-    //hide Mobile
-    .section {
-        &__3 {
-            &__mobile {
+        &__3{
+            &__mlg{
                 display: none;
             }
-            &__desktop{
-                display: flex;
+            &__lg{
+                display: flex;   
+                flex-flow: column;
             }
         }
-    }
-}
-
-//section 4 
-@mixin section4Desktop {
-
-    //hide Mobile
-    .section {
-        &__4 {
-            &__mobile {
+        &__4{
+            &__mlg{
                 display: none;
             }
-            &__desktop{
-                display: flex;
+            &__lg{
+             display: flex;   
             }
         }
     }
