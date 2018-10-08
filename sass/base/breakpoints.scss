@@ -1,34 +1,19 @@
+//root design is 360x640 portrait;
 
-//desktop nav, hides mobile nav
+//mobile med
+@media screen and (min-width: 425px){
+   @include med;
+}
+@media screen and (min-width: 768px){
+    @include mlg;
+}
+
+//desktop sm 1024
 @media screen and (min-width: 1024px)  {
     @include hideMobileNav;
-    @include section1Desktop;
-    @include section2Desktop;
-    @include section3Desktop;
-    @include section4Desktop;
-    @include mainLogoDesktop;
+    @include lg;
 }
-// @media screen and (max-width: 1023px) {
-    // @include hideDesktopNav;
-// }
-//portrait small, root design so N/A.
-
-//portrait large
-@media screen and (max-width: 425px) and (max-height: 800px) {
-    @include section2MobilePortrait;
+// landscape small
+@media screen and (max-height: 599px) and (orientation:landscape) {
+  @include landscapeSmall;
 }
-
-//mobile phone landscape small
-@media screen and (max-width: 640px) and (max-height: 360px) {
-    @include mainLogoMobileLandscapeSmall;
-    @include section1MobileLandscape;
-    @include section2MobileLandscape;
-}
-//mobile phone landscape large
-@media screen and (max-width: 736px) and (max-height: 414px) {
-    @include mainLogoMobileLandscapeSmall;
-    @include section1MobileLandscape;
-    @include section2MobileLandscape;
-}
-
-//standard desktop resolutions
