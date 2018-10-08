@@ -192,16 +192,16 @@
 
     //containers
     //small
+    img {
+      width: 100%;
+      margin-top: .5rem;
+      margin-bottom: .5rem;
+    }
     &__small {
       display: flex;
       flex-flow: column;
       justify-content: center;
 
-      img {
-        width: 100%;
-        margin-top: .5rem;
-        margin-bottom: .5rem;
-      }
 
       .img-flex {
         display: flex;
@@ -278,6 +278,8 @@
 
     p {
       margin-bottom: -.1rem;
+      padding: 0rem;
+      text-align: left;
     }
 
     &--text {
