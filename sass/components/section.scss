@@ -7,13 +7,13 @@
   &__1 {
     background-color: $c-dark-grey;
 
-    h3:nth-of-type(1) {
-      text-align: left;
-    }
+    // h3:nth-of-type(1) {
+    //   text-align: left;
+    // }
 
-    h3:nth-of-type(2) {
-      text-align: right;
-    }
+    // h3:nth-of-type(2) {
+    //   text-align: right;
+    // }
 
     //globals
     &--h1 {
@@ -34,6 +34,14 @@
 
       &--col-1 {
         margin-bottom: 1rem;
+
+        h3:nth-of-type(1) {
+          text-align: left;
+        }
+
+        h3:nth-of-type(2) {
+          text-align: right;
+        }
 
         p:nth-child(4) {
           text-align: right;

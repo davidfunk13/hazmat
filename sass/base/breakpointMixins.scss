@@ -156,6 +156,9 @@
                 display: flex;
                 flex-flow: column;
 
+                img {
+                    width: 100%;
+                }
             }
         }
 
@@ -222,7 +225,35 @@
 
             &__mlg {
                 display: flex;
-                flex-flow: column;
+                flex-flow: row;
+
+                &--col-1 {
+                    display: flex;
+                    flex-flow: column;
+                    width: 50%;
+
+                    img {
+                        margin-top: 1rem;
+                        width: 100%;
+                    }
+                }
+
+                &--col-2 {
+                    display: flex;
+                    flex-flow: column;
+                    margin: auto;
+
+                    &--item {
+                        background-color: $c-light-grey;
+                        width: 14rem;
+                        height: 14rem;
+                        margin-right: 1rem;
+                        margin-bottom: 5rem;
+                        -webkit-clip-path: circle(50% at 50% 50%);
+                        clip-path: circle(50% at 50% 50%);
+                    }
+                }
+
             }
         }
 
@@ -251,6 +282,37 @@
 }
 
 @mixin lg {
+    h1 {
+        font-family: Lato, sans-serif;
+        font-size: 45px;
+        font-style: normal;
+        font-weight: 700;
+        letter-spacing: .3rem;
+        text-transform: uppercase;
+        color: white;
+        margin-bottom: 1.5rem;
+    }
+
+    h2 {
+        font-family: "raleway", sans-serif;
+        font-weight: 900;
+        font-size: 2.3rem;
+        line-height: 2.3rem;
+    }
+
+    h3 {
+        font-family: "raleway", sans-serif;
+        font-weight: 900;
+        font-size: 1.5rem;
+        margin-bottom: .5rem;
+    }
+
+    p {
+        font-size: 20px;
+        padding:1rem;
+        line-height: 2rem;
+    }
+
     .section {
         &__1 {
             &__mlg {
@@ -260,11 +322,14 @@
             &__lg {
                 display: flex;
                 flex-flow: row;
-
+                h3{
+                    text-align: center
+                }
                 &--col-1 {
                     display: flex;
                     flex-flow: column;
 
+               
                 }
 
                 &--col-2 {
@@ -276,7 +341,7 @@
                     }
 
                     img {
-                        width: 50vw;
+                        width: 40vw;
                     }
                 }
 
@@ -290,7 +355,34 @@
 
             &__lg {
                 display: flex;
-                flex-flow: column;
+                flex-flow: row;
+
+                &--col-1 {
+                    display: flex;
+                    flex-flow: column;
+                    width: 50%;
+
+                    img {
+                        margin-top: 1rem;
+                        width: 100%;
+                    }
+                }
+
+                &--col-2 {
+                    display: flex;
+                    flex-flow: column;
+                    margin: auto;
+
+                    &--item {
+                        background-color: $c-light-grey;
+                        width: 20rem;
+                        height: 20rem;
+                        margin-right: 1rem;
+                        margin-bottom: 5rem;
+                        -webkit-clip-path: circle(50% at 50% 50%);
+                        clip-path: circle(50% at 50% 50%);
+                    }
+                }
             }
         }
 
