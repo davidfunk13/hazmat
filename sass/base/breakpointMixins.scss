@@ -1,8 +1,9 @@
 //nav
 @mixin hideMobileNav {
-    #main-logo{
+    #main-logo {
         width: 40%;
     }
+
     #menu-toggle {
         display: none;
     }
@@ -15,119 +16,302 @@
         display: flex;
     }
 }
+
 //breakpoints width
 //landscape small
 @mixin landscapeSmall {
-    #main-logo{
+    #main-logo {
         width: 40%;
     }
-    .section{
-        &__1{
-            &__small{
+
+    .section {
+        &__1 {
+            &__small {
                 display: none;
             }
-            &__med{
+
+            &__med {
                 display: none;
             }
-            &__mlg{
+
+            &__mlg {
                 display: none;
             }
-            &__lg{
+
+            &__lg {
                 display: none;
             }
-            &__landscape{
+
+            &__landscape {
                 display: block;
             }
         }
-        &__2{
-            &__small{
+
+        &__2 {
+            &__small {
                 display: none;
             }
-            &__med{
+
+            &__med {
                 display: none;
                 flex-flow: column;
             }
-            &__mlg{
+
+            &__mlg {
                 display: none;
             }
-            &__lg{
+
+            &__lg {
                 display: none;
             }
-            &__landscape{
+
+            &__landscape {
                 display: block;
             }
         }
-        &__3{
-            &__small{
+
+        &__3 {
+            &__small {
                 display: none;
             }
-            &__med{
-                display: none;   
+
+            &__med {
+                display: none;
                 flex-flow: column;
             }
-            &__mlg{
+
+            &__mlg {
                 display: none;
             }
-            &__lg{
+
+            &__lg {
                 display: none;
             }
-            &__landscape{
+
+            &__landscape {
                 display: block;
             }
         }
-        &__4{
-            &__small{
+
+        &__4 {
+            &__small {
                 display: none;
             }
-            &__med{
-             display: none;   
-            }
-            &__mlg{
+
+            &__med {
                 display: none;
             }
-            &__lg{
+
+            &__mlg {
                 display: none;
             }
-            &__landscape{
+
+            &__lg {
+                display: none;
+            }
+
+            &__landscape {
                 display: block;
             }
         }
     }
 }
-@mixin lg{
-    .section{
-        &__1{
-            &__mlg{
+
+@mixin med {
+    .section {
+        &__1 {
+            &__small {
                 display: none;
             }
-            &__lg{
+
+            &__med {
                 display: flex;
+                flex-flow: column;
+
+                &--col-2 {
+                    display: flex;
+                    flex-flow: row;
+                    align-content: center;
+                    justify-content: center;
+
+                    img:first-child {
+                        padding-top: .15rem;
+                        padding-right: .7rem;
+                    }
+
+                    img {
+                        width: 50%;
+                        height: 15%;
+                    }
+                }
             }
         }
-        &__2{
-            &__mlg{
+
+        &__2 {
+            &__small {
                 display: none;
             }
-            &__lg{
+
+            &__med {
+                display: flex;
+                flex-flow: column;
+
+            }
+        }
+
+        &__3 {
+            &__small {
+                display: none;
+            }
+
+            &__med {
                 display: flex;
                 flex-flow: column;
             }
         }
-        &__3{
-            &__mlg{
+
+        &__4 {
+            &__small {
                 display: none;
             }
-            &__lg{
-                display: flex;   
+
+            &__med {
+                display: flex;
+            }
+        }
+
+    }
+}
+
+@mixin mlg {
+    .section {
+        &__1 {
+            &__med {
+                display: none;
+            }
+
+            &__mlg {
+                display: flex;
+                flex-flow: row;
+
+                &--col-1 {
+                    display: flex;
+                    flex-flow: column;
+
+                }
+
+                &--col-2 {
+                    display: flex;
+                    flex-flow: column;
+
+                    img:first-child {
+                        padding-bottom: 1rem;
+                    }
+
+                    img {
+                        width: 50vw;
+                    }
+                }
+            }
+        }
+
+        &__2 {
+            &__med {
+                display: none;
+            }
+
+            &__mlg {
+                display: flex;
                 flex-flow: column;
             }
         }
-        &__4{
-            &__mlg{
+
+        &__3 {
+            &__med {
                 display: none;
             }
-            &__lg{
-             display: flex;   
+
+            &__mlg {
+                display: flex;
+                flex-flow: column;
+            }
+        }
+
+        &__4 {
+            &__med {
+                display: none;
+            }
+
+            &__mlg {
+                display: flex;
+            }
+        }
+
+    }
+}
+
+@mixin lg {
+    .section {
+        &__1 {
+            &__mlg {
+                display: none;
+            }
+
+            &__lg {
+                display: flex;
+                flex-flow: row;
+
+                &--col-1 {
+                    display: flex;
+                    flex-flow: column;
+
+                }
+
+                &--col-2 {
+                    display: flex;
+                    flex-flow: column;
+
+                    img:first-child {
+                        padding-bottom: 1rem;
+                    }
+
+                    img {
+                        width: 50vw;
+                    }
+                }
+
+            }
+        }
+
+        &__2 {
+            &__mlg {
+                display: none;
+            }
+
+            &__lg {
+                display: flex;
+                flex-flow: column;
+            }
+        }
+
+        &__3 {
+            &__mlg {
+                display: none;
+            }
+
+            &__lg {
+                display: flex;
+                flex-flow: column;
+            }
+        }
+
+        &__4 {
+            &__mlg {
+                display: none;
+            }
+
+            &__lg {
+                display: flex;
             }
         }
     }

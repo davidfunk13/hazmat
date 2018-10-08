@@ -2,82 +2,10 @@
 
 //mobile med
 @media screen and (min-width: 425px){
-    .section{
-        &__1{
-            &__small{
-                display: none;
-            }
-            &__med{
-                display: flex;
-            }
-        }
-        &__2{
-            &__small{
-                display: none;
-            }
-            &__med{
-                display: flex;
-                flex-flow: column;
-            }
-        }
-        &__3{
-            &__small{
-                display: none;
-            }
-            &__med{
-                display: flex;   
-                flex-flow: column;
-            }
-        }
-        &__4{
-            &__small{
-                display: none;
-            }
-            &__med{
-             display: flex;   
-            }
-        }
-
-    }
+   @include med;
 }
 @media screen and (min-width: 768px){
-    .section{
-        &__1{
-            &__med{
-                display: none;
-            }
-            &__mlg{
-                display: flex;
-            }
-        }
-        &__2{
-            &__med{
-                display: none;
-            }
-            &__mlg{
-                display: flex;
-                flex-flow: column;
-            }
-        }
-        &__3{
-            &__med{
-                display: none;
-            }
-            &__mlg{
-                display: flex;   
-                flex-flow: column;
-            }
-        }
-        &__4{
-            &__med{
-                display: none;
-            }
-            &__mlg{
-             display: flex;   
-            }
-        }
-
-    }
+    @include mlg;
 }
 
 //desktop sm 1024
@@ -86,6 +14,6 @@
     @include lg;
 }
 // landscape small
-@media screen and (max-height: 768px) and (orientation:landscape) {
+@media screen and (max-height: 599px) and (orientation:landscape) {
   @include landscapeSmall;
 }
