@@ -315,6 +315,13 @@ video {
       display: none; }
     .section__4__landscape {
       display: none; }
+  .section__5 {
+    background-color: #222629; }
+    .section__5--h1 {
+      color: white;
+      line-height: 2.5rem; }
+    .section__5--h3 {
+      color: #86c232; }
 
 .insert {
   overflow: hidden; }

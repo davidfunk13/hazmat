@@ -24,6 +24,10 @@ let ids = [{
   {
     link: '.link--section__4',
     div: '#4',
+  },
+  {
+    link: '.link--section__5',
+    div: '#5',
   }
 ]
 

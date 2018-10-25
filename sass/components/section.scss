@@ -238,6 +238,16 @@
       display: none;
     }
   }
+  &__5{
+    background-color: $c-dark-grey;
+    &--h1 {
+      color: white;
+      line-height: 2.5rem;
+    }
+    &--h3 {
+      color: $c-light-green;
+    }
+  }
 }
 
 .insert {
