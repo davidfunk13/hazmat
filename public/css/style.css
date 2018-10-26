@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -195,6 +196,18 @@ video {
   min-height: 100vh;
   height: 100%;
   padding: 1rem 1.2rem 1rem 1.2rem; }
+  .section ul {
+    list-style: none;
+    line-height: 2rem; }
+  .section ul li:before {
+    content: '✓';
+    list-style-position: outside;
+    color: #86c232;
+    font-size: 3rem;
+    margin-right: 2rem; }
+  .section ul li {
+    text-indent: -4.2rem;
+    padding-left: 5rem; }
   .section__1 {
     background-color: #222629; }
     .section__1--h1 {
@@ -388,11 +401,6 @@ h3 {
 
 p {
   margin-bottom: .5rem; }
-
-li,
-ol,
-ul {
-  list-style: georgian; }
 
 @media screen and (min-width: 425px) {
   .section__1__small {

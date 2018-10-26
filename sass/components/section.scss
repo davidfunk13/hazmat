@@ -3,6 +3,25 @@
   height: 100%;
   padding: 1rem 1.2rem 1rem 1.2rem;
 
+  ul {
+    list-style: none;
+    line-height: 2rem;
+  }
+
+  ul li:before {
+    content: '✓';
+    list-style-position: outside;
+    color: $c-light-green;
+    font-size: 3rem;
+    margin-right: 2rem;
+
+  }
+
+  ul li {
+    text-indent: -4.2rem;
+    padding-left: 5rem;
+  }
+
   //section 1
   &__1 {
     background-color: $c-dark-grey;
@@ -197,6 +216,7 @@
       margin-top: .5rem;
       margin-bottom: .5rem;
     }
+
     &__small {
       display: flex;
       flex-flow: column;
@@ -238,12 +258,15 @@
       display: none;
     }
   }
-  &__5{
+
+  &__5 {
     background-color: $c-dark-grey;
+
     &--h1 {
       color: white;
       line-height: 2.5rem;
     }
+
     &--h3 {
       color: $c-light-green;
     }
