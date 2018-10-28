@@ -35,3 +35,24 @@
 .text-right {
     text-align: right;
 }
+
+.bubble{
+    position: relative;
+    @include z-index(bubble);
+    background-color: $c-light-grey;
+    width: 10rem;
+    height: 10rem;
+    margin-right: 1rem;
+    margin-bottom: 5rem;
+    -webkit-clip-path: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+}
+.bubble-checkmark{
+    position: relative;
+    color: $c-light-green;
+    top: 0;
+    @include z-index(checkmark);
+
+
+}
+

@@ -74,6 +74,23 @@ table {
 .text-right {
   text-align: right; }
 
+.bubble {
+  position: relative;
+  z-index: 8;
+  background-color: #6b6e70;
+  width: 10rem;
+  height: 10rem;
+  margin-right: 1rem;
+  margin-bottom: 5rem;
+  -webkit-clip-path: circle(50% at 50% 50%);
+  clip-path: circle(50% at 50% 50%); }
+
+.bubble-checkmark {
+  position: relative;
+  color: #86c232;
+  top: 0;
+  z-index: 9; }
+
 body,
 html {
   -webkit-text-size-adjust: 100%;
@@ -472,17 +489,7 @@ p {
         margin-top: 1rem;
         width: 100%; }
     .section__2__mlg--col-2 {
-      display: flex;
-      flex-flow: column;
       margin: auto; }
-      .section__2__mlg--col-2--item {
-        background-color: #6b6e70;
-        width: 14rem;
-        height: 14rem;
-        margin-right: 1rem;
-        margin-bottom: 5rem;
-        -webkit-clip-path: circle(50% at 50% 50%);
-        clip-path: circle(50% at 50% 50%); }
   .section__3__med {
     display: none; }
   .section__3__mlg {
@@ -586,8 +593,7 @@ p {
         margin-right: 1rem;
         margin-bottom: 5rem;
         -webkit-clip-path: circle(50% at 50% 50%);
-        clip-path: circle(50% at 50% 50%);
-        z-index: 8; }
+        clip-path: circle(50% at 50% 50%); }
   .section__3__mlg {
     display: none; }
   .section__3__lg {

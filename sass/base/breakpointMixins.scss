@@ -318,19 +318,8 @@
                 }
 
                 &--col-2 {
-                    display: flex;
-                    flex-flow: column;
                     margin: auto;
-
-                    &--item {
-                        background-color: $c-light-grey;
-                        width: 14rem;
-                        height: 14rem;
-                        margin-right: 1rem;
-                        margin-bottom: 5rem;
-                        -webkit-clip-path: circle(50% at 50% 50%);
-                        clip-path: circle(50% at 50% 50%);
-                    }
+                    
                 }
 
             }
@@ -443,17 +432,7 @@
                     text-align: center
                 }
 
-                &--col-1 {
-                    // display: flex;
-                    // flex-flow: column;
-
-
-                }
-
                 &--col-2 {
-                    // display: flex;
-                    // flex-flow: column;
-
                     img:first-child {
                         padding-bottom: 1rem;
                     }
