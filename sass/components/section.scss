@@ -26,14 +26,6 @@
   &__1 {
     background-color: $c-dark-grey;
 
-    // h3:nth-of-type(1) {
-    //   text-align: left;
-    // }
-
-    // h3:nth-of-type(2) {
-    //   text-align: right;
-    // }
-
     //globals
     &--h1 {
       color: $c-light-green;
@@ -43,42 +35,37 @@
     //small layout
     &__small {
       display: flex;
-      flex-flow: wrap;
-      margin: auto;
-      justify-content: center;
+      flex-flow: column;
+
 
       img {
-        width: 100%;
+        width: 90vw;
+        height: 15%;
+        margin: auto;
       }
-
-      &--col-1 {
+      img:nth-of-type(1){
         margin-bottom: 1rem;
-
-        h3:nth-of-type(1) {
-          text-align: left;
-        }
-
-        h3:nth-of-type(2) {
-          text-align: right;
-        }
-
-        p:nth-child(4) {
-          text-align: right;
-        }
-
-        p:nth-child(5) {
-          text-align: right;
-        }
+        margin-left: auto;
+        margin-right: auto;
+      }
+      p{
+        margin-bottom: 1rem;
       }
 
-      &--col-2 {
-        display: flex;
-        flex-flow: column;
-        justify-content: center;
+      h3:nth-of-type(1) {
+        text-align: left;
+      }
 
-        img:first-child {
-          padding-bottom: 1rem;
-        }
+      h3:nth-of-type(2) {
+        text-align: right;
+      }
+
+      p:nth-child(4) {
+        text-align: right;
+      }
+
+      p:nth-child(5) {
+        text-align: right;
       }
     }
 

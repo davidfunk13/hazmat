@@ -17,3 +17,9 @@
 @media screen and (max-height: 599px) and (orientation:landscape) {
   @include landscapeSmall;
 }
+
+//type adjustments
+
+@media screen and (min-width: 525px){
+    @include fontAdjust1
+}

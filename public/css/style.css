@@ -232,27 +232,25 @@ video {
       white-space: pre; }
     .section__1__small {
       display: flex;
-      flex-flow: wrap;
-      margin: auto;
-      justify-content: center; }
+      flex-flow: column; }
       .section__1__small img {
-        width: 100%; }
-      .section__1__small--col-1 {
+        width: 90vw;
+        height: 15%;
+        margin: auto; }
+      .section__1__small img:nth-of-type(1) {
+        margin-bottom: 1rem;
+        margin-left: auto;
+        margin-right: auto; }
+      .section__1__small p {
         margin-bottom: 1rem; }
-        .section__1__small--col-1 h3:nth-of-type(1) {
-          text-align: left; }
-        .section__1__small--col-1 h3:nth-of-type(2) {
-          text-align: right; }
-        .section__1__small--col-1 p:nth-child(4) {
-          text-align: right; }
-        .section__1__small--col-1 p:nth-child(5) {
-          text-align: right; }
-      .section__1__small--col-2 {
-        display: flex;
-        flex-flow: column;
-        justify-content: center; }
-        .section__1__small--col-2 img:first-child {
-          padding-bottom: 1rem; }
+      .section__1__small h3:nth-of-type(1) {
+        text-align: left; }
+      .section__1__small h3:nth-of-type(2) {
+        text-align: right; }
+      .section__1__small p:nth-child(4) {
+        text-align: right; }
+      .section__1__small p:nth-child(5) {
+        text-align: right; }
     .section__1__med {
       display: none; }
     .section__1__mlg {
@@ -416,15 +414,21 @@ h3 {
   font-size: 1.2rem;
   margin-bottom: .5rem; }
 
-p {
-  margin-bottom: .5rem; }
-
 @media screen and (min-width: 425px) {
   .section__1__small {
     display: none; }
   .section__1__med {
     display: flex;
-    flex-flow: column; }
+    flex-flow: column;
+    justify-content: center; }
+    .section__1__med img {
+      width: 90vw;
+      height: 15%;
+      margin: auto; }
+    .section__1__med img:nth-of-type(1) {
+      margin-bottom: 1rem; }
+    .section__1__med p {
+      margin-bottom: 1rem; }
     .section__1__med h3:nth-of-type(1) {
       text-align: left; }
     .section__1__med h3:nth-of-type(2) {
@@ -433,14 +437,6 @@ p {
       text-align: right; }
     .section__1__med p:nth-child(5) {
       text-align: right; }
-    .section__1__med img {
-      width: 100%;
-      height: 15%;
-      padding-bottom: .5rem; }
-    .section__1__med--col-2 {
-      display: flex;
-      flex-flow: column;
-      justify-content: center; }
   .section__2__small {
     display: none; }
   .section__2__med {
@@ -718,3 +714,9 @@ p {
       display: flex;
       flex-flow: column;
       width: 50%; } }
+
+@media screen and (min-width: 525px) {
+  p {
+    font-size: 1.2rem;
+    padding-bottom: 1rem;
+    line-height: 2rem; } }
