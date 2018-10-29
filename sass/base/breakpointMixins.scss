@@ -243,7 +243,12 @@
             &__med {
                 display: flex;
                 flex-flow: column;
-
+                p{
+                    margin-bottom: 1rem;
+                }
+                p:last-of-type{
+                    margin-bottom: 0;
+                }
                 img {
                     width: 100%;
                 }
@@ -318,22 +323,26 @@
 
             &__mlg {
                 display: flex;
-                flex-flow: row;
+                flex-direction: row;
+            
+                img{
+                    width: 100%;
+                }
 
                 &--col-1 {
+                    flex: 40%;
                     display: flex;
                     flex-flow: column;
-                    width: 50%;
-
-                    img {
-                        margin-top: 1rem;
-                        width: 100%;
-                    }
+                    // justify-content: space-evenly;
+                    margin: auto;
+                    justify-content: center;
                 }
 
                 &--col-2 {
-                    margin: auto;
-
+                    flex: 40%;
+                    display: flex;
+                    flex-flow: column;
+                    justify-content: space-evenly;
                 }
 
             }

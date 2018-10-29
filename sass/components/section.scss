@@ -112,7 +112,12 @@
 
       img {
         width: 100%;
-        padding-top: .5rem;
+      }
+      p:last-of-type{
+        margin-bottom: 0rem;
+      }
+      p{
+        margin-bottom: 1rem;
       }
     }
 
