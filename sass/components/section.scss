@@ -140,7 +140,9 @@
 
   &__3 {
     background-color: $c-dark-grey;
-
+    p.instructions{
+      text-align: center;
+    }
     //globals
     &--h1 {
       color: white;

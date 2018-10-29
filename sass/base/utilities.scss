@@ -36,19 +36,20 @@
     text-align: right;
 }
 
-.list-item{
+.list-item {
     display: flex;
     flex-flow: row;
     position: relative;
     justify-content: flex-start;
     margin-bottom: 10rem;
-    // height: 100%;
-    // width: 100%;
-    p{
-padding-left: 1rem;
+
+    p {
+        padding-left: 1rem;
         padding-right: 1rem;
+        margin-top: 1rem;
     }
-    &__bubble{
+
+    &__bubble {
         position: absolute;
         @include z-index(bubble);
         background-color: $c-light-grey;
@@ -57,36 +58,37 @@ padding-left: 1rem;
         margin-bottom: 5rem;
         -webkit-clip-path: circle(50% at 50% 50%);
         clip-path: circle(50% at 50% 50%);
-        
-    }
-    &__bubble-checkmark{
 
-        font-size: 10rem;
-        margin-top: 2rem;
+    }
+
+    &__bubble-checkmark {
+        font-size: 11rem;
+        margin-top: 3rem;
         color: $c-light-green;
         @include z-index(checkmark);
     }
 }
-.bubble{
-    position: relative;
-    @include z-index(bubble);
-    background-color: $c-light-grey;
-    width: 5rem;
-    height: 5rem;
-    margin-right: 1rem;
-    margin-bottom: 5rem;
-    -webkit-clip-path: circle(50% at 50% 50%);
-    clip-path: circle(50% at 50% 50%);
-}
-.bubble-checkmark{
-    position: absolute;
-    font-size: 4rem;
-    color: $c-light-green;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    @include z-index(checkmark);
+
+// .bubble {
+//     position: relative;
+//     @include z-index(bubble);
+//     background-color: $c-light-grey;
+//     width: 5rem;
+//     height: 5rem;
+//     margin-right: 1rem;
+//     margin-bottom: 5rem;
+//     -webkit-clip-path: circle(50% at 50% 50%);
+//     clip-path: circle(50% at 50% 50%);
+// }
+
+// .bubble-checkmark {
+//     position: absolute;
+//     font-size: 4rem;
+//     color: $c-light-green;
+//     top: 50%;
+//     left: 50%;
+//     transform: translate(-50%, -50%);
+//     @include z-index(checkmark);
 
 
-}
-
+// }

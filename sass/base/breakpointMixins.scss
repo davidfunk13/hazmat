@@ -483,34 +483,26 @@
 
             &__lg {
                 display: flex;
-                flex-flow: row;
+                flex-direction: row;
+            
+                img{
+                    width: 100%;
+                }
 
                 &--col-1 {
+                    flex: 40%;
                     display: flex;
                     flex-flow: column;
-                    width: 50%;
-
-                    img {
-                        margin-top: 1rem;
-                        width: 100%;
-                    }
+                    // justify-content: space-evenly;
+                    margin: auto;
+                    justify-content: center;
                 }
 
                 &--col-2 {
+                    flex: 40%;
                     display: flex;
                     flex-flow: column;
-                    margin: auto;
-
-                    &--item {
-                        background-color: $c-light-grey;
-                        width: 10rem;
-                        height: 10rem;
-                        margin-right: 1rem;
-                        margin-bottom: 5rem;
-                        -webkit-clip-path: circle(50% at 50% 50%);
-                        clip-path: circle(50% at 50% 50%);
-                        @include z-index(item);
-                    }
+                    justify-content: space-evenly;
                 }
             }
         }
