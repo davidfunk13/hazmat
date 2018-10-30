@@ -3,23 +3,22 @@
 //mobile med
 @media screen and (min-width: 425px){
    @include med;
+   @include medFont;
 }
 @media screen and (min-width: 768px){
     @include mlg;
+    @include mlgFont;
 }
 
 //desktop sm 1024
 @media screen and (min-width: 1024px)  {
     @include hideMobileNav;
     @include lg;
+    @include lgFont;
 }
 // landscape small
 @media screen and (max-height: 599px) and (orientation:landscape) {
   @include landscapeSmall;
 }
 
-//type adjustments
-
-@media screen and (min-width: 525px){
-    @include fontAdjust1
-}
+//type adjustmentsw

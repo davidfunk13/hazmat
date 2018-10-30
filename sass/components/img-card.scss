@@ -8,8 +8,6 @@
     &__side {
         border: 1px solid white;
         position: absolute;
-        // top: 0;
-        // left: 0;
         width: 100%;
         backface-visibility: hidden;
         border-radius: 3px;
@@ -17,8 +15,6 @@
         box-shadow: .5rem .5rem 1rem rgba(black, .65);
         height: 15rem;
         transition: all .8s;
-        // box-shadow: .5rem .5rem 1rem rgba(black, .2);
-
         &--front {
             background-color: white;
             z-index: 1;
@@ -26,11 +22,9 @@
 
         &--back {
             transform: rotateY(180deg);
-
             p {
                 padding: 1rem;
             }
-
             &-1 {
                 background-image: linear-gradient(to right bottom, $c-light-grey, $c-dark-grey)
             }
@@ -46,15 +40,8 @@
     }
 
     &__picture {
-        // background-size: cover;
         height: 15rem;
-        // -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-        // clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-
         &--1 {
-            // background-image: url(./img/stock_images/6.jpeg);
-            // background-blend-mode: overlay;
-            // height: 100%;
             width: 100%;
         }
     }
@@ -65,7 +52,5 @@
         text-transform: uppercase;
         color: white;
         position: absolute;
-
-
     }
 }

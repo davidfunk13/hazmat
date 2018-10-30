@@ -18,7 +18,65 @@
 }
 
 //type adjustments 
-@mixin fontAdjust1 {
+@mixin medFont {
+    p {
+        font-size: 1.2rem;
+        padding-bottom: 1rem;
+        line-height: 2rem;
+    }
+}
+
+@mixin mlgFont {
+    h1 {
+        font-size: 3rem;
+    }
+
+    h3 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1.1rem;
+        padding-bottom: 1rem;
+        line-height: 2.4rem;
+    }
+}
+
+@mixin lgFont {
+    .desktop-nav{
+        font-size: 1.4rem;
+        margin-top: -1rem;
+        align-items: center;
+        height: 4rem;
+    }
+    h1 {
+        margin-top: 2rem;
+        font-size: 4rem;
+        margin-bottom: 4rem;
+    }
+
+    h3 {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        font-size: 2.5rem;
+    }
+
+    p {
+        font-size: 1.5rem;
+        padding-bottom: 1rem;
+        line-height: 3.5rem;
+    }
+}
+
+@mixin xlFont {
+    p {
+        font-size: 1.2rem;
+        padding-bottom: 1rem;
+        line-height: 2rem;
+    }
+}
+
+@mixin HDFont {
     p {
         font-size: 1.2rem;
         padding-bottom: 1rem;
@@ -243,12 +301,15 @@
             &__med {
                 display: flex;
                 flex-flow: column;
-                p{
+
+                p {
                     margin-bottom: 1rem;
                 }
-                p:last-of-type{
+
+                p:last-of-type {
                     margin-bottom: 0;
                 }
+
                 img {
                     width: 100%;
                 }
@@ -324,8 +385,8 @@
             &__mlg {
                 display: flex;
                 flex-direction: row;
-            
-                img{
+
+                img {
                     width: 100%;
                 }
 
@@ -484,8 +545,8 @@
             &__lg {
                 display: flex;
                 flex-direction: row;
-            
-                img{
+
+                img {
                     width: 100%;
                 }
 
