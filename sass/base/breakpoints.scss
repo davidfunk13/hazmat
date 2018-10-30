@@ -16,9 +16,6 @@
     @include lg;
     @include lgFont;
 }
-// @media screen and (min-width: 1440px)  {
-//     @include xlgFont;
-// }
 // landscape small
 @media screen and (max-height: 599px) and (orientation:landscape) {
   @include landscapeSmall;

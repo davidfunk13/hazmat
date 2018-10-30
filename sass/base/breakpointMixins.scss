@@ -65,8 +65,24 @@
     p {
         font-size: 1.5rem;
         padding-bottom: 1rem;
-        line-height: 3.5rem;
+        line-height: 6rem;
     }
+    .list-item {
+    
+        p {
+            font-size: 2rem;
+        }
+    
+        &__bubble {
+            width: 10rem;
+            height: 10rem;
+        }
+    
+        &__bubble-checkmark {
+            font-size: 15rem;
+        }
+    }
+    
 }
 
 @mixin xlgFont {
@@ -542,6 +558,8 @@
     }
 
     .section {
+        padding-left: 5rem;
+        padding-right: 5rem;
         &__1 {
             &__mlg {
                 display: none;
@@ -569,7 +587,7 @@
                     }
 
                     img {
-                        width: 45vw;
+                        width: 35vw;
                     }
                 }
 
@@ -603,6 +621,9 @@
                     display: flex;
                     flex-flow: column;
                     justify-content: space-evenly;
+                    p{
+                        text-indent: 5rem;
+                    }
                 }
             }
         }
@@ -641,8 +662,8 @@
                     margin-right: auto;
 
                     &--item {
-                        width: 30rem;
-                        height: 20rem;
+                        width: 40rem;
+                        height: 25rem;
                         background-color: $c-light-green;
                         margin-right: 1rem;
                         margin-bottom: 10rem;
