@@ -614,8 +614,7 @@ h3 {
       display: flex;
       flex-flow: column;
       width: 50%;
-      margin: auto;
-      margin-right: 1rem; }
+      margin: auto; }
     .section__3__mlg--col-2 {
       display: flex;
       flex-flow: column;

@@ -69,11 +69,39 @@
     }
 }
 
-@mixin xlFont {
+@mixin xlgFont {
+    .desktop-nav {
+        font-size: 1.9rem;
+        margin-top: -1rem;
+        align-items: center;
+        height: 4rem;
+    }
+.section{
+    padding-left: 15rem;
+    padding-right: 15rem;
+    &__1{
+        img{
+            margin-left: 15rem;
+            width:40vw
+        }
+    }
+}
+    h1 {
+        margin-top: 1rem;
+        font-size: 1.5rem;
+        margin-bottom: 3rem;
+    }
+
+    h3 {
+        margin-top: 2rem;
+        margin-bottom: 3rem;
+        font-size: 7.5rem;
+    }
+
     p {
-        font-size: 1.2rem;
-        padding-bottom: 1rem;
-        line-height: 2rem;
+        font-size: 4rem;
+        padding-bottom: 8rem;
+        line-height: 10rem;
     }
 }
 
@@ -434,7 +462,6 @@
                     flex-flow: column;
                     width: 50%;
                     margin: auto;
-                    margin-right: 1rem;
                 }
 
                 &--col-2 {
