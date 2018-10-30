@@ -43,12 +43,13 @@
 }
 
 @mixin lgFont {
-    .desktop-nav{
+    .desktop-nav {
         font-size: 1.4rem;
         margin-top: -1rem;
         align-items: center;
         height: 4rem;
     }
+
     h1 {
         margin-top: 2rem;
         font-size: 4rem;
@@ -324,6 +325,7 @@
             &__med {
                 display: flex;
                 flex-flow: column;
+
             }
         }
 
@@ -409,6 +411,16 @@
         }
 
         &__3 {
+            &--bold-text {
+                margin-top: .5rem;
+                margin-bottom: .5rem;
+                color: $c-dark-green;
+                font-family: "raleway", sans-serif;
+                font-weight: 900;
+                font-size: 2.5rem;
+                line-height: 2.3rem;
+            }
+
             &__med {
                 display: none;
             }
@@ -422,15 +434,16 @@
                     flex-flow: column;
                     width: 50%;
                     margin: auto;
+                    margin-right: 1rem;
                 }
 
                 &--col-2 {
                     display: flex;
                     flex-flow: column;
-                    margin: auto;
+                    justify-content: space-evenly;
 
                     &--item {
-                        width: 15rem;
+                        width: 22rem;
                         height: 15rem;
                         background-color: $c-light-green;
                         margin-right: 1rem;
@@ -568,6 +581,16 @@
         }
 
         &__3 {
+            &--bold-text {
+                margin-top: .5rem;
+                margin-bottom: .5rem;
+                color: $c-dark-green;
+                font-family: "raleway", sans-serif;
+                font-weight: 900;
+                font-size: 2.9rem;
+                line-height: 2.3rem;
+            }
+
             &__mlg {
                 display: none;
             }
@@ -580,17 +603,19 @@
                     display: flex;
                     flex-flow: column;
                     width: 50%;
-                    margin: auto;
+                    // margin: auto;
                 }
 
                 &--col-2 {
                     display: flex;
                     flex-flow: column;
-                    margin: auto;
+                    justify-content: space-evenly;
+                    margin-left: auto;
+                    margin-right: auto;
 
                     &--item {
-                        width: 15rem;
-                        height: 15rem;
+                        width: 30rem;
+                        height: 20rem;
                         background-color: $c-light-green;
                         margin-right: 1rem;
                         margin-bottom: 10rem;
