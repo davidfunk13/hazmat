@@ -67,22 +67,23 @@
         padding-bottom: 1rem;
         line-height: 3.5rem;
     }
+
     .list-item {
-    
+
         p {
             font-size: 1.3rem;
         }
-    
+
         &__bubble {
             width: 10rem;
             height: 10rem;
         }
-    
+
         &__bubble-checkmark {
             font-size: 15rem;
         }
     }
-    
+
 }
 
 @mixin xlgFont {
@@ -110,22 +111,24 @@
         padding-bottom: 1rem;
         line-height: 3.5rem;
     }
+
     .list-item {
-    
+
         p {
             font-size: 2rem;
         }
-    
+
         &__bubble {
             width: 10rem;
             height: 10rem;
         }
-    
+
         &__bubble-checkmark {
             font-size: 15rem;
         }
     }
 }
+
 //breakpoints width
 //landscape small
 @mixin landscapeSmall {
@@ -452,13 +455,17 @@
         }
 
         &__3 {
+        img{
+            width: 45vw;
+
+        }
             &--bold-text {
                 margin-top: .5rem;
                 margin-bottom: .5rem;
                 color: $c-dark-green;
                 font-family: "raleway", sans-serif;
                 font-weight: 900;
-                font-size: 2.5rem;
+                font-size: 2rem;
                 line-height: 2.3rem;
             }
 
@@ -469,29 +476,15 @@
             &__mlg {
                 display: flex;
                 flex-flow: row;
-
-                &--col-1 {
-                    display: flex;
-                    flex-flow: column;
-                    width: 50%;
-                    margin: auto;
-                }
+                justify-items: center;
+                &--col-1 {  
+                    width: 50%;           
+   }
 
                 &--col-2 {
-                    display: flex;
-                    flex-flow: column;
-                    justify-content: space-evenly;
+width: 50%;
 
-                    &--item {
-                        width: 22rem;
-                        height: 15rem;
-                        background-color: $c-light-green;
-                        margin-right: 1rem;
-                        margin-bottom: 5rem;
-                        -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-                        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-                    }
-                }
+            }
             }
         }
 
@@ -557,6 +550,7 @@
     .section {
         padding-left: 5rem;
         padding-right: 5rem;
+
         &__1 {
             &__mlg {
                 display: none;
@@ -568,11 +562,10 @@
                 min-height: 100vh;
 
                 &--col-1 {
-                    p{
-                        margin-top: -5rem;
+                    &--p {
+                        // margin-top: -5rem;
                     }
-                    padding-left: 5rem;
-                    padding-right: 5rem;
+
                     display: flex;
                     flex-flow: column;
                     justify-content: space-evenly;
@@ -623,7 +616,8 @@
                     display: flex;
                     flex-flow: column;
                     justify-content: space-evenly;
-                    p{
+
+                    p {
                         text-indent: 5rem;
                     }
                 }
@@ -631,13 +625,14 @@
         }
 
         &__3 {
+      
             &--bold-text {
                 margin-top: .5rem;
                 margin-bottom: .5rem;
                 color: $c-dark-green;
                 font-family: "raleway", sans-serif;
                 font-weight: 900;
-                font-size: 2.9rem;
+                font-size: 2.3rem;
                 line-height: 2.3rem;
             }
 
@@ -649,30 +644,18 @@
                 display: flex;
                 flex-flow: row;
 
+                img {
+                    width: 40vw;
+                }
+
                 &--col-1 {
-                    display: flex;
-                    flex-flow: column;
                     width: 50%;
-                    // margin: auto;
                 }
 
                 &--col-2 {
-                    display: flex;
-                    flex-flow: column;
-                    justify-content: space-evenly;
-                    margin-left: auto;
-                    margin-right: auto;
-
-                    &--item {
-                        width: 40rem;
-                        height: 25rem;
-                        background-color: $c-light-green;
-                        margin-right: 1rem;
-                        margin-bottom: 10rem;
-                        -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-                        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-                    }
+                    width: 50%;
                 }
+
             }
         }
 
@@ -701,9 +684,46 @@
         }
     }
 }
+
 @mixin xlg {
-.section{
-    padding-left: 12rem;
-    padding-right: 12rem;
-}
+    .section {
+        padding-left: 10rem;
+        padding-right: 10rem;
+        &__3 {
+      
+            &--bold-text {
+                margin-top: .5rem;
+                margin-bottom: .5rem;
+                color: $c-dark-green;
+                font-family: "raleway", sans-serif;
+                font-weight: 900;
+                font-size: 2.2rem;
+                line-height: 2.3rem;
+            }
+
+            &__mlg {
+                display: none;
+            }
+
+            &__lg {
+                display: flex;
+                flex-flow: row;
+
+                img {
+                    width: 30vw;
+                }
+
+                &--col-1 {
+                    width: 50%;
+                    margin: auto;
+                }
+
+                &--col-2 {
+                    width: 50%;
+                    margin: auto;
+                }
+
+            }
+        }
+    }
 }
