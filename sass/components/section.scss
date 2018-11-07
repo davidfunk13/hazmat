@@ -192,7 +192,8 @@
 
   &__4 {
     background-color: $c-light-grey;
-
+display: flex;
+flex-flow: column;
     //globals
     &--h1 {
       color: white;
@@ -212,27 +213,7 @@
     }
 
     &__small {
-      display: flex;
-      flex-flow: column;
-      justify-content: center;
 
-
-      .img-flex {
-        display: flex;
-        flex-flow: row;
-        justify-content: center;
-        align-content: space-around;
-      }
-
-      &--col-1 {
-        display: flex;
-        flex-flow: column;
-        align-items: center;
-      }
-
-      &--col-2 {
-        flex-shrink: 1.1
-      }
 
     }
 

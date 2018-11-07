@@ -495,20 +495,7 @@ width: 50%;
 
             &__mlg {
                 display: flex;
-                flex-flow: row;
-
-                &--col-1 {
-                    padding-right: 1rem;
-                    display: flex;
-                    flex-flow: column;
-                    width: 50%;
-                }
-
-                &--col-2 {
-                    display: flex;
-                    flex-flow: column;
-                    width: 50%;
-                }
+                flex-flow: column;
             }
         }
 
@@ -666,20 +653,7 @@ width: 50%;
 
             &__lg {
                 display: flex;
-                flex-flow: row;
-
-                &--col-1 {
-                    padding-right: 1rem;
-                    display: flex;
-                    flex-flow: column;
-                    width: 50%;
-                }
-
-                &--col-2 {
-                    display: flex;
-                    flex-flow: column;
-                    width: 50%;
-                }
+                flex-flow: column;
             }
         }
     }
