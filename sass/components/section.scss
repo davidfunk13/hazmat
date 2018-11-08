@@ -199,8 +199,6 @@
   &__4 {
     background-color: $c-light-grey;
 
-
-    //globals
     &--h1 {
       color: white;
       line-height: 2.5rem;
@@ -209,10 +207,6 @@
     &--h3 {
       color: $c-light-green;
     }
-
-    //containers
-    //small
-
 
     &__small {
       display: flex;
@@ -251,9 +245,7 @@
       line-height: 2.5rem;
     }
 
-    &--h3 {
-      color: $c-light-green;
-    }
+   text-align: center;
   }
 }
 
@@ -279,28 +271,18 @@
   &__footer {
     overflow: hidden;
     display: flex;
-    flex-flow: column;
-    align-items: center;
-    text-align: center;
-    padding: .4rem;
-    width: 100%;
+    flex-flow: row;
+align-items: center;
+justify-content: center;
     background-color: white;
     // font-size: 5rem;
-
-    &--h3 {
+    height: 10vh;
+    p{
+      line-height: 1rem;
       color: black;
+      font-size: .7rem;
+      text-align: center;
     }
-
-    p {
-      margin-bottom: -.1rem;
-      padding: 0rem;
-      text-align: left;
-    }
-
-    &--text {
-      color: $c-dark-grey;
-      letter-spacing: .1rem;
-      // text-align: center;
-    }
+   
   }
 }

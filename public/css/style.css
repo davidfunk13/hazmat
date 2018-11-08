@@ -346,12 +346,11 @@ video {
     .section__4__landscape {
       display: none; }
   .section__5 {
-    background-color: #222629; }
+    background-color: #222629;
+    text-align: center; }
     .section__5--h1 {
       color: white;
       line-height: 2.5rem; }
-    .section__5--h3 {
-      color: #86c232; }
 
 .insert {
   overflow: hidden; }
@@ -370,36 +369,28 @@ video {
   .insert__footer {
     overflow: hidden;
     display: flex;
-    flex-flow: column;
+    flex-flow: row;
     align-items: center;
-    text-align: center;
-    padding: .4rem;
-    width: 100%;
-    background-color: white; }
-    .insert__footer--h3 {
-      color: black; }
+    justify-content: center;
+    background-color: white;
+    height: 10vh; }
     .insert__footer p {
-      margin-bottom: -.1rem;
-      padding: 0rem;
-      text-align: left; }
-    .insert__footer--text {
-      color: #222629;
-      letter-spacing: .1rem; }
+      line-height: 1rem;
+      color: black;
+      font-size: .7rem;
+      text-align: center; }
 
 form {
   text-align: center; }
 
 input[name=name] {
-  background-color: black;
-  width: 80vw; }
+  width: 45vw; }
 
 input[name=mail] {
-  background-color: blue;
-  width: 80vw; }
+  width: 45vw; }
 
 input[name=comment] {
-  background-color: red;
-  width: 80vw;
+  width: 45vw;
   height: 20vh; }
 
 input[type=submit] {
