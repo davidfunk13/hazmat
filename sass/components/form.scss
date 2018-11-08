@@ -1,0 +1,22 @@
+form{
+    text-align: center;
+}
+input[name=name]{
+    background-color: black;
+    width: 80vw;
+}
+input[name=mail]{
+background-color: blue;
+width: 80vw;
+}
+input[name=comment]{
+    background-color: red;
+    width: 80vw;
+    height: 20vh;
+}
+input[type=submit]{
+    border: 1px solid black;
+}
+input[type=reset]{
+    border: 1px solid black;
+}
