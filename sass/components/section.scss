@@ -285,15 +285,16 @@
     text-align: center;
   }
 
-  &__insert{
-    &__1{
+  &__insert {
+    &__1 {
       display: flex;
       justify-content: center;
       align-items: center;
       background-color: $c-light-green;
       height: 12vh;
       color: black;
-      p{
+
+      p {
         font-size: 1.8rem;
       }
     }
@@ -302,7 +303,8 @@
   &__footer {
     background-color: white;
     color: black;
-overflow: hidden;
+    overflow: hidden;
+
     &__small {
       display: flex;
       flex-flow: column;

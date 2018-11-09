@@ -1,7 +1,7 @@
 			AOS.init({
 				easing: 'ease-out-back',
         duration: 1000,
-        once: false, // whether animation should happen only once - while scrolling down
+        once: true, // whether animation should happen only once - while scrolling down
         mirror: true, // whether elements should animate out while scrolling past them
 			});
 //nav link ids
@@ -38,7 +38,7 @@ ids.map(id => {
     lastClicked = id.div;
     if ($('.desktop-nav').is(":visible")) {
       $('html, body').animate({
-        scrollTop: $(id.div).offset().top - 40
+        scrollTop: $(id.div).offset().top - 55
       }, 1000)
     } else {
       $('html, body').animate({
