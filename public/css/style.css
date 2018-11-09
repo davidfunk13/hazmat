@@ -351,53 +351,48 @@ video {
     .section__5--h1 {
       color: white;
       line-height: 2.5rem; }
-
-.insert {
-  overflow: hidden; }
-  .insert--1 {
+    .section__5 form {
+      text-align: center;
+      margin-top: 5rem; }
+    .section__5 input {
+      margin-bottom: 1rem; }
+    .section__5 input[name=name] {
+      width: 65vw; }
+    .section__5 input[name=mail] {
+      width: 65vw; }
+    .section__5 input[name=comment] {
+      width: 65vw;
+      height: 20vh; }
+    .section__5 input[type=submit] {
+      border: 1px solid black;
+      width: 6rem;
+      height: 2rem; }
+    .section__5 input[type=reset] {
+      border: 1px solid black;
+      width: 6rem;
+      height: 2rem; }
+  .section__insert__1 {
     display: flex;
-    flex-flow: row wrap;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    text-align: center;
-    height: 100px;
-    background-color: #86c232; }
-    .insert--1--text {
-      color: #222629;
-      letter-spacing: .8rem; }
-  .insert__footer {
-    overflow: hidden;
-    display: flex;
-    flex-flow: row;
-    align-items: center;
-    justify-content: center;
+    background-color: #86c232;
+    height: 12vh;
+    color: black; }
+    .section__insert__1 p {
+      font-size: 1.8rem; }
+  .section__footer {
     background-color: white;
-    height: 10vh; }
-    .insert__footer p {
-      line-height: 1rem;
-      color: black;
-      font-size: .7rem;
-      text-align: center; }
-
-form {
-  text-align: center; }
-
-input[name=name] {
-  width: 45vw; }
-
-input[name=mail] {
-  width: 45vw; }
-
-input[name=comment] {
-  width: 45vw;
-  height: 20vh; }
-
-input[type=submit] {
-  border: 1px solid black; }
-
-input[type=reset] {
-  border: 1px solid black; }
+    color: black;
+    overflow: hidden; }
+    .section__footer__small {
+      display: flex;
+      flex-flow: column;
+      align-items: center; }
+      .section__footer__small p {
+        font-size: .6rem;
+        line-height: .7rem; }
+    .section__footer__large {
+      display: none; }
 
 h1,
 h2,

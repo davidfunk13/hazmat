@@ -245,44 +245,77 @@
       line-height: 2.5rem;
     }
 
-   text-align: center;
-  }
-}
+    form {
+      text-align: center;
+      margin-top: 5rem;
+    }
 
-.insert {
-  overflow: hidden;
+    input {
+      margin-bottom: 1rem;
+    }
 
-  &--1 {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
+    input[name=name] {
+
+      width: 65vw;
+    }
+
+    input[name=mail] {
+
+      width: 65vw;
+    }
+
+    input[name=comment] {
+
+      width: 65vw;
+      height: 20vh;
+    }
+
+    input[type=submit] {
+      border: 1px solid black;
+      width: 6rem;
+      height: 2rem;
+    }
+
+    input[type=reset] {
+      border: 1px solid black;
+      width: 6rem;
+      height: 2rem;
+    }
+
     text-align: center;
-    height: 100px;
-    background-color: $c-light-green;
+  }
 
-    &--text {
-      color: $c-dark-grey;
-      letter-spacing: .8rem;
+  &__insert{
+    &__1{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: $c-light-green;
+      height: 12vh;
+      color: black;
+      p{
+        font-size: 1.8rem;
+      }
     }
   }
 
   &__footer {
-    overflow: hidden;
-    display: flex;
-    flex-flow: row;
-align-items: center;
-justify-content: center;
     background-color: white;
-    // font-size: 5rem;
-    height: 10vh;
-    p{
-      line-height: 1rem;
-      color: black;
-      font-size: .7rem;
-      text-align: center;
+    color: black;
+overflow: hidden;
+    &__small {
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+
+      p {
+        font-size: .6rem;
+        line-height: .7rem;
+      }
     }
-   
+
+    &__large {
+      display: none;
+    }
   }
 }
