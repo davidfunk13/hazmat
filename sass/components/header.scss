@@ -25,15 +25,32 @@ video {
   width: 100vw;
   height: 100vh;
 }
+@keyframes logoSpin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 
-#main-logo {
+.logoWrapper{
   position: absolute;
-  width: 55%;
   transform: translate(-50%, -50%);
   top: 50%;
   left: 50%;
   @include z-index(logo);
+}
+.spin{
+  animation: logoSpin infinite 20s linear;
+}
+#main-logo {
   transition: margin-left .5s;
+  width: 50vw;
+}
+#main-logo-text {
+  transition: margin-left .5s;
+  width: 50vw;
 }
 
 .desktop-nav {

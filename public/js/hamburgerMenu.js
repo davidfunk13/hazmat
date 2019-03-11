@@ -71,6 +71,7 @@ function orientationHandler() {
       document.getElementById("pushNav").style.width = "45%";
       document.getElementById("pushNav__container").style.transform = "translateX(45%)";
       document.getElementById("main-logo").style.marginLeft = "45%";
+      document.getElementById("main-logo-text").style.marginLeft = "45%";
       document.getElementById("video").style.marginLeft = "45%";
     }
     if (screenOrientation === 90) {
@@ -78,6 +79,7 @@ function orientationHandler() {
       document.getElementById("pushNav").style.width = "25%";
       document.getElementById("pushNav__container").style.transform = "translateX(25%)";
       document.getElementById("main-logo").style.marginLeft = "25%";
+      document.getElementById("main-logo-text").style.marginLeft = "25%";
       document.getElementById("video").style.marginLeft = "25%";
     }
   }
@@ -87,6 +89,7 @@ function orientationHandler() {
     document.getElementById("pushNav").style.width = "0%";
     document.getElementById("pushNav__container").style.transform = "translateX(0%)";
     document.getElementById("main-logo").style.marginLeft = "0%";
+    document.getElementById("main-logo-text").style.marginLeft = "0%";
     document.getElementById("video").style.marginLeft = "0%";
   }
 }
