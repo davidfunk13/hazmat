@@ -1,4 +1,5 @@
 @import url("https://use.typekit.net/nky5mob.css");
+
 h1,
 h2,
 h3 {
@@ -29,9 +30,55 @@ h3 {
   font-size: 1.2rem;
   margin-bottom: .5rem;
 }
+
 .contact-block{
+  padding-top: 1rem;
   p{
 
-    line-height:0;
+  }
+}
+@media screen and (min-width: 425px) {
+  .contact-block {
+    p {
+      padding: 0;
+      line-height: 1.5rem;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contact-block {
+    p {
+      padding: 0;
+      line-height: 1.5rem;
+    }
+  }
+}
+
+//desktop sm 1024
+@media screen and (min-width: 1024px) {
+  .contact-block {
+    p {
+      padding: 0;
+      line-height: 1.5rem;
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .contact-block {
+    p {
+      padding: 0;
+      line-height: 1.5rem;
+    }
+  }
+}
+
+// landscape small
+@media screen and (max-height: 599px) and (orientation:landscape) {
+  .contact-block {
+    p {
+      background: yellow;
+    }
   }
 }

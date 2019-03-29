@@ -471,8 +471,32 @@ h3 {
   font-size: 1.2rem;
   margin-bottom: .5rem; }
 
-.contact-block p {
-  line-height: 0; }
+.contact-block {
+  padding-top: 1rem; }
+
+@media screen and (min-width: 425px) {
+  .contact-block p {
+    padding: 0;
+    line-height: 1.5rem; } }
+
+@media screen and (min-width: 768px) {
+  .contact-block p {
+    padding: 0;
+    line-height: 1.5rem; } }
+
+@media screen and (min-width: 1024px) {
+  .contact-block p {
+    padding: 0;
+    line-height: 1.5rem; } }
+
+@media screen and (min-width: 1440px) {
+  .contact-block p {
+    padding: 0;
+    line-height: 1.5rem; } }
+
+@media screen and (max-height: 599px) and (orientation: landscape) {
+  .contact-block p {
+    background: yellow; } }
 
 @media screen and (min-width: 425px) {
   .section__1__small {
