@@ -1,331 +1,351 @@
-.logo{
+.logo {
     width: 60%;
+
     // background: white;
-    &__wb{
-        &--small{
+    &__wb {
+        &--small {
             width: 50%;
         }
-        &--med{
+
+        &--med {
+            width: 50%;
 
         }
-        &--mlg{
 
+        &--mlg {
+            // width: 60%;
         }
-        &--lg{
 
-        }
-        &--landscape{
+        &--lg {}
 
-        }
+        &--landscape {}
     }
-    &__nick{
-        &--small{
+
+    &__nick {
+        &--small {
             width: 75%;
         }
-        &--med{
+
+        &--med {
+            width: 75%;
 
         }
-        &--mlg{
 
+        &--mlg {
+            padding: 3rem 0 3rem 0;
+            width: 100%;
         }
-        &--lg{
 
+        &--lg {
+            padding: 5rem 0 5rem 0;
+            width: 100%;
         }
-        &--landscape{
 
+        &--landscape {
+            padding: 3rem 0 3rem 0;
+            width: 100%;
         }
     }
-    &__a24{
-        &--small{
-        }
-        &--med{
 
-        }
-        &--mlg{
+    &__a24 {
+        &--small {}
 
-        }
-        &--lg{
+        &--med {}
 
+        &--mlg {
+            width: 50%;
         }
-        &--landscape{
 
+        &--lg {
+            width: 50%;
         }
+
+        &--landscape {  width: 50%;}
     }
-    &__ubisoft{
-        &--small{
+
+    &__ubisoft {
+        &--small {
             width: 40%;
         }
-        &--med{
+
+        &--med {
+            width: 40%;
 
         }
-        &--mlg{
 
+        &--mlg {
+            width: 45%;
         }
-        &--lg{
 
+        &--lg {
+            width: 45%;
         }
-        &--landscape{
 
+        &--landscape {            width: 45%;
         }
     }
-    &__finn{
+
+    &__finn {
         background: white;
-        &--small{
 
+        &--small {}
+
+        &--med {}
+
+        &--mlg {
+            // width: 30%;
         }
-        &--med{
 
+        &--lg {}
+
+        &--landscape {}
+    }
+
+    &__ifc {
+        &--small {}
+
+        &--med {}
+
+        &--mlg {
+            padding: 1rem;
         }
-        &--mlg{
 
+        &--lg {
+            padding: 1rem;
         }
-        &--lg{
 
-        }
-        &--landscape{
-
+        &--landscape {            padding: 1rem;
         }
     }
-    &__ifc{
-        &--small{
 
+    &__natgeo {
+        &--small {}
+
+        &--med {}
+
+        &--mlg {
+            // width: 30%;
         }
-        &--med{
 
+        &--lg {}
+
+        &--landscape {}
+    }
+
+    &__playstation {
+        &--small {}
+
+        &--med {}
+
+        &--mlg {
+            padding: 1rem;
         }
-        &--mlg{
 
+        &--lg {
+            padding: 1rem;
         }
-        &--lg{
 
-        }
-        &--landscape{
-
+        &--landscape {            padding: 1rem;
         }
     }
-    &__natgeo{
-        &--small{
 
+    &__hulu {
+        &--small {}
+
+        &--med {}
+
+        &--mlg {
+            // width: 30%;
         }
-        &--med{
 
+        &--lg {}
+
+        &--landscape {}
+    }
+
+    &__amazon {
+        &--small {}
+
+        &--med {}
+
+        &--mlg {
+            padding: 1rem;
         }
-        &--mlg{
 
+        &--lg {
+            padding: 1rem;
         }
-        &--lg{
 
-        }
-        &--landscape{
-
+        &--landscape {            padding: 1rem;
         }
     }
-    &__playstation{
-        &--small{
 
-        }
-        &--med{
+    &__capcom {
+        &--small {}
 
-        }
-        &--mlg{
+        &--med {}
 
+        &--mlg {
+            // width: 30%;
         }
-        &--lg{
 
-        }
-        &--landscape{
+        &--lg {}
 
-        }
+        &--landscape {}
     }
-    &__hulu{
-        &--small{
 
-        }
-        &--med{
-
-        }
-        &--mlg{
-
-        }
-        &--lg{
-
-        }
-        &--landscape{
-
-        }
-    }
-    &__amazon{
-        &--small{
-
-        }
-        &--med{
-
-        }
-        &--mlg{
-
-        }
-        &--lg{
-
-        }
-        &--landscape{
-
-        }
-    }
-    &__capcom{
-        &--small{
-
-        }
-        &--med{
-
-        }
-        &--mlg{
-
-        }
-        &--lg{
-
-        }
-        &--landscape{
-
-        }
-    }
-    &__lightyears{
-        &--small{
+    &__lightyears {
+        &--small {
             width: 45%;
         }
-        &--med{
+
+        &--med {
+            width: 45%;
 
         }
-        &--mlg{
 
+        &--mlg {
+            padding: 1rem;
         }
-        &--lg{
 
+        &--lg {
+            padding: 1rem;
         }
-        &--landscape{
 
-        }
-    }
-    &__magnolia{
-        &--small{
-
-        }
-        &--med{
-
-        }
-        &--mlg{
-
-        }
-        &--lg{
-
-        }
-        &--landscape{
-
+        &--landscape {            padding: 1rem;
         }
     }
-    &__oscope{
-        &--small{
 
+    &__magnolia {
+        &--small {}
+
+        &--med {}
+
+        &--mlg {
+            // width: 30%;
+            padding: 1rem;
         }
-        &--med{
 
+        &--lg {
+            padding: 1rem;
         }
-        &--mlg{
 
-        }
-        &--lg{
-
-        }
-        &--landscape{
-
-        }
-    }
-    &__participant{
-        &--small{
-
-        }
-        &--med{
-
-        }
-        &--mlg{
-
-        }
-        &--lg{
-
-        }
-        &--landscape{
-
+        &--landscape {            padding: 1rem;
         }
     }
-    &__roadside{
-        &--small{
-            background: white;
-            padding: .25rem;
+
+    &__oscope {
+        &--small {}
+
+        &--med {}
+
+        &--mlg {}
+
+        &--lg {}
+
+        &--landscape {}
+    }
+
+    &__participant {
+        &--small {}
+
+        &--med {}
+
+        &--mlg {
+            // width: 30%;
+            padding: 1rem;
+        }
+
+        &--lg {
+            padding: 1rem;
+        }
+
+        &--landscape {            padding: 1rem;
+        }
+    }
+
+    &__roadside {
+        background: white;
+        padding: .25rem;
+
+        &--small {
             width: 45%;
         }
-        &--med{
 
+        &--med {
+            width: 45%;
         }
-        &--mlg{
 
+        &--mlg {
+            // background: white;
+            padding: 1rem;
         }
-        &--lg{
 
+        &--lg {
+            padding: 1rem;
         }
-        &--landscape{
 
+        &--landscape {            padding: 1rem;
         }
     }
-    &__rogersandcowan{
-        &--small{
-            width: 45%
-        }
-        &--med{
 
+    &__rogersandcowan {
+        &--small {
+            width: 50%
         }
-        &--mlg{
 
+        &--med {
+            width: 50%
         }
-        &--lg{
 
+        &--mlg {
+            // width: 30%;
         }
-        &--landscape{
 
+        &--lg {}
+
+        &--landscape {}
+    }
+
+    &__spr {
+        background: white;
+        padding: .25rem;
+
+        &--small {
+            width: 50%;
+        }
+
+        &--med {
+            width: 50%;
+        }
+
+        &--mlg {
+            padding: 1rem;
+        }
+
+        &--lg {
+            padding: 1rem;
+        }
+
+        &--landscape {            padding: 1rem;
         }
     }
-    &__spr{
-        &--small{
-            background: white;
-            padding: .25rem;
-            width: 40%;
-        }
-        &--med{
 
+    &__tpn {
+        &--small {
+            width: 50%;
         }
-        &--mlg{
 
+        &--med {
+            width: 50%;
         }
-        &--lg{
 
+        &--mlg {
+            // width: 30%;
         }
-        &--landscape{
 
-        }
-    }
-    &__tpn{
-        &--small{
+        &--lg {}
 
-        }
-        &--med{
-
-        }
-        &--mlg{
-
-        }
-        &--lg{
-
-        }
-        &--landscape{
-
-        }
+        &--landscape {}
     }
 }

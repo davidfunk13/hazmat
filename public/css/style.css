@@ -425,24 +425,113 @@ video {
   width: 60%; }
   .logo__wb--small {
     width: 50%; }
+  .logo__wb--med {
+    width: 50%; }
   .logo__nick--small {
     width: 75%; }
+  .logo__nick--med {
+    width: 75%; }
+  .logo__nick--mlg {
+    padding: 3rem 0 3rem 0;
+    width: 100%; }
+  .logo__nick--lg {
+    padding: 5rem 0 5rem 0;
+    width: 100%; }
+  .logo__nick--landscape {
+    padding: 3rem 0 3rem 0;
+    width: 100%; }
+  .logo__a24--mlg {
+    width: 50%; }
+  .logo__a24--lg {
+    width: 50%; }
+  .logo__a24--landscape {
+    width: 50%; }
   .logo__ubisoft--small {
     width: 40%; }
+  .logo__ubisoft--med {
+    width: 40%; }
+  .logo__ubisoft--mlg {
+    width: 45%; }
+  .logo__ubisoft--lg {
+    width: 45%; }
+  .logo__ubisoft--landscape {
+    width: 45%; }
   .logo__finn {
     background: white; }
+  .logo__ifc--mlg {
+    padding: 1rem; }
+  .logo__ifc--lg {
+    padding: 1rem; }
+  .logo__ifc--landscape {
+    padding: 1rem; }
+  .logo__playstation--mlg {
+    padding: 1rem; }
+  .logo__playstation--lg {
+    padding: 1rem; }
+  .logo__playstation--landscape {
+    padding: 1rem; }
+  .logo__amazon--mlg {
+    padding: 1rem; }
+  .logo__amazon--lg {
+    padding: 1rem; }
+  .logo__amazon--landscape {
+    padding: 1rem; }
   .logo__lightyears--small {
     width: 45%; }
-  .logo__roadside--small {
-    background: white;
-    padding: .25rem;
+  .logo__lightyears--med {
     width: 45%; }
+  .logo__lightyears--mlg {
+    padding: 1rem; }
+  .logo__lightyears--lg {
+    padding: 1rem; }
+  .logo__lightyears--landscape {
+    padding: 1rem; }
+  .logo__magnolia--mlg {
+    padding: 1rem; }
+  .logo__magnolia--lg {
+    padding: 1rem; }
+  .logo__magnolia--landscape {
+    padding: 1rem; }
+  .logo__participant--mlg {
+    padding: 1rem; }
+  .logo__participant--lg {
+    padding: 1rem; }
+  .logo__participant--landscape {
+    padding: 1rem; }
+  .logo__roadside {
+    background: white;
+    padding: .25rem; }
+    .logo__roadside--small {
+      width: 45%; }
+    .logo__roadside--med {
+      width: 45%; }
+    .logo__roadside--mlg {
+      padding: 1rem; }
+    .logo__roadside--lg {
+      padding: 1rem; }
+    .logo__roadside--landscape {
+      padding: 1rem; }
   .logo__rogersandcowan--small {
-    width: 45%; }
-  .logo__spr--small {
+    width: 50%; }
+  .logo__rogersandcowan--med {
+    width: 50%; }
+  .logo__spr {
     background: white;
-    padding: .25rem;
-    width: 40%; }
+    padding: .25rem; }
+    .logo__spr--small {
+      width: 50%; }
+    .logo__spr--med {
+      width: 50%; }
+    .logo__spr--mlg {
+      padding: 1rem; }
+    .logo__spr--lg {
+      padding: 1rem; }
+    .logo__spr--landscape {
+      padding: 1rem; }
+  .logo__tpn--small {
+    width: 50%; }
+  .logo__tpn--med {
+    width: 50%; }
 
 h1,
 h2,
@@ -494,10 +583,6 @@ h3 {
     padding: 0;
     line-height: 1.5rem; } }
 
-@media screen and (max-height: 599px) and (orientation: landscape) {
-  .contact-block p {
-    background: yellow; } }
-
 @media screen and (min-width: 425px) {
   .section__1__small {
     display: none; }
@@ -544,7 +629,6 @@ h3 {
     flex-flow: column;
     align-items: center; }
     .section__4__med img {
-      width: 50vw;
       margin-top: .5rem;
       margin-bottom: 1rem; }
   .section__footer {
@@ -630,19 +714,19 @@ h3 {
     flex-flow: row;
     justify-content: center; }
     .section__4__mlg img {
-      width: 30vw;
       margin-top: .5rem;
       margin-bottom: 1rem; }
     .section__4__mlg--col-1 {
       display: flex;
       flex-flow: column;
-      padding-right: 3rem;
-      padding-left: 3rem; }
+      align-items: center;
+      width: 50%; }
     .section__4__mlg--col-2 {
       display: flex;
       flex-flow: column;
-      padding-right: 3rem;
-      padding-left: 3rem; }
+      align-items: center;
+      align-content: space-between;
+      width: 50%; }
   .section__footer__small {
     display: none; }
   .section__footer__large {
@@ -760,19 +844,18 @@ h3 {
       flex-flow: row;
       justify-content: center; }
       .section__4__lg img {
-        width: 20vw;
         margin-top: .5rem;
         margin-bottom: 1rem; }
       .section__4__lg--col-1 {
         display: flex;
         flex-flow: column;
-        padding-right: 8rem;
-        padding-left: 8rem; }
+        align-items: center;
+        width: 50%; }
       .section__4__lg--col-2 {
         display: flex;
         flex-flow: column;
-        padding-right: 8rem;
-        padding-left: 8rem; }
+        align-items: center;
+        width: 50%; }
   .desktop-nav {
     font-size: 1.4rem;
     margin-top: -1rem;
@@ -949,11 +1032,11 @@ h3 {
     display: none; }
   .section__4__landscape {
     display: flex;
-    flex-flow: row; }
+    flex-flow: row;
+    justify-content: center; }
     .section__4__landscape img {
-      width: 30vw;
-      padding-top: 1rem;
-      padding-bottom: 1rem; }
+      margin-top: 1rem;
+      margin-bottom: 1rem; }
     .section__4__landscape--col-1 {
       width: 50%;
       display: flex;
