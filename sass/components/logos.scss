@@ -1,8 +1,9 @@
 .logo{
-    background: white;
+    width: 60%;
+    // background: white;
     &__wb{
         &--small{
-
+            width: 50%;
         }
         &--med{
 
@@ -19,7 +20,7 @@
     }
     &__nick{
         &--small{
-
+            width: 75%;
         }
         &--med{
 
@@ -36,7 +37,6 @@
     }
     &__a24{
         &--small{
-
         }
         &--med{
 
@@ -53,7 +53,7 @@
     }
     &__ubisoft{
         &--small{
-
+            width: 40%;
         }
         &--med{
 
@@ -69,6 +69,7 @@
         }
     }
     &__finn{
+        background: white;
         &--small{
 
         }
@@ -189,7 +190,7 @@
     }
     &__lightyears{
         &--small{
-
+            width: 45%;
         }
         &--med{
 
@@ -257,7 +258,9 @@
     }
     &__roadside{
         &--small{
-
+            background: white;
+            padding: .25rem;
+            width: 45%;
         }
         &--med{
 
@@ -274,7 +277,7 @@
     }
     &__rogersandcowan{
         &--small{
-
+            width: 45%
         }
         &--med{
 
@@ -291,7 +294,9 @@
     }
     &__spr{
         &--small{
-
+            background: white;
+            padding: .25rem;
+            width: 40%;
         }
         &--med{
 

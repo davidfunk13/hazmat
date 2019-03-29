@@ -360,10 +360,8 @@ video {
     .section__4__small {
       display: flex;
       flex-flow: column;
-      align-items: center;
-      background: rgba(255, 255, 255, 0.25); }
+      align-items: center; }
       .section__4__small img {
-        width: 30%;
         margin-top: .5rem;
         margin-bottom: 1rem; }
     .section__4__med {
@@ -424,7 +422,27 @@ video {
       display: none; }
 
 .logo {
-  background: white; }
+  width: 60%; }
+  .logo__wb--small {
+    width: 50%; }
+  .logo__nick--small {
+    width: 75%; }
+  .logo__ubisoft--small {
+    width: 40%; }
+  .logo__finn {
+    background: white; }
+  .logo__lightyears--small {
+    width: 45%; }
+  .logo__roadside--small {
+    background: white;
+    padding: .25rem;
+    width: 45%; }
+  .logo__rogersandcowan--small {
+    width: 45%; }
+  .logo__spr--small {
+    background: white;
+    padding: .25rem;
+    width: 40%; }
 
 h1,
 h2,
