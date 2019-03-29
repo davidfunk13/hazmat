@@ -423,6 +423,9 @@ video {
     .section__footer__large {
       display: none; }
 
+.logo {
+  background: white; }
+
 h1,
 h2,
 h3 {
