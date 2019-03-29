@@ -212,9 +212,9 @@
       display: flex;
       flex-flow: column;
       align-items: center;
-
+      background: rgba($color: white, $alpha: .25);
       img {
-        width: 50vw;
+        width: 30%;
         margin-top: .5rem;
         margin-bottom: 1rem;
       }
