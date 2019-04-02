@@ -357,13 +357,14 @@ video {
       line-height: 2.5rem; }
     .section__4--h3 {
       color: #86c232; }
+    .section__4 img {
+      width: 40vw;
+      margin-top: .5rem;
+      margin-bottom: 1rem; }
     .section__4__small {
       display: flex;
       flex-flow: column;
       align-items: center; }
-      .section__4__small img {
-        margin-top: .5rem;
-        margin-bottom: 1rem; }
     .section__4__med {
       display: none; }
     .section__4__mlg {
@@ -423,115 +424,16 @@ video {
 
 .logo {
   width: 60%; }
-  .logo__wb--small {
-    width: 50%; }
-  .logo__wb--med {
-    width: 50%; }
   .logo__nick--small {
-    width: 75%; }
-  .logo__nick--med {
-    width: 75%; }
-  .logo__nick--mlg {
-    padding: 3rem 0 3rem 0;
-    width: 100%; }
-  .logo__nick--lg {
-    padding: 5rem 0 5rem 0;
-    width: 100%; }
-  .logo__nick--landscape {
-    padding: 3rem 0 3rem 0;
-    width: 100%; }
-  .logo__a24--mlg {
-    width: 50%; }
-  .logo__a24--lg {
-    width: 50%; }
-  .logo__a24--landscape {
-    width: 50%; }
-  .logo__ubisoft--small {
-    width: 40%; }
-  .logo__ubisoft--med {
-    width: 40%; }
-  .logo__ubisoft--mlg {
-    width: 45%; }
-  .logo__ubisoft--lg {
-    width: 45%; }
-  .logo__ubisoft--landscape {
-    width: 45%; }
+    width: 50vw; }
   .logo__finn {
     background: white; }
-  .logo__ifc--mlg {
-    padding: 1rem; }
-  .logo__ifc--lg {
-    padding: 1rem; }
-  .logo__ifc--landscape {
-    padding: 1rem; }
-  .logo__playstation--mlg {
-    padding: 1rem; }
-  .logo__playstation--lg {
-    padding: 1rem; }
-  .logo__playstation--landscape {
-    padding: 1rem; }
-  .logo__amazon--mlg {
-    padding: 1rem; }
-  .logo__amazon--lg {
-    padding: 1rem; }
-  .logo__amazon--landscape {
-    padding: 1rem; }
-  .logo__lightyears--small {
-    width: 45%; }
-  .logo__lightyears--med {
-    width: 45%; }
-  .logo__lightyears--mlg {
-    padding: 1rem; }
-  .logo__lightyears--lg {
-    padding: 1rem; }
-  .logo__lightyears--landscape {
-    padding: 1rem; }
-  .logo__magnolia--mlg {
-    padding: 1rem; }
-  .logo__magnolia--lg {
-    padding: 1rem; }
-  .logo__magnolia--landscape {
-    padding: 1rem; }
-  .logo__participant--mlg {
-    padding: 1rem; }
-  .logo__participant--lg {
-    padding: 1rem; }
-  .logo__participant--landscape {
-    padding: 1rem; }
   .logo__roadside {
     background: white;
     padding: .25rem; }
-    .logo__roadside--small {
-      width: 45%; }
-    .logo__roadside--med {
-      width: 45%; }
-    .logo__roadside--mlg {
-      padding: 1rem; }
-    .logo__roadside--lg {
-      padding: 1rem; }
-    .logo__roadside--landscape {
-      padding: 1rem; }
-  .logo__rogersandcowan--small {
-    width: 50%; }
-  .logo__rogersandcowan--med {
-    width: 50%; }
   .logo__spr {
     background: white;
     padding: .25rem; }
-    .logo__spr--small {
-      width: 50%; }
-    .logo__spr--med {
-      width: 50%; }
-    .logo__spr--mlg {
-      padding: 1rem; }
-    .logo__spr--lg {
-      padding: 1rem; }
-    .logo__spr--landscape {
-      padding: 1rem; }
-  .logo__tpn--small {
-    width: 50%; }
-  .logo__tpn--med {
-    width: 50%; }
 
 h1,
 h2,
@@ -629,6 +531,7 @@ h3 {
     flex-flow: column;
     align-items: center; }
     .section__4__med img {
+      width: 30vw;
       margin-top: .5rem;
       margin-bottom: 1rem; }
   .section__footer {
@@ -711,22 +614,25 @@ h3 {
     display: none; }
   .section__4__mlg {
     display: flex;
-    flex-flow: row;
-    justify-content: center; }
+    flex-flow: row; }
     .section__4__mlg img {
+      width: 20vw;
       margin-top: .5rem;
       margin-bottom: 1rem; }
     .section__4__mlg--col-1 {
       display: flex;
       flex-flow: column;
       align-items: center;
+      justify-content: center;
       width: 50%; }
     .section__4__mlg--col-2 {
       display: flex;
       flex-flow: column;
       align-items: center;
-      align-content: space-between;
+      justify-content: center;
       width: 50%; }
+      .section__4__mlg--col-2 img {
+        padding-bottom: .7rem; }
   .section__footer__small {
     display: none; }
   .section__footer__large {
@@ -846,18 +752,23 @@ h3 {
       flex-flow: row;
       justify-content: center; }
       .section__4__lg img {
+        width: 13vw;
         margin-top: .5rem;
         margin-bottom: 1rem; }
       .section__4__lg--col-1 {
         display: flex;
         flex-flow: column;
         align-items: center;
+        justify-content: center;
         width: 50%; }
       .section__4__lg--col-2 {
         display: flex;
         flex-flow: column;
         align-items: center;
+        justify-content: center;
         width: 50%; }
+        .section__4__lg--col-2 img {
+          padding: .65rem; }
   .desktop-nav {
     font-size: 1.4rem;
     margin-top: -1rem;
@@ -1037,18 +948,23 @@ h3 {
     flex-flow: row;
     justify-content: center; }
     .section__4__landscape img {
+      width: 30vw;
       margin-top: 1rem;
       margin-bottom: 1rem; }
     .section__4__landscape--col-1 {
-      width: 50%;
       display: flex;
       flex-flow: column;
-      align-items: center; }
+      align-items: center;
+      justify-content: center;
+      width: 50%; }
     .section__4__landscape--col-2 {
-      width: 50%;
       display: flex;
       flex-flow: column;
-      align-items: center; }
+      align-items: center;
+      justify-content: center;
+      width: 50%; }
+      .section__4__landscape--col-2 img {
+        padding: .5rem; }
   .section__insert {
     padding-top: 1rem; }
   .list-item {

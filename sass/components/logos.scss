@@ -4,244 +4,294 @@
     // background: white;
     &__wb {
         &--small {
-            width: 50%;
+
         }
 
         &--med {
-            width: 50%;
 
         }
 
         &--mlg {
-            // width: 60%;
+
         }
 
-        &--lg {}
+        &--lg {
+    
+        }
 
         &--landscape {}
     }
 
     &__nick {
         &--small {
-            width: 75%;
+            width: 50vw;
         }
 
         &--med {
-            width: 75%;
+
 
         }
 
         &--mlg {
-            padding: 3rem 0 3rem 0;
-            width: 100%;
+
         }
 
         &--lg {
-            padding: 5rem 0 5rem 0;
-            width: 100%;
+     
         }
 
         &--landscape {
-            padding: 3rem 0 3rem 0;
-            width: 100%;
+      
         }
     }
 
     &__a24 {
         &--small {}
 
-        &--med {}
+        &--med {
+        }
 
         &--mlg {
-            width: 50%;
         }
 
         &--lg {
-            width: 50%;
+     
         }
 
-        &--landscape {  width: 50%;}
+        &--landscape { 
+            
+        }
     }
 
     &__ubisoft {
         &--small {
-            width: 40%;
+           
         }
 
         &--med {
-            width: 40%;
+       
 
         }
 
         &--mlg {
-            width: 45%;
+         
         }
 
         &--lg {
-            width: 45%;
+     
         }
 
-        &--landscape {            width: 45%;
+        &--landscape {            
+          
         }
     }
 
     &__finn {
         background: white;
 
-        &--small {}
+        &--small {
 
-        &--med {}
-
-        &--mlg {
-            // width: 30%;
         }
 
-        &--lg {}
+        &--med {
+           
+        }
+
+        &--mlg {
+        
+        }
+
+        &--lg {
+    
+        }
 
         &--landscape {}
     }
 
     &__ifc {
-        &--small {}
+        &--small {
 
-        &--med {}
+        }
+
+        &--med {
+  
+        }
 
         &--mlg {
-            padding: 1rem;
+    
         }
 
         &--lg {
-            padding: 1rem;
+ 
         }
 
-        &--landscape {            padding: 1rem;
+        &--landscape {            
+          
         }
     }
 
     &__natgeo {
         &--small {}
 
-        &--med {}
-
-        &--mlg {
-            // width: 30%;
+        &--med {
+        
         }
 
-        &--lg {}
+        &--mlg {
+           
+        }
 
-        &--landscape {}
+        &--lg {
+          
+        }
+
+        &--landscape {
+
+        }
     }
 
     &__playstation {
         &--small {}
 
-        &--med {}
+        &--med {
+          
+        }
 
         &--mlg {
-            padding: 1rem;
+
         }
 
         &--lg {
-            padding: 1rem;
+           
         }
 
-        &--landscape {            padding: 1rem;
+        &--landscape {     
+    
         }
     }
 
     &__hulu {
-        &--small {}
+        &--small {
 
-        &--med {}
-
-        &--mlg {
-            // width: 30%;
         }
 
-        &--lg {}
+        &--med {
+           
+        }
+
+        &--mlg {
+           
+        }
+
+        &--lg {
+           
+        }
 
         &--landscape {}
     }
 
     &__amazon {
-        &--small {}
+        &--small {
 
-        &--med {}
+        }
+
+        &--med {
+           
+        }
 
         &--mlg {
-            padding: 1rem;
+          
         }
 
         &--lg {
-            padding: 1rem;
+           
         }
 
-        &--landscape {            padding: 1rem;
+        &--landscape {            
+         
         }
     }
 
     &__capcom {
-        &--small {}
+        &--small {
 
-        &--med {}
-
-        &--mlg {
-            // width: 30%;
         }
 
-        &--lg {}
+        &--med {
+    
+        }
 
-        &--landscape {}
+        &--mlg {
+          
+        }
+
+        &--lg {
+         
+        }
+
+        &--landscape {
+
+        }
     }
 
     &__lightyears {
         &--small {
-            width: 45%;
+        
         }
 
         &--med {
-            width: 45%;
 
         }
 
         &--mlg {
-            padding: 1rem;
+          
         }
 
         &--lg {
-            padding: 1rem;
+           
         }
 
-        &--landscape {            padding: 1rem;
+        &--landscape {           
+            
         }
     }
 
     &__magnolia {
-        &--small {}
+        &--small {
 
-        &--med {}
+        }
+
+        &--med {
+       
+        }
 
         &--mlg {
-            // width: 30%;
-            padding: 1rem;
+         
         }
 
         &--lg {
-            padding: 1rem;
+        
         }
 
-        &--landscape {            padding: 1rem;
+        &--landscape {        
+          
         }
     }
 
     &__oscope {
-        &--small {}
+        &--small {
 
-        &--med {}
+        }
+
+        &--med {
+         
+        }
 
         &--mlg {}
 
-        &--lg {}
+        &--lg {
+          
+        }
 
         &--landscape {}
     }
@@ -249,18 +299,20 @@
     &__participant {
         &--small {}
 
-        &--med {}
+        &--med {
+       
+        }
 
         &--mlg {
-            // width: 30%;
-            padding: 1rem;
+       
         }
 
         &--lg {
-            padding: 1rem;
+        
         }
 
-        &--landscape {            padding: 1rem;
+        &--landscape {            
+          
         }
     }
 
@@ -269,42 +321,46 @@
         padding: .25rem;
 
         &--small {
-            width: 45%;
+        
         }
 
         &--med {
-            width: 45%;
+         
         }
 
         &--mlg {
-            // background: white;
-            padding: 1rem;
+      
         }
 
         &--lg {
-            padding: 1rem;
+          
         }
 
-        &--landscape {            padding: 1rem;
+        &--landscape {       
+              
         }
     }
 
     &__rogersandcowan {
         &--small {
-            width: 50%
+          
         }
 
         &--med {
-            width: 50%
+         
         }
 
         &--mlg {
-            // width: 30%;
+          
         }
 
-        &--lg {}
+        &--lg {
+       
+        }
 
-        &--landscape {}
+        &--landscape {
+        
+        }
     }
 
     &__spr {
@@ -312,40 +368,45 @@
         padding: .25rem;
 
         &--small {
-            width: 50%;
+          
         }
 
         &--med {
-            width: 50%;
+       
         }
 
         &--mlg {
-            padding: 1rem;
+          
         }
 
         &--lg {
-            padding: 1rem;
+
         }
 
-        &--landscape {            padding: 1rem;
+        &--landscape {          
+            
         }
     }
 
     &__tpn {
         &--small {
-            width: 50%;
+         
         }
 
         &--med {
-            width: 50%;
+    
         }
 
         &--mlg {
-            // width: 30%;
+
         }
 
-        &--lg {}
+        &--lg {
+        
+        }
 
-        &--landscape {}
+        &--landscape {
+
+        }
     }
 }
